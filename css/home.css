@@ -1,0 +1,1020 @@
+/* =================================================
+   HERO SECTION (FIGMA EXACT FROM COLORS)
+   ================================================= */
+   .hero,
+.about-hero,
+.hero-medical{
+  position:relative;
+  z-index:1;
+}
+
+
+.hero-medical {
+  position: relative;
+  height: 100vh;
+  min-height: 900px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: url("../assesst/Banner_Section.png") right center/cover no-repeat;
+}
+
+.hero-medical::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    #000137 0%,
+    #000137 40%,
+    rgba(0, 1, 55, 0.85) 58%,
+    rgba(0, 1, 55, 0.45) 72%,
+    rgba(0, 1, 55, 0.1) 85%,
+    transparent 100%
+  );
+  z-index: 1;
+}
+
+.hero-medical .container {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  padding-left: 300px;
+  color: #ffffff;
+}
+
+.hero-content h1 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.5px;
+  margin-bottom: 24px;
+}
+
+.hero-content p {
+  font-size: 16px;
+  line-height: 1.7;
+
+  color: rgba(255, 255, 255, 0.85);
+
+  margin-bottom: 40px;
+}
+
+.btn-appointment {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  height: 58px;
+  padding: 6px 6px 6px 26px;
+  background: #ffffff;
+  color: #000137;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.btn-appointment:hover {
+  background: #5552e7;
+  color: #ffffff;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+.btn-icon {
+  width: 46px;
+  height: 46px;
+
+  background: #000137;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+.about {
+  position: relative;
+  margin: 120px 0 0 ;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+/* container */
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+/* layout */
+.about-wrapper {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+/* =========================================
+   SVG BACKGROUND (dots)
+========================================= */
+
+.about-bg {
+  position: absolute;
+  left: -120px;
+  top: -60px;
+  width: 700px;
+  opacity: 0.35;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* =========================================
+   IMAGE COLLAGE
+========================================= */
+
+.about-gallery {
+  display: flex;
+}
+
+.gallery-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* images */
+.gallery-big img,
+.gallery-small img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+/* exact sizes */
+.gallery-big {
+  width: 360px;
+  height: 480px;
+}
+
+.gallery-small {
+  width: 260px;
+  height: 220px;
+}
+
+.about-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 18px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: #00b4d8;
+  border: 2px solid #a6dae5;
+  border-radius: 100px;
+  width: max-content;
+}
+.about-title {
+  font-size: 43px;
+  margin-bottom: 24px;
+  color: #000137;
+}
+.about-desc {
+  font-size: 14px;
+  color: #00194c;
+}
+
+.about-feature-card {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  background: #ffffff;
+  padding: 22px;
+  border-radius: 26px;
+  box-shadow: 0 18px 40px rgba(10, 35, 80, 0.08);
+  margin: 28px 0 32px;
+}
+
+/* video */
+/* ===============================
+   VIDEO THUMB
+=============================== */
+
+.feature-video {
+  position: relative;
+  width: 210px;
+  height: 130px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.feature-video > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* ===============================
+   PLAY BUTTON (IMAGE ICON)
+=============================== */
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 54px;
+  height: 54px;
+
+  background: #fff;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+/* icon size */
+.play-btn img {
+  width: 68px;
+  height: 68px;
+  object-fit: contain;
+}
+
+/* hover effect */
+.play-btn:hover {
+  transform: translate(-50%, -50%) scale(1.08);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* ======================================
+   CHECKLIST
+====================================== */
+.about-list {
+  list-style: none;
+  padding: 0;
+}
+
+.about-list li {
+  position: relative;
+  padding-left: 30px;
+  margin: 12px 0;
+  font-size: 15px;
+  color: #00194c;
+}
+.about-content{
+  margin-bottom: 120px;
+}
+/* SVG icon */
+.about-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 18px;
+  height: 18px;
+  background: url("../assesst/checkmark-circle-01.png") no-repeat center/contain;
+}
+
+/* ======================================
+   ACTIONS ROW
+====================================== */
+
+.about-actions {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* ======================================
+   PRIMARY BUTTON (FIGMA EXACT)
+====================================== */
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+
+  background: #14c6d1;
+  color: #fff;
+  padding: 10px 12px 10px 26px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  box-shadow: 0 10px 25px rgba(20, 198, 209, 0.25);
+  transition: 0.25s;
+}
+
+/* text */
+.btn-text {
+  text-transform: capitalize;
+}
+
+/* right circle */
+.btn-icon {
+  width: 40px;
+  height: 40px;
+
+  background: #ffffff;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+/* arrow svg */
+.btn-icon svg {
+  width: 18px;
+  height: 18px;
+  stroke: #00194c;
+}
+
+/* hover */
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(20, 198, 209, 0.35);
+  background: #0fa9b3;
+}
+
+/* emergency */
+.about-emergency {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+/* round icon */
+.phone-circle {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 2px solid #dbe2ea;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+  color: #0b1b4a;
+  background: #fff;
+}
+
+/* text */
+.emergency small {
+  display: block;
+  font-size: 13px;
+  color: #9aa3b2;
+}
+
+.emergency strong {
+  font-size: 17px;
+  color: #0b1b4a;
+  font-weight: 700;
+}
+
+/* =================================
+   SERVICES SECTION
+================================= */
+.services-section{
+  padding:90px 0;
+  background:#F2FBFD;
+  text-align:center;
+}
+
+
+/* =================================
+   TITLE
+================================= */
+.intro-tag{
+  display:inline-block;
+  padding:7px 22px;
+  border:1.5px solid #14c6d1;
+  color:#14c6d1;
+  border-radius:40px;
+  font-size:12px;
+  font-weight:600;
+  margin-bottom:25px;
+}
+
+.intro-title{
+  font-size:42px;
+  font-weight:700;
+  color:#0b1a45;
+  margin-bottom:50px;
+  line-height:1.3;
+}
+
+
+/* =================================
+   SERVICES TABS (GRAY BG)
+================================= */
+.services-tabs{
+  background:#F2FBFD;
+  border-radius:28px;
+  padding:20px;
+
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:10px;
+
+  margin-bottom:60px;
+}
+
+
+/* =================================
+   SERVICE CARD
+================================= */
+.service-card{
+  background:transparent;
+  border-radius:22px;
+  padding:32px 10px;
+
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+
+  transition:.3s;
+}
+
+.service-card .icon{
+  font-size:32px;
+  margin-bottom:14px;
+}
+
+.service-card h4{
+  font-size:15px;
+  font-weight:600;
+  color:#0b1a45;
+}
+
+.service-card p{
+  font-size:13px;
+  color:#6b7b8f;
+}
+
+
+/* active */
+.service-card.active{
+  background:linear-gradient(135deg,#14c6d1,#17b2c7);
+  color:#fff;
+}
+
+.service-card.active h4,
+.service-card.active p{
+  color:#fff;
+}
+
+
+/* hover */
+.service-card:hover{
+  background:linear-gradient(135deg,#14c6d1,#17b2c7);
+  color:#fff;
+}
+
+
+/* =================================
+   DEPARTMENT WRAPPER (BLUE BG)
+================================= */
+.dept-wrapper{
+  background:#DFF9FF;
+  border-radius:36px;
+  padding:60px;
+
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:36px;
+}
+
+
+/* =================================
+   DEPT CARD
+================================= */
+.dept-card{
+  background:#fff;
+  border-radius:26px;
+  padding:20px;
+  text-align:left;
+  box-shadow:0 10px 30px rgba(0,0,0,.06);
+  transition:.3s;
+}
+
+.dept-card:hover{
+  transform:translateY(-6px);
+}
+
+.dept-card img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+  border-radius:18px;
+  margin-bottom:20px;
+}
+
+.dept-card h3{
+  font-size:18px;
+  font-weight:700;
+  color:#0b1a45;
+  margin-bottom:10px;
+}
+
+.dept-card p{
+  font-size:13px;
+  color:#6b7b8f;
+  line-height:1.7;
+  margin-bottom:20px;
+}
+
+.read-more{
+  font-size:13px;
+  font-weight:600;
+  color:#0b1a45;
+  text-decoration:none;
+}
+
+.read-more:hover{
+  color:#14c6d1;
+}
+
+.read-more:hover svg {
+  transform: translateX(5px);
+}
+
+.stats {
+  padding: 260px 0 140px;
+  color: #fff;
+  position: relative;
+  overflow: visible;
+  background: url("../assesst/stats-image.png") center/cover no-repeat;
+  z-index: 1;
+}
+
+/* container */
+.stats .container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+/* =====================================
+   title
+===================================== */
+
+.stats-title {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.3;
+  text-align: center;
+  margin: 0 auto 90px;
+  max-width: 900px;
+  width: auto;
+  height: auto;
+}
+
+/* =====================================
+   grid
+===================================== */
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+}
+
+/* stat item */
+.stat-item {
+  padding: 0 30px;
+  position: relative;
+}
+
+/* vertical divider */
+.stat-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 120px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* icon */
+.stat-icon {
+  width: 44px;
+  margin-bottom: 20px;
+}
+
+/* number */
+.stat-item h3 {
+  font-size: 56px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+/* label */
+.stat-item p {
+  font-size: 15px;
+  opacity: 0.85;
+}
+
+.team {
+  background: #f4f7fa;
+  padding: 140px 0;
+}
+
+/* container */
+.team-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* =====================================
+   TAG
+===================================== */
+
+.team-tag {
+  display: inline-block;
+  padding: 6px 18px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+
+  color: #14c6d1;
+  border: 1.5px solid #14c6d1;
+  margin-bottom: 20px;
+}
+
+/* =====================================
+   TITLE
+===================================== */
+
+.team-title {
+  font-size: 38px;
+  font-weight: 700;
+  color: #0b1a45;
+  margin-bottom: 14px;
+}
+
+/* subtitle */
+.team-subtitle {
+  max-width: 720px;
+  margin: 0 auto 70px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #6b7b8f;
+}
+
+/* =====================================
+   CARDS ROW
+===================================== */
+
+.team-row {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 45px;
+  align-items: center;
+}
+
+/* =====================================
+   CARD
+===================================== */
+
+.team-card {
+  position: relative;
+  border-radius: 28px;
+  overflow: visible;
+}
+
+/* image */
+.team-card img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 28px;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+}
+
+/* =====================================
+   NAME BADGE (floating bottom like figma)
+===================================== */
+
+.team-info {
+  position: absolute;
+
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+
+  background: #fff;
+  width: 85%;
+  padding: 18px 20px;
+
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* name */
+.team-info h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0b1a45;
+  margin-bottom: 4px;
+}
+
+/* role */
+.team-info span {
+  font-size: 13px;
+  color: #6b7b8f;
+}
+
+/* =====================================
+   RIGHT ARROW BUTTON
+===================================== */
+
+.team-next {
+  position: absolute;
+  right: -70px;
+  top: 45%;
+
+  width: 48px;
+  height: 48px;
+
+  border-radius: 50%;
+  border: none;
+
+  background: #14c6d1;
+  color: #fff;
+
+  font-size: 26px;
+  cursor: pointer;
+
+  box-shadow: 0 10px 25px rgba(20, 198, 209, 0.35);
+}
+
+.team-next:hover {
+  transform: scale(1.08);
+}
+
+/* =====================================
+   DOTS
+===================================== */
+
+.team-dots {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.team-dots span {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #cfd8e3;
+}
+
+.team-dots .active {
+  width: 40px;
+  border-radius: 20px;
+  background: #0b1a45;
+}
+@media (max-width: 1200px) {
+  /* HERO */
+  .hero-content {
+    padding-left: 120px;
+  }
+
+  .hero-content h1 {
+    font-size: 54px;
+  }
+
+  /* STATS */
+  .stats {
+    padding: 220px 0 120px;
+  }
+
+  .stats-title {
+    font-size: 36px;
+    margin-bottom: 70px;
+  }
+
+  /* TEAM */
+  .team {
+    padding: 120px 0;
+  }
+
+  .team-row {
+    gap: 30px;
+  }
+
+  .team-card img {
+    height: 400px;
+  }
+
+  .team-next {
+    right: -50px;
+  }
+}
+
+@media (max-width: 992px) {
+  /* HERO */
+  .hero-medical {
+    min-height: 780px;
+  }
+
+  .hero-content {
+    padding-left: 60px;
+  }
+
+  .hero-content h1 {
+    font-size: 46px;
+  }
+
+  /* STATS */
+  .stats {
+    padding: 200px 0 100px;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px 0;
+  }
+
+  .stat-item:not(:last-child)::after {
+    display: none;
+  }
+
+  /* TEAM */
+  .team-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-next {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  /* HERO */
+  .hero-medical {
+    min-height: 680px;
+  }
+
+  .hero-content {
+    padding-left: 40px;
+  }
+
+  .hero-content h1 {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+
+  .hero-content p {
+    font-size: 15px;
+  }
+
+  .btn-appointment {
+    height: 54px;
+    font-size: 14px;
+  }
+
+  /* STATS */
+  .stats-title {
+    font-size: 32px;
+    margin-bottom: 60px;
+  }
+
+  /* TEAM */
+  .team {
+    padding: 100px 0;
+  }
+
+  .team-title {
+    font-size: 32px;
+  }
+
+  .team-subtitle {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* HERO */
+  .hero-medical {
+    height: auto;
+    padding: 120px 0 100px;
+  }
+
+  .hero-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 34px;
+  }
+
+  .btn-appointment {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  /* STATS */
+  .stats {
+    padding: 160px 0 90px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .stat-item h3 {
+    font-size: 48px;
+  }
+
+  /* TEAM */
+  .team-row {
+    grid-template-columns: 1fr;
+  }
+
+  .team-card img {
+    height: 360px;
+  }
+
+  .team-info {
+    bottom: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  /* HERO */
+  .hero-content h1 {
+    font-size: 30px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+  .btn-appointment {
+    height: 52px;
+    font-size: 13px;
+  }
+
+  .btn-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* STATS */
+  .stats-title {
+    font-size: 28px;
+  }
+
+  .stat-item h3 {
+    font-size: 44px;
+  }
+
+  /* TEAM */
+  .team-title {
+    font-size: 28px;
+  }
+
+  .team-card img {
+    height: 320px;
+  }
+
+  .team-info {
+    padding: 14px;
+  }
+}
