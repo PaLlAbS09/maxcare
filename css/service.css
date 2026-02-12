@@ -49,6 +49,9 @@
 }
 
 /* Navbar */
+.navbar-nav .navbar-nav .nav-link.active{
+  color: #fff;
+}
 .navbar {
   background: #0b1b4a;
   color: #fff;
@@ -61,9 +64,9 @@
   text-decoration: none;
 }
 
-.active {
-  border-bottom: 2px solid #00bcd4;
-}
+/*.active {
+  border-bottom: 2px solid #ffffff;
+}*/
 
 /* Hero */
 
