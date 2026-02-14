@@ -1,0 +1,171 @@
+.about-hero {
+  position: relative;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  overflow: hidden;
+  background: url(../assesst/hero-img.png);
+}
+
+/* container layout */
+.about-hero-wrap {
+  max-width: 1280px;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ================================
+   TITLE
+================================ */
+
+.about-hero-left h1 {
+  font-size: 56px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+/* ================================
+   BREADCRUMB (RIGHT SIDE)
+================================ */
+
+.about-hero-right {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  opacity: 0.9;
+}
+
+.about-hero-right .sep {
+  opacity: 0.5;
+}
+
+.about-hero-right .title {
+  color: #00b4d8;
+  font-weight: 600;
+}
+.about-hero-right a {
+  color: #ffffff;
+}
+.about-hero-right a :hover {
+  color: #1475e2;
+}
+
+/* ================================
+   DECORATIVE CURVE 
+================================ */
+
+.about-hero::after {
+  content: "";
+  position: absolute;
+  right: -120px;
+  bottom: -120px;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(20, 198, 209, 0.18),
+    transparent 70%
+  );
+}
+
+/* ===============================
+   SECTION BG
+================================ */
+.filter-section {
+  background: #f3f5f8;
+  padding: 80px 0 35px;
+}
+
+/* ===============================
+   OUTER CAPSULE (1320 × 43)
+================================ */
+.filter-bar {
+  width: 1320px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  box-shadow: none;
+}
+
+/* ===============================
+   INDIVIDUAL MINI PILLS
+================================ */
+.filter-pill {
+  height: 32px;
+  padding: 0 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(11, 16, 48, 0.2);
+  background: #f6f8fb;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #5f6f85;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* hover */
+.filter-pill:hover {
+  background: #00b4d8;
+  color: #2f3e52;
+}
+
+/* ===============================
+   SECTION BG
+================================= */
+.medical-gallery {
+  background: #f6f7f9;
+  padding: 0 0 80px;
+}
+
+/* ===============================
+   CENTERED CONTAINER (figma width)
+================================= */
+.gallery-container {
+  max-width: 1269px;
+  margin: 0 auto;
+}
+
+/* ===============================
+   TRUE 3x3 GRID 
+================================= */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* ===============================
+   CARD 
+================================= */
+.gallery-card {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+  background: #eaeaea;
+}
+
+/* image fill */
+.gallery-card img {
+  position: absolute;
+  inset: 0;
+  width: 403px;
+  height: 487px;
+  object-fit: cover;
+  display: block;
+}

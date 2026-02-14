@@ -447,7 +447,21 @@
                 <li>
                   <a class="dropdown-item" href="indexabout.html">About Us </a>
                 </li>
-                <li><a class="dropdown-item" href="#">Doctor</a></li>
+                <li class="dropdown-submenu">
+                  <a
+                    href="#"
+                    class="dropdown-item submenu-toggle"
+                    data-bs-toggle="submenu"
+                  >
+                    Doctor
+                  </a>
+                  <ul class="submenu-panel">
+                    <li><a class="dropdown-item" href="indexourdoctor.html">Our Doctors</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Doctor Details</a>
+                    </li>
+                  </ul>
+                </li>
                 <li>
                   <a class="dropdown-item" href="#">Make An Appoinment</a>
                 </li>
@@ -492,7 +506,11 @@
                     >Our Service
                   </a>
                 </li>
-                <li><a class="dropdown-item" href="indexservice2.html">Service Details</a></li>
+                <li>
+                  <a class="dropdown-item" href="indexservice2.html"
+                    >Service Details</a
+                  >
+                </li>
               </ul>
             </li>
 
@@ -528,7 +546,11 @@
                 </svg>
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Case Studies</a></li>
+                <li>
+                  <a class="dropdown-item" href="indexcasestudies.html"
+                    >Case Studies</a
+                  >
+                </li>
                 <li><a class="dropdown-item" href="#">Case Details</a></li>
               </ul>
             </li>
@@ -758,78 +780,69 @@
       </div>
     </section>
     <!--================= CTA SECTION =================-->
-   <section class="cta">
-  <div class="cta-grid">
+    <section class="cta">
+      <div class="cta-grid">
+        <!-- LEFT -->
+        <div class="cta-left">
+          <img src="./assesst/cta-img.png" alt="" />
+          <div class="overlay"></div>
 
-    <!-- LEFT -->
-    <div class="cta-left">
-      <img src="./assesst/cta-img.png" alt="">
-      <div class="overlay"></div>
-
-      <div class="left-content">
-        <span>WELCOME TO MAXCARE</span>
-        <h2>
-          Committed to<br>
-          Ensure Quality<br>
-          Healthcare
-        </h2>
-      </div>
-    </div>
-
-
-    <!-- CENTER -->
-    <div class="cta-mid">
-
-      <div class="mid-head">
-        <h3>Get Appointment</h3>
-        <span>+</span>
-      </div>
-
-      <p>
-        Call us 24/7 with any emergency or to schedule
-        an appointment & check your health.
-      </p>
-
-      <div class="mid-call">
-        <div class="icon">
-          <svg viewBox="0 0 24 24">
-            <path d="M6 2h4l2 5-2 2c1.5 3 3.5 5 6 6l2-2 5 2v4c0 1-1 2-2 2C9 21 3 15 3 7c0-1 1-2 2-2z" fill="white"/>
-          </svg>
+          <div class="left-content">
+            <span>WELCOME TO MAXCARE</span>
+            <h2>
+              Committed to<br />
+              Ensure Quality<br />
+              Healthcare
+            </h2>
+          </div>
         </div>
-        <div>
-          <small>Call Us :</small>
-          <b>+811.2311.785</b>
-          <b>+811.2311.657</b>
+
+        <!-- CENTER -->
+        <div class="cta-mid">
+          <div class="mid-head">
+            <h3>Get Appointment</h3>
+            <span>+</span>
+          </div>
+
+          <p>
+            Call us 24/7 with any emergency or to schedule an appointment &
+            check your health.
+          </p>
+
+          <div class="mid-call">
+            <div class="icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M6 2h4l2 5-2 2c1.5 3 3.5 5 6 6l2-2 5 2v4c0 1-1 2-2 2C9 21 3 15 3 7c0-1 1-2 2-2z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <div>
+              <small>Call Us :</small>
+              <b>+811.2311.785</b>
+              <b>+811.2311.657</b>
+            </div>
+          </div>
+
+          <a href="#" class="link"> Request An Appointment → </a>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="cta-right">
+          <h3>Opening Hours</h3>
+
+          <ul>
+            <li><span>Monday – Thursday</span><span>08:00 – 18:00</span></li>
+            <li><span>Friday</span><span>08:00 – 18:00</span></li>
+            <li><span>Saturday</span><span>08:00 – 18:00</span></li>
+            <li><span>Sunday</span><span>08:00 – 18:00</span></li>
+          </ul>
+
+          <a href="#" class="link white"> Request An Appointment → </a>
         </div>
       </div>
-
-      <a href="#" class="link">
-        Request An Appointment →
-      </a>
-    </div>
-
-
-    <!-- RIGHT -->
-    <div class="cta-right">
-
-      <h3>Opening Hours</h3>
-
-      <ul>
-        <li><span>Monday – Thursday</span><span>08:00 – 18:00</span></li>
-        <li><span>Friday</span><span>08:00 – 18:00</span></li>
-        <li><span>Saturday</span><span>08:00 – 18:00</span></li>
-        <li><span>Sunday</span><span>08:00 – 18:00</span></li>
-      </ul>
-
-      <a href="#" class="link white">
-        Request An Appointment →
-      </a>
-    </div>
-
-  </div>
-</section>
-
-
+    </section>
 
     <!--================= about SECTION =================-->
     <section class="about">

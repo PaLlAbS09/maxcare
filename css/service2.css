@@ -167,133 +167,144 @@
 }
 
 
-
 /* =====================================
-   SUPPORT CARD (FIGMA EXACT)
+   CARD (exact 380 × 568 from Figma)
 ===================================== */
 .support-card{
+  position:relative;
   width:380px;
   height:568px;
-  background:#fff;
-  border-radius:26px;
+  border-radius:10px;
   overflow:hidden;
-  box-shadow:0 20px 50px rgba(0,0,0,.08);
-  position:relative;
-  display:flex;
-  flex-direction:column;
+  background:#fff;
+  box-shadow:0 30px 60px rgba(0,0,0,.12);
 }
 
 
-/* ================= IMAGE ================= */
-.support-card img{
+
+/* =====================================
+   DOCTOR IMAGE (top area)
+===================================== */
+.support-card > img{
+  position:absolute;
+  top:0;
+  left:0;
   width:100%;
   height:60%;
   object-fit:cover;
-  display:block;
+  z-index:1;
 }
 
 
-/* ================= BOTTOM DARK AREA ================= */
-.support-content{
+
+/* =====================================
+   SVG CURVE (EXACT FIGMA SHAPE)
+===================================== */
+.support-curve{
   position:absolute;
   bottom:0;
   left:0;
   width:100%;
-  height:52%;
-  background:#071e4a;
-  color:#fff;
+  height:75%;
+  z-index:2;
+  display:block;
+}
+
+
+
+/* =====================================
+   CONTENT ON TOP OF CURVE
+===================================== */
+.support-content{
+  position:absolute;
+  bottom:-94px;
+  left:0;
+  width:100%;
+  height:75%;
+  padding:48px 28px;
+  z-index:3;
   display:flex;
   flex-direction:column;
   align-items:center;
   justify-content:center;
-  padding:40px 28px;
-  clip-path: path("M0 140 C120 40 260 0 480 0 L480 420 L0 420 Z");
+  text-align:center;
+  color:#fff;
 }
+
+
+
+/* =====================================
+   TITLE
+===================================== */
+.support-content h4{
+  font-size:18px;
+  font-weight:600;
+  margin-bottom:26px;
+  letter-spacing:.2px;
+}
+
+
+
+/* =====================================
+   BUTTON (exact like Figma)
+===================================== */
+.support-btn{
+  position:relative;
+  width:278px;       
+  height:95px;       
+  background:#ffffff;
+  border-radius:22px;
+  display:flex;
+  align-items:center;
+  gap:14px;
+  padding:0 22px;
+  text-decoration:none;
+  box-shadow:0 12px 30px rgba(0,0,0,.15);
+  transition:.25s;
+}
+
+
+
+/* =====================================
+   PHONE ICON CIRCLE
+===================================== */
+.support-btn svg{
+      position: absolute;
+    left: -26px;
+    top: 28px;
+}
+
+
+
 
 /* =====================================
    TEXT
 ===================================== */
-
-.support-content h4{
-  font-size:16px;
-  font-weight:600;
-  margin-bottom:22px;
-}
-
-/* ===============================
-   SUPPORT BUTTON – FIGMA MATCH
-================================ */
-
-.support-btn{
-  position:relative;
-
-  width:278px;
-  height:95px;
-
-  background:#f2f4f6;
-  border-radius:20px;
-
-  display:flex;
-  align-items:center;
-  justify-content:center;
-
-  margin:0 auto;
-
-  box-shadow:0 8px 20px rgba(0,0,0,.08);
-}
-
-
-/* ===============================
-   FLOATING PHONE CIRCLE
-================================ */
-.phone-badge{
-  position:absolute;
-
-  left:-22px;           /* key: outside */
-  top:50%;
-  transform:translateY(-50%);
-
-  width:46px;
-  height:46px;
-
-  background:#14c6d1;
-  border-radius:50%;
-
-  display:flex;
-  align-items:center;
-  justify-content:center;
-
-  box-shadow:0 6px 12px rgba(20,198,209,.35);
-}
-
-.phone-badge svg{
-  width:18px;
-  height:18px;
-  fill:#ffffff;
-}
-
-
-/* ===============================
-   TEXT
-================================ */
 .support-text{
-  text-align:center;
-  line-height:1.2;
+  display:flex;
+  flex-direction:column;
+  text-align:left;
 }
 
 .support-text span{
-  display:block;
   font-size:14px;
-  color:#119cc0;
-  font-weight:500;
-  margin-bottom:6px;
+  color:#14c6d1;
+  font-weight:600;
+  padding: 0 0 0 13px;
 }
 
 .support-text strong{
-  display:block;
   font-size:18px;
   font-weight:700;
-  color:#08143d;
+  color:#00194C;
+padding: 0 0 0 37px;
+}
+
+
+
+/* hover */
+.support-btn:hover{
+  transform:translateY(-2px);
 }
 
 

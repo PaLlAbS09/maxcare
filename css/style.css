@@ -346,6 +346,44 @@ ul {
   color: #fff;
 }
 
+/* =====================================
+   SUBMENU BASE
+===================================== */
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.submenu-panel {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  margin-left: 16px;
+  min-width: 240px;
+  padding: 14px 0;
+  border-radius: 12px;
+  background: linear-gradient(135deg,#14c6d1,#11b6c6);
+  box-shadow: 0 25px 60px rgba(0,0,0,.25);
+  display: none;   
+  z-index: 10001;
+}
+
+/* show when active */
+.dropdown-submenu.show > .submenu-panel {
+  display: block;
+}
+
+/* arrow rotate */
+.submenu-toggle svg {
+  transition: .25s;
+}
+
+.dropdown-submenu.show .submenu-toggle svg {
+  transform: rotate(90deg);
+}
+
+
+
 /* =================================================
    RIGHT — CONTACT + GRID
 ================================================= */

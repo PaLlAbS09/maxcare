@@ -1,0 +1,1159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MediCare+</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="css/casestudies.css" />
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="topbar-inner">
+        <!-- LEFT INFO -->
+        <div class="topbar-left">
+          <div class="info-item">
+            <!-- clock -->
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                stroke="white"
+                stroke-width="1.5"
+              />
+              <path
+                d="M12 8V12L14 14"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <span>Mon – Fri : 8:00 – 16:00</span>
+          </div>
+
+          <div class="info-item">
+            <!-- mail -->
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_2010_209)">
+                <path
+                  d="M7 8.5L9.94202 10.2394C11.6572 11.2535 12.3428 11.2535 14.058 10.2394L17 8.5"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M2.01577 13.4756C2.08114 16.5412 2.11383 18.0739 3.24496 19.2094C4.37608 20.3448 5.95033 20.3843 9.09883 20.4634C11.0393 20.5122 12.9607 20.5122 14.9012 20.4634C18.0497 20.3843 19.6239 20.3448 20.7551 19.2094C21.8862 18.0739 21.9189 16.5412 21.9842 13.4756C22.0053 12.4899 22.0053 11.5101 21.9842 10.5244C21.9189 7.45886 21.8862 5.92609 20.7551 4.79066C19.6239 3.65523 18.0497 3.61568 14.9012 3.53657C12.9607 3.48781 11.0393 3.48781 9.09882 3.53656C5.95033 3.61566 4.37608 3.65521 3.24495 4.79065C2.11382 5.92608 2.08114 7.45885 2.01576 10.5244C1.99474 11.5101 1.99475 12.4899 2.01577 13.4756Z"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linejoin="round"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_2010_209">
+                  <rect width="24" height="24" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <span>maxcareservices@email.com</span>
+          </div>
+
+          <div class="info-item">
+            <!-- location -->
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_2010_216)">
+                <path
+                  d="M2 22H22"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M18 9H14C11.518 9 11 9.518 11 12V22H21V12C21 9.518 20.482 9 18 9Z"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M15 22H3V5C3 2.518 3.518 2 6 2H12C14.482 2 15 2.518 15 5V9"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M3 6H6M3 10H6M3 14H6"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M15 13H17M15 16H17"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M16 22V19"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_2010_216">
+                  <rect width="24" height="24" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <span>28 Street, New York, USA</span>
+          </div>
+        </div>
+
+        <!-- CENTER EMERGENCY -->
+        <a href="#" class="emergency-pill">
+          <span class="plus-icon">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M12 5V19M5 12H19"
+                stroke="white"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+            </svg>
+          </span>
+
+          <span>24-Hour Emergency Aid</span>
+
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none">
+            <path d="M6 9L12 15L18 9" stroke="white" stroke-width="2" />
+          </svg>
+        </a>
+
+        <!-- RIGHT SOCIAL -->
+        <div class="topbar-right">
+          <a href="https://www.facebook.com/">
+            <!-- facebook -->
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_2010_244)">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M4.63636 7.74997C3.90304 7.74997 3.75 7.8939 3.75 8.5833V9.83333C3.75 10.5228 3.90304 10.6667 4.63636 10.6667H6.40909V15.6667C6.40909 16.3561 6.56213 16.5 7.29545 16.5H9.06818C9.80153 16.5 9.95452 16.3561 9.95452 15.6667V10.6667H11.945C12.5012 10.6667 12.6446 10.565 12.7973 10.0623L13.1772 8.81227C13.4389 7.95105 13.2776 7.74997 12.3249 7.74997H9.95452V5.66667C9.95452 5.20643 10.3514 4.83333 10.8409 4.83333H13.3636C14.0969 4.83333 14.25 4.68944 14.25 4V2.33333C14.25 1.64389 14.0969 1.5 13.3636 1.5H10.8409C8.39325 1.5 6.40909 3.36548 6.40909 5.66667V7.74997H4.63636Z"
+                  fill="white"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_2010_244">
+                  <rect width="18" height="18" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+
+          <a href="https://www.instagram.com/">
+            <!-- insta -->
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_2010_247)">
+                <path
+                  d="M1.875 9C1.875 5.64124 1.875 3.96187 2.91843 2.91843C3.96187 1.875 5.64124 1.875 9 1.875C12.3587 1.875 14.0381 1.875 15.0816 2.91843C16.125 3.96187 16.125 5.64124 16.125 9C16.125 12.3587 16.125 14.0381 15.0816 15.0816C14.0381 16.125 12.3587 16.125 9 16.125C5.64124 16.125 3.96187 16.125 2.91843 15.0816C1.875 14.0381 1.875 12.3587 1.875 9Z"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12.375 9C12.375 10.864 10.864 12.375 9 12.375C7.13604 12.375 5.625 10.864 5.625 9C5.625 7.13604 7.13604 5.625 9 5.625C10.864 5.625 12.375 7.13604 12.375 9Z"
+                  stroke="white"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M13.1309 4.875H13.1241"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_2010_247">
+                  <rect width="18" height="18" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+
+          <a href="https://x.com/">
+            <!-- twitter -->
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_2010_252)">
+                <path
+                  d="M1.5 13.875C2.82378 14.6407 4.36071 15 6 15C10.8606 15 14.8213 11.1469 14.9942 6.32848L16.5 3.375L13.9844 3.75C13.4555 3.28323 12.7608 3 12 3C10.0707 3 8.62552 4.88801 9.09068 6.73502C6.42588 6.90695 4.0115 5.26597 2.6152 3.07892C1.6886 6.22639 2.54722 10.0171 4.875 12.3529C4.875 13.2353 2.625 13.7616 1.5 13.875Z"
+                  fill="white"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_2010_252">
+                  <rect width="18" height="18" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/feed/">
+            <!--linkdin-->
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_2010_255)">
+                <path
+                  d="M3.375 7.125H3C2.29289 7.125 1.93934 7.125 1.71967 7.34467C1.5 7.56435 1.5 7.9179 1.5 8.625V15C1.5 15.7071 1.5 16.0606 1.71967 16.2803C1.93934 16.5 2.29289 16.5 3 16.5H3.375C4.08211 16.5 4.43566 16.5 4.65533 16.2803C4.875 16.0606 4.875 15.7071 4.875 15V8.625C4.875 7.9179 4.875 7.56435 4.65533 7.34467C4.43566 7.125 4.08211 7.125 3.375 7.125Z"
+                  fill="white"
+                />
+                <path
+                  d="M4.875 3.1875C4.875 4.11948 4.11948 4.875 3.1875 4.875C2.25552 4.875 1.5 4.11948 1.5 3.1875C1.5 2.25552 2.25552 1.5 3.1875 1.5C4.11948 1.5 4.875 2.25552 4.875 3.1875Z"
+                  fill="white"
+                />
+                <path
+                  d="M9.2445 7.125H8.625C7.9179 7.125 7.56435 7.125 7.34467 7.34467C7.125 7.56435 7.125 7.9179 7.125 8.625V15C7.125 15.7071 7.125 16.0606 7.34467 16.2803C7.56435 16.5 7.9179 16.5 8.625 16.5H9C9.7071 16.5 10.0606 16.5 10.2803 16.2803C10.5 16.0606 10.5 15.7071 10.5 15L10.5001 12.3751C10.5001 11.1325 10.8961 10.1251 12.0659 10.1251C12.6508 10.1251 13.125 10.6288 13.125 11.2501V14.6251C13.125 15.3322 13.125 15.6857 13.3447 15.9054C13.5643 16.1251 13.9179 16.1251 14.625 16.1251H14.999C15.706 16.1251 16.0595 16.1251 16.2791 15.9055C16.4988 15.6859 16.4989 15.3324 16.499 14.6255L16.5001 10.5002C16.5001 8.63625 14.7273 7.12518 12.9726 7.12518C11.9737 7.12518 11.0825 7.61482 10.5001 8.3805C10.5 7.90792 10.5 7.67167 10.3974 7.49625C10.3324 7.38514 10.2398 7.29265 10.1288 7.22765C9.95333 7.125 9.71708 7.125 9.2445 7.125Z"
+                  fill="white"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_2010_255">
+                  <rect width="18" height="18" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--================= NAVBAR =================-->
+
+    <nav class="navbar navbar-expand-xl med-navbar">
+      <div class="container nav-container">
+        <!-- ================= LEFT : BRAND ================= -->
+        <a class="navbar-brand nav-brand" href="#">
+          <img src="./assesst/Logo.png" alt="logo" />
+        </a>
+
+        <!-- ================= MOBILE TOGGLE ================= -->
+        <button
+          class="navbar-toggler border-0 shadow-none"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+        >
+          <!-- hamburger svg -->
+          <svg
+            width="48"
+            height="48"
+            viewBox="0 0 48 48"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_2063_1054)">
+              <path
+                d="M36.9502 10.95H36.9503"
+                stroke="white"
+                stroke-width="8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M23.9501 10.95H23.9502"
+                stroke="white"
+                stroke-width="8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M10.95 10.95H10.9501"
+                stroke="white"
+                stroke-width="8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+            <g clip-path="url(#clip1_2063_1054)">
+              <path
+                d="M36.9502 23.95H36.9503"
+                stroke="white"
+                stroke-width="8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M23.9501 23.95H23.9502"
+                stroke="white"
+                stroke-width="8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M10.95 23.95H10.9501"
+                stroke="white"
+                stroke-width="8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+            <g clip-path="url(#clip2_2063_1054)">
+              <path
+                d="M36.9502 36.95H36.9503"
+                stroke="white"
+                stroke-width="8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M23.9501 36.95H23.9502"
+                stroke="white"
+                stroke-width="8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M10.95 36.95H10.9501"
+                stroke="white"
+                stroke-width="8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_2063_1054">
+                <rect
+                  width="34"
+                  height="8"
+                  fill="white"
+                  transform="translate(6.94995 6.95001)"
+                />
+              </clipPath>
+              <clipPath id="clip1_2063_1054">
+                <rect
+                  width="34"
+                  height="8"
+                  fill="white"
+                  transform="translate(6.94995 19.95)"
+                />
+              </clipPath>
+              <clipPath id="clip2_2063_1054">
+                <rect
+                  width="34"
+                  height="8"
+                  fill="white"
+                  transform="translate(6.94995 32.95)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+
+        <!-- ================= CENTER + RIGHT ================= -->
+        <div class="collapse navbar-collapse" id="mainNav">
+          <!-- ============ CENTER MENU ============ -->
+          <ul class="navbar-nav mx-auto nav-menu">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home </a>
+            </li>
+
+            <!-- About -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                About
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_2010_978)">
+                    <path
+                      d="M15 7.50004C15 7.50004 11.3176 12.5 10 12.5C8.68233 12.5 5 7.5 5 7.5"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2010_978">
+                      <rect width="20" height="20" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="indexabout.html">About Us </a>
+                </li>
+                <li class="dropdown-submenu">
+                  <a
+                    href="#"
+                    class="dropdown-item submenu-toggle"
+                    data-bs-toggle="submenu"
+                  >
+                    Doctor
+                  </a>
+                  <ul class="submenu-panel">
+                    <li><a class="dropdown-item" href="indexourdoctor.html">Our Doctors</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Doctor Details</a>
+                    </li>
+                  </ul>
+                </li>
+
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Make An Appoinment</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Schedule</a></li>
+              </ul>
+            </li>
+
+            <!-- Services -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                Services
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_2010_978)">
+                    <path
+                      d="M15 7.50004C15 7.50004 11.3176 12.5 10 12.5C8.68233 12.5 5 7.5 5 7.5"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2010_978">
+                      <rect width="20" height="20" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="indexservice.html"
+                    >Our Service
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="indexservice2.html"
+                    >Service Details</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <!-- Case Studies -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                Case Studies
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_2010_978)">
+                    <path
+                      d="M15 7.50004C15 7.50004 11.3176 12.5 10 12.5C8.68233 12.5 5 7.5 5 7.5"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2010_978">
+                      <rect width="20" height="20" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="indexcasestudies.html"
+                    >Case Studies</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#">Case Details</a></li>
+              </ul>
+            </li>
+
+            <!-- Blog -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                Blog
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_2010_978)">
+                    <path
+                      d="M15 7.50004C15 7.50004 11.3176 12.5 10 12.5C8.68233 12.5 5 7.5 5 7.5"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2010_978">
+                      <rect width="20" height="20" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Blog Standard</a></li>
+                <li><a class="dropdown-item" href="#">Blog Details</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacts</a>
+            </li>
+          </ul>
+
+          <!-- ============ RIGHT SIDE ============ -->
+          <div class="nav-right">
+            <!-- phone -->
+            <div class="phone-box">
+              <div class="phone-icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.1585 5.71217L8.75584 4.80619C8.49256 4.21382 8.36092 3.91762 8.16405 3.69095C7.91732 3.40688 7.59571 3.19788 7.23592 3.08779C6.94883 2.99994 6.6247 2.99994 5.97645 2.99994C5.02815 2.99994 4.554 2.99994 4.15597 3.18223C3.68711 3.39696 3.26368 3.86322 3.09497 4.35054C2.95175 4.76423 2.99278 5.18937 3.07482 6.03964C3.94815 15.0901 8.91006 20.052 17.9605 20.9254C18.8108 21.0074 19.236 21.0484 19.6496 20.9052C20.137 20.7365 20.6032 20.3131 20.818 19.8442C21.0002 19.4462 21.0002 18.972 21.0002 18.0237C21.0002 17.3755 21.0002 17.0514 20.9124 16.7643C20.8023 16.4045 20.5933 16.0829 20.3092 15.8361C20.0826 15.6393 19.7864 15.5076 19.194 15.2443L18.288 14.8417C17.6465 14.5566 17.3257 14.414 16.9998 14.383C16.6878 14.3533 16.3733 14.3971 16.0813 14.5108C15.7762 14.6296 15.5066 14.8543 14.9672 15.3038C14.4304 15.7511 14.162 15.9748 13.834 16.0946C13.5432 16.2009 13.1588 16.2402 12.8526 16.1951C12.5071 16.1442 12.2426 16.0028 11.7135 15.7201C10.0675 14.8404 9.15977 13.9327 8.28011 12.2867C7.99738 11.7576 7.85602 11.4931 7.80511 11.1476C7.75998 10.8414 7.79932 10.457 7.90554 10.1662C8.02536 9.83822 8.24905 9.5698 8.69643 9.03294C9.14586 8.49362 9.37058 8.22396 9.48939 7.91885C9.60309 7.62688 9.64686 7.31234 9.61719 7.00042C9.58618 6.67446 9.44362 6.3537 9.1585 5.71217Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+
+              <div class="phone-text">
+                <span>Have Any Questions?</span>
+                <strong>+020.098.456</strong>
+              </div>
+            </div>
+
+            <!-- grid icon -->
+            <button class="grid-btn">
+              <svg
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_2063_1054)">
+                  <path
+                    d="M36.9502 10.95H36.9503"
+                    stroke="white"
+                    stroke-width="8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M23.9501 10.95H23.9502"
+                    stroke="white"
+                    stroke-width="8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M10.95 10.95H10.9501"
+                    stroke="white"
+                    stroke-width="8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <g clip-path="url(#clip1_2063_1054)">
+                  <path
+                    d="M36.9502 23.95H36.9503"
+                    stroke="white"
+                    stroke-width="8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M23.9501 23.95H23.9502"
+                    stroke="white"
+                    stroke-width="8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M10.95 23.95H10.9501"
+                    stroke="white"
+                    stroke-width="8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <g clip-path="url(#clip2_2063_1054)">
+                  <path
+                    d="M36.9502 36.95H36.9503"
+                    stroke="white"
+                    stroke-width="8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M23.9501 36.95H23.9502"
+                    stroke="white"
+                    stroke-width="8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M10.95 36.95H10.9501"
+                    stroke="white"
+                    stroke-width="8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_2063_1054">
+                    <rect
+                      width="34"
+                      height="8"
+                      fill="white"
+                      transform="translate(6.94995 6.95001)"
+                    />
+                  </clipPath>
+                  <clipPath id="clip1_2063_1054">
+                    <rect
+                      width="34"
+                      height="8"
+                      fill="white"
+                      transform="translate(6.94995 19.95)"
+                    />
+                  </clipPath>
+                  <clipPath id="clip2_2063_1054">
+                    <rect
+                      width="34"
+                      height="8"
+                      fill="white"
+                      transform="translate(6.94995 32.95)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="about-hero">
+      <div class="container about-hero-wrap">
+        <!-- LEFT -->
+        <div class="about-hero-left">
+          <h1>Case Studies</h1>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="about-hero-right">
+          <a href="index.html">Home</a>
+          <span class="sep">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9 6C9 6 15 10.4189 15 12C15 13.5812 9 18 9 18"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+          <span class="title">Case Studies </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FILTER BAR ================= -->
+    <section class="filter-section">
+      <div class="container">
+        <!-- OUTER CAPSULE -->
+        <div class="filter-wrapper d-flex justify-content-center">
+          <div class="filter-bar">
+            <button class="filter-pill">All</button>
+            <button class="filter-pill">Cardiology</button>
+            <button class="filter-pill">Neurology</button>
+            <button class="filter-pill">Orthopedics</button>
+            <button class="filter-pill">Pathology</button>
+            <button class="filter-pill">Pediatrics</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===============================
+     MEDICAL GALLERY SECTION
+================================= -->
+    <section class="medical-gallery">
+      <div class="gallery-container">
+        <div class="gallery-grid">
+          <div class="gallery-card">
+            <img src="./assesst/cs-1.png" />
+          </div>
+          <div class="gallery-card">
+            <img src="./assesst/cs-2.png" />
+          </div>
+          <div class="gallery-card">
+            <img src="./assesst/cs-3.png" />
+          </div>
+
+          <div class="gallery-card">
+            <img src="./assesst/cs-4.png" />
+          </div>
+          <div class="gallery-card">
+            <img src="./assesst/cs-5.png" />
+          </div>
+          <div class="gallery-card">
+            <img src="./assesst/cs-6.png" />
+          </div>
+
+          <div class="gallery-card">
+            <img src="./assesst/cs-7.png" />
+          </div>
+          <div class="gallery-card">
+            <img src="./assesst/cs-8.png" />
+          </div>
+          <div class="gallery-card">
+            <img src="./assesst/cs-9.png" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- TOP GRID -->
+        <div class="footer-top">
+          <!-- BRAND -->
+          <div class="footer-brand">
+            <div class="logo">
+              <img src="./assesst/Logo.png" alt="Maxcare" />
+            </div>
+
+            <p>
+              Maxcare has been offering comprehensive medical services across a
+              wide range of specialties all over USA.
+            </p>
+
+            <div class="socials">
+              <a href="#"
+                ><svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_2010_244)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M4.63636 7.74997C3.90304 7.74997 3.75 7.8939 3.75 8.5833V9.83333C3.75 10.5228 3.90304 10.6667 4.63636 10.6667H6.40909V15.6667C6.40909 16.3561 6.56213 16.5 7.29545 16.5H9.06818C9.80153 16.5 9.95452 16.3561 9.95452 15.6667V10.6667H11.945C12.5012 10.6667 12.6446 10.565 12.7973 10.0623L13.1772 8.81227C13.4389 7.95105 13.2776 7.74997 12.3249 7.74997H9.95452V5.66667C9.95452 5.20643 10.3514 4.83333 10.8409 4.83333H13.3636C14.0969 4.83333 14.25 4.68944 14.25 4V2.33333C14.25 1.64389 14.0969 1.5 13.3636 1.5H10.8409C8.39325 1.5 6.40909 3.36548 6.40909 5.66667V7.74997H4.63636Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2010_244">
+                      <rect width="18" height="18" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+              <a href="#">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_2010_247)">
+                    <path
+                      d="M1.875 9C1.875 5.64124 1.875 3.96187 2.91843 2.91843C3.96187 1.875 5.64124 1.875 9 1.875C12.3587 1.875 14.0381 1.875 15.0816 2.91843C16.125 3.96187 16.125 5.64124 16.125 9C16.125 12.3587 16.125 14.0381 15.0816 15.0816C14.0381 16.125 12.3587 16.125 9 16.125C5.64124 16.125 3.96187 16.125 2.91843 15.0816C1.875 14.0381 1.875 12.3587 1.875 9Z"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12.375 9C12.375 10.864 10.864 12.375 9 12.375C7.13604 12.375 5.625 10.864 5.625 9C5.625 7.13604 7.13604 5.625 9 5.625C10.864 5.625 12.375 7.13604 12.375 9Z"
+                      stroke="white"
+                      stroke-width="1.5"
+                    />
+                    <path
+                      d="M13.1309 4.875H13.1241"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2010_247">
+                      <rect width="18" height="18" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+              <a href="#">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z"
+                    stroke="white"
+                    stroke-width="1.125"
+                  />
+                  <path
+                    d="M9 9H12.75C12.75 11.071 11.071 12.75 9 12.75C6.92893 12.75 5.25 11.071 5.25 9C5.25 6.92893 6.92893 5.25 9 5.25C10.0355 5.25 10.973 5.66973 11.6516 6.34835"
+                    stroke="white"
+                    stroke-width="1.125"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <a href="#">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9 8.25L6 15.75"
+                    stroke="white"
+                    stroke-width="1.125"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7.48026 12.4293C7.94482 12.6355 8.45902 12.75 9 12.75C11.071 12.75 12.75 11.071 12.75 9C12.75 6.92893 11.071 5.25 9 5.25C6.92893 5.25 5.25 6.92893 5.25 9C5.25 9.6831 5.43275 10.3234 5.75191 10.875"
+                    stroke="white"
+                    stroke-width="1.125"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z"
+                    stroke="white"
+                    stroke-width="1.125"
+                  />
+                </svg>
+              </a>
+              <a href="#">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_2010_252)">
+                    <path
+                      d="M1.5 13.875C2.82378 14.6407 4.36071 15 6 15C10.8606 15 14.8213 11.1469 14.9942 6.32848L16.5 3.375L13.9844 3.75C13.4555 3.28323 12.7608 3 12 3C10.0707 3 8.62552 4.88801 9.09068 6.73502C6.42588 6.90695 4.0115 5.26597 2.6152 3.07892C1.6886 6.22639 2.54722 10.0171 4.875 12.3529C4.875 13.2353 2.625 13.7616 1.5 13.875Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2010_252">
+                      <rect width="18" height="18" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- SERVICES -->
+          <div class="footer-col">
+            <h4>Our Services</h4>
+            <ul>
+              <li>Diagnostic & Imaging Services</li>
+              <li>Specialized Medical Services</li>
+              <li>Women's Health Services</li>
+              <li>Emergency & Critical Care</li>
+              <li>Preventive Health & Wellness</li>
+            </ul>
+          </div>
+
+          <!-- CUSTOMERS -->
+          <div class="footer-col">
+            <h4>For Customers</h4>
+            <ul>
+              <li>Upload Prescription</li>
+              <li>Request a Call Back</li>
+              <li>Healthcare Packages</li>
+              <li>Download Reports</li>
+              <li>Track Progress</li>
+            </ul>
+          </div>
+
+          <!-- HOURS -->
+          <div class="footer-col">
+            <h4>Opening Hour</h4>
+            <ul class="hours">
+              <li><span>Monday</span><span>9am - 9pm</span></li>
+              <li><span>Tuesday</span><span>9am - 9pm</span></li>
+              <li><span>Wednesday</span><span>9am - 9pm</span></li>
+              <li><span>Thursday</span><span>9am - 9pm</span></li>
+              <li><span>Friday</span><span>9am - 9pm</span></li>
+              <li><span>Saturday</span><span>9am - 9pm</span></li>
+              <li><span>Sunday</span><span class="closed">Closed</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- CONTACT BAR -->
+        <div class="footer-contact">
+          <div>
+            <svg
+              width="44"
+              height="44"
+              viewBox="0 0 44 44"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <mask id="path-1-inside-1_2095_3245" fill="white">
+                <path
+                  d="M0 22C0 9.84974 9.84974 0 22 0C34.1503 0 44 9.84974 44 22C44 34.1503 34.1503 44 22 44C9.84974 44 0 34.1503 0 22Z"
+                />
+              </mask>
+              <path
+                d="M0 22C0 9.84974 9.84974 0 22 0C34.1503 0 44 9.84974 44 22C44 34.1503 34.1503 44 22 44C9.84974 44 0 34.1503 0 22Z"
+                fill="#00B4D8"
+              />
+              <g
+                clip-path="url(#paint0_angular_2095_3245_clip_path)"
+                data-figma-skip-parse="true"
+                mask="url(#path-1-inside-1_2095_3245)"
+              >
+                <g transform="matrix(0 0.022 -0.022 0 22 22)">
+                  <foreignObject
+                    x="-1136.36"
+                    y="-1136.36"
+                    width="2272.73"
+                    height="2272.73"
+                  >
+                  </foreignObject>
+                </g>
+              </g>
+              <path
+                d="M22 44V41C11.5066 41 3 32.4934 3 22H0H-3C-3 35.8071 8.19288 47 22 47V44ZM44 22H41C41 32.4934 32.4934 41 22 41V44V47C35.8071 47 47 35.8071 47 22H44ZM22 0V3C32.4934 3 41 11.5066 41 22H44H47C47 8.19288 35.8071 -3 22 -3V0ZM22 0V-3C8.19288 -3 -3 8.19288 -3 22H0H3C3 11.5066 11.5066 3 22 3V0Z"
+                data-figma-gradient-fill="{&#34;type&#34;:&#34;GRADIENT_ANGULAR&#34;,&#34;stops&#34;:[{&#34;color&#34;:{&#34;r&#34;:1.0,&#34;g&#34;:1.0,&#34;b&#34;:1.0,&#34;a&#34;:1.0},&#34;position&#34;:0.0},{&#34;color&#34;:{&#34;r&#34;:0.40000000596046448,&#34;g&#34;:0.52941179275512695,&#34;b&#34;:0.59607845544815063,&#34;a&#34;:1.0},&#34;position&#34;:1.0}],&#34;stopsVar&#34;:[{&#34;color&#34;:{&#34;r&#34;:1.0,&#34;g&#34;:1.0,&#34;b&#34;:1.0,&#34;a&#34;:1.0},&#34;position&#34;:0.0},{&#34;color&#34;:{&#34;r&#34;:0.40000000596046448,&#34;g&#34;:0.52941179275512695,&#34;b&#34;:0.59607845544815063,&#34;a&#34;:1.0},&#34;position&#34;:1.0}],&#34;transform&#34;:{&#34;m00&#34;:2.6942231286269285e-15,&#34;m01&#34;:-44.0,&#34;m02&#34;:44.0,&#34;m10&#34;:44.0,&#34;m11&#34;:2.6942231286269285e-15,&#34;m12&#34;:-2.6942231286269285e-15},&#34;opacity&#34;:1.0,&#34;blendMode&#34;:&#34;NORMAL&#34;,&#34;visible&#34;:true}"
+                mask="url(#path-1-inside-1_2095_3245)"
+              />
+              <path
+                d="M19.1585 15.7122L18.7558 14.8063C18.4926 14.2139 18.3609 13.9177 18.1641 13.691C17.9173 13.4069 17.5957 13.1979 17.2359 13.0879C16.9488 13 16.6247 13 15.9765 13C15.0282 13 14.554 13 14.156 13.1823C13.6871 13.397 13.2637 13.8633 13.095 14.3506C12.9518 14.7643 12.9928 15.1894 13.0748 16.0397C13.9482 25.0902 18.9101 30.0521 27.9605 30.9255C28.8108 31.0075 29.236 31.0485 29.6496 30.9053C30.137 30.7366 30.6032 30.3132 30.818 29.8443C31.0002 29.4463 31.0002 28.9721 31.0002 28.0238C31.0002 27.3756 31.0002 27.0515 30.9124 26.7644C30.8023 26.4046 30.5933 26.083 30.3092 25.8362C30.0826 25.6394 29.7864 25.5077 29.194 25.2444L28.288 24.8418C27.6465 24.5567 27.3257 24.4141 26.9998 24.3831C26.6878 24.3534 26.3733 24.3972 26.0813 24.5109C25.7762 24.6297 25.5066 24.8544 24.9672 25.3039C24.4304 25.7512 24.162 25.9749 23.834 26.0947C23.5432 26.201 23.1588 26.2403 22.8526 26.1952C22.5071 26.1443 22.2426 26.0029 21.7135 25.7202C20.0675 24.8405 19.1598 23.9328 18.2801 22.2868C17.9974 21.7577 17.856 21.4932 17.8051 21.1477C17.76 20.8415 17.7993 20.4571 17.9055 20.1663C18.0254 19.8383 18.2491 19.5699 18.6964 19.033C19.1459 18.4937 19.3706 18.224 19.4894 17.9189C19.6031 17.6269 19.6469 17.3124 19.6172 17.0005C19.5862 16.6745 19.4436 16.3538 19.1585 15.7122Z"
+                fill="white"
+              />
+              <defs>
+                <clipPath id="paint0_angular_2095_3245_clip_path">
+                  <path
+                    d="M22 44V41C11.5066 41 3 32.4934 3 22H0H-3C-3 35.8071 8.19288 47 22 47V44ZM44 22H41C41 32.4934 32.4934 41 22 41V44V47C35.8071 47 47 35.8071 47 22H44ZM22 0V3C32.4934 3 41 11.5066 41 22H44H47C47 8.19288 35.8071 -3 22 -3V0ZM22 0V-3C8.19288 -3 -3 8.19288 -3 22H0H3C3 11.5066 11.5066 3 22 3V0Z"
+                    mask="url(#path-1-inside-1_2095_3245)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+
+            <span>Book Your Consultation </span>
+            <br />
+            <span class="foot-num"> +020.098.456</span>
+          </div>
+
+          <div>
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3.33331 10L14.855 16.5283C19.1026 18.935 20.8973 18.935 25.145 16.5283L36.6666 10"
+                stroke="#00B4D8"
+                stroke-width="2"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M3.3596 22.459C3.46855 27.5683 3.52303 30.1228 5.40825 32.0153C7.29345 33.9077 9.9172 33.9735 15.1647 34.1053C18.3988 34.1867 21.6011 34.1867 24.8353 34.1053C30.0828 33.9735 32.7065 33.9077 34.5918 32.0153C36.477 30.1228 36.5315 27.5683 36.6403 22.459C36.6755 20.8162 36.6755 19.1832 36.6403 17.5403C36.5315 12.4311 36.477 9.87649 34.5918 7.98411C32.7065 6.09173 30.0828 6.02581 24.8353 5.89396C21.6011 5.81269 18.3988 5.81269 15.1647 5.89394C9.9172 6.02578 7.29345 6.09169 5.40823 7.98409C3.52301 9.87648 3.46855 12.4311 3.35958 17.5403C3.32455 19.1832 3.32456 20.8162 3.3596 22.459Z"
+                stroke="#00B4D8"
+                stroke-width="2"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <span>Maxcare3456mail@gmail.com</span>
+          </div>
+
+          <div>
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M30 30C32.0745 30.7073 33.3333 31.6365 33.3333 32.6542C33.3333 34.8702 27.3638 36.6667 20 36.6667C12.6362 36.6667 6.66663 34.8702 6.66663 32.6542C6.66663 31.6365 7.92541 30.7073 9.99996 30"
+                stroke="#00B4D8"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M25 15.833C25 18.5945 22.7615 20.833 20 20.833C17.2385 20.833 15 18.5945 15 15.833C15 13.0716 17.2385 10.833 20 10.833C22.7615 10.833 25 13.0716 25 15.833Z"
+                stroke="#00B4D8"
+                stroke-width="2"
+              />
+              <path
+                d="M20 3.33301C26.7647 3.33301 32.5 9.04639 32.5 15.9778C32.5 23.0197 26.6713 27.9613 21.2875 31.3217C20.8952 31.5475 20.4515 31.6663 20 31.6663C19.5485 31.6663 19.1048 31.5475 18.7125 31.3217C13.3387 27.9285 7.5 23.044 7.5 15.9778C7.5 9.04639 13.2353 3.33301 20 3.33301Z"
+                stroke="#00B4D8"
+                stroke-width="2"
+              />
+            </svg>
+
+            <span>231 Utah City Centre, Utah, USA</span>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2025,<span> Case-Themes.</span> All rights reserved</p>
+          <div class="links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Condition</a>
+            <a href="#">*Promo T&Cs Apply</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <button class="scroll-top" aria-label="Scroll to top">
+      <svg
+        width="20"
+        height="11"
+        viewBox="0 0 20 11"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M18.4999 9.75C18.4999 9.75 12.0557 1.00001 9.74993 1C7.44416 0.999985 1 9.75 1 9.75"
+          stroke="#141B34"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,353 @@
+.about-hero {
+  position: relative;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  overflow: hidden;
+  background: url(../assesst/hero-img.png);
+}
+
+/* container layout */
+.about-hero-wrap {
+  max-width: 1280px;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ================================
+   TITLE
+================================ */
+
+.about-hero-left h1 {
+  font-size: 56px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+/* ================================
+   BREADCRUMB (RIGHT SIDE)
+================================ */
+
+.about-hero-right {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  opacity: 0.9;
+}
+
+.about-hero-right .sep {
+  opacity: 0.5;
+}
+
+.about-hero-right .title {
+  color: #00b4d8;
+  font-weight: 600;
+}
+.about-hero-right a {
+  color: #ffffff;
+}
+.about-hero-right a :hover {
+  color: #1475e2;
+}
+
+/* ================================
+   DECORATIVE CURVE 
+================================ */
+
+.about-hero::after {
+  content: "";
+  position: absolute;
+  right: -120px;
+  bottom: -120px;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(20, 198, 209, 0.18),
+    transparent 70%
+  );
+}
+/* ===============================
+   SECTION BASE
+=============================== */
+
+.team-header{
+  padding:70px 0 40px;
+  background:#ffffff;
+}
+
+.team-header .container{
+  max-width:1320px;
+}
+
+
+/* ===============================
+   SMALL TAG WITH ICON
+=============================== */
+
+.team-tag{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  height:38px;
+  padding:0 18px;          
+  border:1px solid #bdeaf1;    
+  border-radius:50px;          
+  font-size:13px;
+  font-weight:600;
+  letter-spacing:0.5px;
+  color:#14c6d1;
+  text-transform:uppercase;
+  margin-bottom: 21px;
+}
+
+.team-tag p{
+  margin:0;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.stethoscope-icon{
+  width:16px;
+  height:16px;
+  stroke:#14c6d1;
+}
+
+
+
+/* ===============================
+   TITLE
+=============================== */
+
+.team-title{
+  font-size:43px;
+  font-weight:700;
+  color:#0b1a45;
+  margin-bottom: 62px;
+  line-height:1.25;
+}
+
+.team-title span{
+  color:#14c6d1;
+}
+
+/* =========================================
+   CONTAINER WIDTH EXACT
+========================================= */
+
+.doctor-container{
+  max-width:1320px;
+  margin-bottom: 80px;
+}
+
+
+/* =========================================
+   GRID (NO BOOTSTRAP GUTTER)
+========================================= */
+
+.doctor-grid{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:32px; /* figma spacing */
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.doctor-card{
+  position:relative;
+  height:506px; 
+  border-radius:22px;
+  overflow:hidden;
+  background:#eaeaea;
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.doctor-card img{
+  width: 410px;
+  height:506px;
+  border-radius: 40px;
+  object-fit:cover;
+  display:block;
+}
+
+
+/* =========================================
+   FLOATING INFO PILL
+========================================= */
+
+.doctor-info{
+  position:absolute;
+  left:50%;
+  bottom:25px;
+  transform:translateX(-50%);
+height: 114px;
+  width:390px;
+  padding:32px 10px 20px;
+  background:#ffffff;
+  border-radius:40px;
+  text-align:center;
+  box-shadow:0 8px 18px rgba(0,0,0,.12);
+}
+
+
+/* =========================================
+   TEXT
+========================================= */
+
+.doctor-info h3{
+  font-size:30px;
+  font-weight:600;
+  color:#00194C;
+  margin:0;
+}
+
+.doctor-info span{
+  font-size:18px;
+  font-weight:bold;
+  color:#00194C;
+  display:block;
+  margin-top:4px;
+}
+
+/* =========================================
+   SECTION
+========================================= */
+
+.appointment-section{
+  background:#f4f6f8;
+  padding:120px 0 140px;
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.appointment-container{
+  max-width:900px;
+  margin:auto;
+  text-align:center;
+}
+
+
+/* =========================================
+   TOP BADGE
+========================================= */
+
+.appointment-badge{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+
+  padding:6px 16px;
+
+  border-radius:50px;
+  border:1px solid #cfe8ef;
+  background:#ffffff;
+
+  font-size:12px;
+  font-weight:500;
+  color:#14c6d1;
+
+  margin-bottom:22px;
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.appointment-title{
+  font-size:36px;
+  font-weight:700;
+  color:#0b1a45;
+  margin-bottom:40px;
+}
+
+.appointment-title span{
+  color:#14c6d1;
+}
+
+
+/* =========================================
+   FORM GRID
+========================================= */
+
+.form-grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:22px 28px;
+  margin-bottom:40px;
+}
+
+
+/* =========================================
+   INPUTS
+========================================= */
+
+.appointment-form input,
+.appointment-form select{
+  height:48px;
+  padding:0 18px;
+
+  border-radius:24px;
+  border:1px solid #cfe8ef;
+
+  background:#ffffff;
+
+  font-size:14px;
+  color:#0b1a45;
+
+  outline:none;
+  transition:0.25s;
+}
+
+.appointment-form input::placeholder{
+  color:#9aa9b8;
+}
+
+.appointment-form input:focus,
+.appointment-form select:focus{
+  border-color:#14c6d1;
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.appointment-btn{
+  width:420px;
+  height:54px;
+
+  border:none;
+  border-radius:50px;
+
+  background:linear-gradient(90deg,#14c6d1,#19a9c3);
+
+  color:#ffffff;
+  font-size:14px;
+  font-weight:600;
+
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.appointment-btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 10px 20px rgba(20,198,209,.25);
+}
