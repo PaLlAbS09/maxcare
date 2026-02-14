@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="css/style.css" />
 
     <!-- Page CSS -->
-    <link rel="stylesheet" href="css/casestudies.css" />
+    <link rel="stylesheet" href="css/schedule.css" />
   </head>
   <body>
     <div class="topbar">
@@ -445,7 +445,9 @@
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="indexabout.html">About Us </a>
+                  <a class="dropdown-item active" href="indexabout.html"
+                    >About Us
+                  </a>
                 </li>
                 <li class="dropdown-submenu">
                   <a
@@ -456,18 +458,26 @@
                     Doctor
                   </a>
                   <ul class="submenu-panel">
-                    <li><a class="dropdown-item" href="indexourdoctor.html">Our Doctors</a></li>
                     <li>
-                      <a class="dropdown-item" href="#">Doctor Details</a>
+                      <a class="dropdown-item" href="indexourdoctor.html"
+                        >Our Doctors</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="indexdoctordetails.html"
+                        >Doctor Details</a
+                      >
                     </li>
                   </ul>
-                </li>
-
                 </li>
                 <li>
                   <a class="dropdown-item" href="#">Make An Appoinment</a>
                 </li>
-                <li><a class="dropdown-item" href="indexschedule.html">Schedule</a></li>
+                <li>
+                  <a class="dropdown-item" href="indexschedule.html"
+                    >Schedule</a
+                  >
+                </li>
               </ul>
             </li>
 
@@ -589,8 +599,8 @@
                 </svg>
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Blog Standard</a></li>
-                <li><a class="dropdown-item" href="#">Blog Details</a></li>
+                <li><a class="dropdown-item" href="#">Articles</a></li>
+                <li><a class="dropdown-item" href="#">News</a></li>
               </ul>
             </li>
 
@@ -734,12 +744,11 @@
         </div>
       </div>
     </nav>
-
     <section class="about-hero">
       <div class="container about-hero-wrap">
         <!-- LEFT -->
         <div class="about-hero-left">
-          <h1>Case Studies</h1>
+          <h1>Schedule</h1>
         </div>
 
         <!-- RIGHT -->
@@ -762,64 +771,322 @@
               />
             </svg>
           </span>
-          <span class="title">Case Studies </span>
+          <span class="title">Schedule </span>
+        </div>
+      </div>
+    </section>
+    <section class="doctor-schedule-section">
+      <div class="schedule-container">
+        <!-- ================= BADGE ================= -->
+        <div class="schedule-badge">
+          <!-- Stethoscope SVG -->
+
+          <svg
+            width="34"
+            height="34"
+            viewBox="0 0 34 34"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_670_8103)">
+              <path
+                d="M24.7495 10.6076C25.5301 11.3882 25.5045 12.6795 24.6922 13.4918C24.021 14.1629 23.4492 14.7856 22.4132 14.7369C19.022 14.5777 17.3263 14.4981 16.2635 13.4352C15.2006 12.3723 15.121 10.6767 14.9618 7.28551C14.9131 6.24936 15.5359 5.67754 16.207 5.00636C17.0192 4.19414 18.3104 4.16845 19.0909 4.94898"
+                stroke="#00B4D8"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M13.4348 16.2634L10.9601 18.7382C9.20264 20.4956 9.20264 23.3451 10.9601 25.1025C12.7176 26.8601 15.5671 26.8601 17.3245 25.1026L18.3851 24.0421"
+                stroke="#00B4D8"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M21.9202 14.8493L18.6973 16.2305C17.8406 16.5977 17.4122 16.7812 16.9559 16.8277C16.4995 16.8741 16.0429 16.7806 15.1298 16.5936L13.4134 16.242L13.0817 14.5418C12.9061 13.6417 12.8183 13.1917 12.8661 12.7427C12.9139 12.2937 13.0945 11.8722 13.4558 11.0293L14.8491 7.7782"
+                stroke="#00B4D8"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M22.6274 24.0416C21.4558 25.2132 19.5564 25.2132 18.3848 24.0416C17.2132 22.87 17.2132 20.9705 18.3848 19.7989C19.5564 18.6273 21.4558 18.6273 22.6274 19.7989C23.799 20.9705 23.799 22.87 22.6274 24.0416Z"
+                stroke="#00B4D8"
+                stroke-width="1.5"
+              />
+              <path
+                d="M20.5117 21.9259L20.5054 21.9196"
+                stroke="#00B4D8"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_670_8103">
+                <rect
+                  width="24"
+                  height="24"
+                  fill="white"
+                  transform="translate(16.9705) rotate(45)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+          <span>DOCTOR'S SCHEDULE</span>
+        </div>
+
+        <!-- ================= TITLE ================= -->
+        <h2 class="schedule-title">
+          Meet Our Doctors by <br />
+          <span>Schedule Time</span>
+        </h2>
+
+        <!-- ================= FILTER PILLS ================= -->
+        <div class="schedule-filters">
+          <button class="filter-pill ">Surgery</button>
+          <button class="filter-pill">Cardiology</button>
+          <button class="filter-pill">Neurology</button>
+          <button class="filter-pill">Pediatrics</button>
+          <button class="filter-pill">Gynaecologist</button>
+          <button class="filter-pill">Orthopedics</button>
+        </div>
+
+        <!-- ================= TABLE CARD ================= -->
+        <div class="schedule-card">
+          <table class="schedule-table">
+            <thead>
+              <tr>
+                <th>Room No</th>
+                <th>Doctors</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>201</td>
+                <td>Dr. Jenifer Olivia</td>
+                <td>08:00 AM - 10:00 PM</td>
+                <td>-</td>
+                <td>06:00 PM - 08:00 PM</td>
+                <td>-</td>
+                <td>10:00 AM - 01:00 PM</td>
+                <td>-</td>
+                <td>10:00 AM - 01:00 PM</td>
+              </tr>
+
+              <tr>
+                <td>202</td>
+                <td>Dr. Arnold Maxwell</td>
+                <td>-</td>
+                <td>08:00 AM - 10:00 PM</td>
+                <td>-</td>
+                <td>10:00 AM - 01:00 PM</td>
+                <td>-</td>
+                <td>08:00 AM - 10:00 PM</td>
+                <td>-</td>
+              </tr>
+
+              <tr>
+                <td>203</td>
+                <td>Dr. Garrison Hall</td>
+                <td>08:00 AM - 10:00 PM</td>
+                <td>-</td>
+                <td>10:00 AM - 03:00 PM</td>
+                <td>-</td>
+                <td>05:00 AM - 08:00 PM</td>
+                <td>-</td>
+                <td>10:00 AM - 03:00 PM</td>
+              </tr>
+
+              <tr>
+                <td>204</td>
+                <td>Dr. Ashley Graham</td>
+                <td>-</td>
+                <td>08:00 AM - 10:00 PM</td>
+                <td>-</td>
+                <td>10:00 AM - 03:00 PM</td>
+                <td>-</td>
+                <td>08:00 AM - 10:00 PM</td>
+                <td>-</td>
+              </tr>
+
+              <tr>
+                <td>205</td>
+                <td>Dr. Oakland Miller</td>
+                <td>10:00 AM - 01:00 PM</td>
+                <td>-</td>
+                <td>08:00 AM - 10:00 PM</td>
+                <td>-</td>
+                <td>05:00 AM - 08:00 PM</td>
+                <td>-</td>
+                <td>10:00 AM - 03:00 PM</td>
+              </tr>
+
+              <tr>
+                <td>206</td>
+                <td>Dr. Jason Armstrong</td>
+                <td>-</td>
+                <td>08:00 AM - 10:00 PM</td>
+                <td>-</td>
+                <td>10:00 AM - 01:00 PM</td>
+                <td>-</td>
+                <td>08:00 AM - 10:00 PM</td>
+                <td>-</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </section>
 
-    <!-- ================= FILTER BAR ================= -->
-    <section class="filter-section">
-      <div class="container">
-        <!-- OUTER CAPSULE -->
-        <div class="filter-wrapper d-flex justify-content-center">
-          <div class="filter-bar">
-            <button class="filter-pill">All</button>
-            <button class="filter-pill">Cardiology</button>
-            <button class="filter-pill">Neurology</button>
-            <button class="filter-pill">Orthopedics</button>
-            <button class="filter-pill">Pathology</button>
-            <button class="filter-pill">Pediatrics</button>
-          </div>
+    <section class="appointment-section">
+      <div class="appointment-container">
+        <!-- Top Badge -->
+        <div class="appointment-badge">
+          <svg
+            width="34"
+            height="34"
+            viewBox="0 0 34 34"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_670_8103)">
+              <path
+                d="M24.7495 10.6076C25.5301 11.3882 25.5045 12.6795 24.6922 13.4918C24.021 14.1629 23.4492 14.7856 22.4132 14.7369C19.022 14.5777 17.3263 14.4981 16.2635 13.4352C15.2006 12.3723 15.121 10.6767 14.9618 7.28551C14.9131 6.24936 15.5359 5.67754 16.207 5.00636C17.0192 4.19414 18.3104 4.16845 19.0909 4.94898"
+                stroke="#00B4D8"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M13.4348 16.2634L10.9601 18.7382C9.20264 20.4956 9.20264 23.3451 10.9601 25.1025C12.7176 26.8601 15.5671 26.8601 17.3245 25.1026L18.3851 24.0421"
+                stroke="#00B4D8"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M21.9202 14.8493L18.6973 16.2305C17.8406 16.5977 17.4122 16.7812 16.9559 16.8277C16.4995 16.8741 16.0429 16.7806 15.1298 16.5936L13.4134 16.242L13.0817 14.5418C12.9061 13.6417 12.8183 13.1917 12.8661 12.7427C12.9139 12.2937 13.0945 11.8722 13.4558 11.0293L14.8491 7.7782"
+                stroke="#00B4D8"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M22.6274 24.0416C21.4558 25.2132 19.5564 25.2132 18.3848 24.0416C17.2132 22.87 17.2132 20.9705 18.3848 19.7989C19.5564 18.6273 21.4558 18.6273 22.6274 19.7989C23.799 20.9705 23.799 22.87 22.6274 24.0416Z"
+                stroke="#00B4D8"
+                stroke-width="1.5"
+              />
+              <path
+                d="M20.5117 21.9259L20.5054 21.9196"
+                stroke="#00B4D8"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_670_8103">
+                <rect
+                  width="24"
+                  height="24"
+                  fill="white"
+                  transform="translate(16.9705) rotate(45)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+
+          <span>Trusted Care, Proven Excellence</span>
         </div>
-      </div>
-    </section>
 
-    <!-- ===============================
-     MEDICAL GALLERY SECTION
-================================= -->
-    <section class="medical-gallery">
-      <div class="gallery-container">
-        <div class="gallery-grid">
-          <div class="gallery-card">
-            <img src="./assesst/cs-1.png" />
-          </div>
-          <div class="gallery-card">
-            <img src="./assesst/cs-2.png" />
-          </div>
-          <div class="gallery-card">
-            <img src="./assesst/cs-3.png" />
+        <!-- Title -->
+        <h2 class="appointment-title">Make an <span>Appointment!</span></h2>
+
+        <!-- Form -->
+        <form class="appointment-form" action="#" method="post">
+          <div class="form-grid">
+            <!-- Full Name -->
+            <div class="form-group">
+              <label for="name" class="visually-hidden">Full Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Full Name*"
+                required
+              />
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+              <label for="email" class="visually-hidden">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="E-Mail*"
+                required
+              />
+            </div>
+
+            <!-- Treatment -->
+            <div class="form-group">
+              <label for="treatment" class="visually-hidden"
+                >Select Treatment</label
+              >
+              <select id="treatment" name="treatment" required>
+                <option value="" disabled selected>Select Treatment</option>
+                <option value="cardiology">Cardiology</option>
+                <option value="pediatric">Pediatric</option>
+                <option value="orthopedics">Orthopedics</option>
+                <option value="nephrology">Nephrology</option>
+              </select>
+            </div>
+
+            <!-- Doctor -->
+            <div class="form-group">
+              <label for="doctor" class="visually-hidden">Choose Doctor</label>
+              <select id="doctor" name="doctor" required>
+                <option value="" disabled selected>Choose Doctor</option>
+                <option value="garrison-hall">Dr. Garrison Hall</option>
+                <option value="jenifer-olivia">Dr. Jenifer Olivia</option>
+                <option value="arnold-maxwell">Dr. Arnold Maxwell</option>
+                <option value="ashley-graham">Dr. Ashley Graham</option>
+              </select>
+            </div>
+
+            <!-- Phone -->
+            <div class="form-group">
+              <label for="number" class="visually-hidden">Phone Number</label>
+              <input
+                type="tel"
+                id="number"
+                name="phone"
+                placeholder="Phone Number*"
+                required
+              />
+            </div>
+
+            <!-- Date -->
+            <div class="form-group">
+              <label for="date" class="visually-hidden">Select Date</label>
+              <input type="date" id="date" name="date" required />
+            </div>
           </div>
 
-          <div class="gallery-card">
-            <img src="./assesst/cs-4.png" />
-          </div>
-          <div class="gallery-card">
-            <img src="./assesst/cs-5.png" />
-          </div>
-          <div class="gallery-card">
-            <img src="./assesst/cs-6.png" />
-          </div>
-
-          <div class="gallery-card">
-            <img src="./assesst/cs-7.png" />
-          </div>
-          <div class="gallery-card">
-            <img src="./assesst/cs-8.png" />
-          </div>
-          <div class="gallery-card">
-            <img src="./assesst/cs-9.png" />
-          </div>
-        </div>
+          <button type="submit" class="appointment-btn">
+            Book an Appointment
+          </button>
+        </form>
       </div>
     </section>
 

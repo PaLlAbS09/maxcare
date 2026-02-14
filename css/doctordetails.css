@@ -1,0 +1,399 @@
+.about-hero {
+  position: relative;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  overflow: hidden;
+  background: url(../assesst/hero-img.png);
+}
+
+/* container layout */
+.about-hero-wrap {
+  max-width: 1280px;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ================================
+   TITLE
+================================ */
+
+.about-hero-left h1 {
+  font-size: 56px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+/* ================================
+   BREADCRUMB (RIGHT SIDE)
+================================ */
+
+.about-hero-right {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  opacity: 0.9;
+}
+
+.about-hero-right .sep {
+  opacity: 0.5;
+}
+
+.about-hero-right .title {
+  color: #00b4d8;
+  font-weight: 600;
+}
+.about-hero-right a {
+  color: #ffffff;
+}
+.about-hero-right a :hover {
+  color: #1475e2;
+}
+
+/* ================================
+   DECORATIVE CURVE 
+================================ */
+
+.about-hero::after {
+  content: "";
+  position: absolute;
+  right: -120px;
+  bottom: -120px;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(20, 198, 209, 0.18),
+    transparent 70%
+  );
+}
+
+/* ===================================
+   SECTION BASE
+=================================== */
+
+.doctor-details-section {
+  background: #f6f7f9;
+  padding: 100px 0;
+}
+
+/* EXACT FIGMA WIDTH */
+.doctor-container {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 482px 754px; 
+  column-gap: 84px;                   
+  align-items: start;                 
+}
+
+/* ===================================
+   LEFT CARD — FIGMA EXACT
+=================================== */
+
+.doctor-card {
+  width: 482px;
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(11, 16, 48, 0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===================================
+   IMAGE
+=================================== */
+
+.doctor-image {
+  padding: 24px 24px 0 24px;
+}
+
+.doctor-image img {
+  width: 422px;
+  height: 521px;          
+  border-radius: 20px;
+  display: block;
+}
+
+/* ===================================
+   BODY CONTENT
+=================================== */
+
+.doctor-body {
+  padding: 24px 28px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* ===================================
+   HEADER
+=================================== */
+
+.doctor-header h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #0B1030;
+  margin-bottom: 6px;
+}
+
+.doctor-role {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+/* ===================================
+   INFO LIST
+=================================== */
+
+.doctor-details {
+  border-top: 1px solid #EDF1F5;
+}
+
+.detail-item {
+  padding: 18px 0;
+  border-bottom: 1px solid #EDF1F5;
+}
+
+.detail-item span {
+  display: block;
+  font-size: 13px;
+  color: #8A97A8;
+  margin-bottom: 6px;
+}
+
+.detail-item strong {
+  font-size: 14px;
+  font-weight: 500;
+  color: #0B1030;
+}
+
+/* ===================================
+   SOCIAL ICONS
+=================================== */
+
+.doctor-social {
+  display: flex;
+  gap: 12px;
+  margin: 26px 0 28px 0;
+}
+
+.social-box {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  background: rgba(11, 16, 48, 0.102); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.25s ease;
+}
+
+.social-box svg {
+  width: 16px;
+  height: 16px;
+  fill: #0B1030;
+  opacity: 0.6;
+  transition: 0.25s ease;
+}
+
+.social-box:hover {
+  background: #19C6D1;
+}
+
+.social-box:hover svg {
+  fill: #ffffff;
+  opacity: 1;
+}
+
+/* ===================================
+   BUTTON — FIGMA STYLE
+=================================== */
+
+.doctor-appointment-btn {
+  height: 58px;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #19C6D1 0%, #14AEB9 100%);
+  border: none;
+  padding: 0 20px 0 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-top: auto;
+}
+
+/* Arrow circle */
+.btn-arrow {
+  width: 38px;
+  height: 38px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-arrow svg {
+  stroke: #0B1030;
+}
+
+/* Hover effect */
+.doctor-appointment-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(25, 198, 209, 0.25);
+}
+
+
+/* ===================================
+   RIGHT CONTENT
+=================================== */
+
+
+.doctor-content {
+  max-width: 754px;
+}
+
+/* Main Heading */
+.doctor-content h2 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #0b1a45;
+  margin-bottom: 28px;
+  letter-spacing: -0.3px;
+}
+
+
+
+.doctor-meta {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 28px 0;
+}
+
+.doctor-meta li {
+  font-size: 15px;
+  color: #4f5d75;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  line-height: 1.6;
+}
+
+
+
+/* Label (Name:, Specialty:) */
+.doctor-meta strong {
+  font-weight: 600;
+  color: #0b1a45;
+  margin-right: 4px;
+}
+
+/* ===================================
+   PARAGRAPHS
+=================================== */
+
+.doctor-content p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #6b7c93;
+  margin-bottom: 18px;
+}
+
+/* ===================================
+   SECTION TITLES
+=================================== */
+
+.section-title {
+  margin-top: 44px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #0b1a45;
+  margin-bottom: 26px;
+}
+
+/* ===================================
+   EDUCATION GRID
+=================================== */
+
+.education-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 34px 40px;   /* exact figma spacing */
+}
+
+/* Single Item */
+.edu-item {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+}
+
+/* Number circle */
+.edu-num {
+  width: 40px;
+  height: 40px;
+  background: #f0fbfc;
+  color: #19c6d1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 15px;
+  flex-shrink: 0;
+}
+
+/* Degree title */
+.edu-item h4 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #0b1a45;
+}
+
+/* Institute */
+.edu-item p {
+  font-size: 14px;
+  color: #7a889c;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ===================================
+   EXPERTISE LIST
+=================================== */
+
+.expertise-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.expertise-list li {
+  font-size: 15px;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: #4f5d75;
+  line-height: 1.6;
+}
+
+

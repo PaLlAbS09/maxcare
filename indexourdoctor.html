@@ -285,7 +285,7 @@
     </div>
     <!--================= NAVBAR =================-->
 
-    <nav class="navbar navbar-expand-xl med-navbar">
+     <nav class="navbar navbar-expand-xl med-navbar">
       <div class="container nav-container">
         <!-- ================= LEFT : BRAND ================= -->
         <a class="navbar-brand nav-brand" href="#">
@@ -444,16 +444,26 @@
                 </svg>
               </a>
               <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="indexabout.html">About Us </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="indexourdoctor.html">Doctor</a>
+                <li><a class="dropdown-item active" href="indexabout.html">About Us </a></li>
+                <li class="dropdown-submenu">
+                  <a
+                    href="#"
+                    class="dropdown-item submenu-toggle"
+                    data-bs-toggle="submenu"
+                  >
+                    Doctor
+                  </a>
+                  <ul class="submenu-panel">
+                    <li><a class="dropdown-item" href="indexourdoctor.html">Our Doctors</a></li>
+                    <li>
+                      <a class="dropdown-item" href="indexdoctordetails.html">Doctor Details</a>
+                    </li>
+                  </ul>
                 </li>
                 <li>
                   <a class="dropdown-item" href="#">Make An Appoinment</a>
                 </li>
-                <li><a class="dropdown-item" href="#">Schedule</a></li>
+                <li><a class="dropdown-item" href="indexschedule.html">Schedule</a></li>
               </ul>
             </li>
 
@@ -489,16 +499,8 @@
                 </svg>
               </a>
               <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="indexservice.html"
-                    >Our Service
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="indexservice2.html"
-                    >Service Details</a
-                  >
-                </li>
+                <li><a class="dropdown-item" href="indexservice.html">Our Service </a></li>
+                <li><a class="dropdown-item" href="indexservice2.html">Service Details</a></li>
               </ul>
             </li>
 
@@ -534,11 +536,7 @@
                 </svg>
               </a>
               <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="indexcasestudies.html"
-                    >Case Studies</a
-                  >
-                </li>
+                <li><a class="dropdown-item" href="indexcasestudies.html">Case Studies</a></li>
                 <li><a class="dropdown-item" href="#">Case Details</a></li>
               </ul>
             </li>
@@ -575,8 +573,8 @@
                 </svg>
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Blog Standard</a></li>
-                <li><a class="dropdown-item" href="#">Blog Details</a></li>
+                <li><a class="dropdown-item" href="#">Articles</a></li>
+                <li><a class="dropdown-item" href="#">News</a></li>
               </ul>
             </li>
 
@@ -991,21 +989,75 @@
         <h2 class="appointment-title">Make an <span>Appointment!</span></h2>
 
         <!-- Form -->
-        <form class="appointment-form">
+        <form class="appointment-form" action="#" method="post">
           <div class="form-grid">
-            <input type="text" id="name" placeholder="Full Name*" />
-            <input type="email" id="email" placeholder="E-Mail*" />
+            <!-- Full Name -->
+            <div class="form-group">
+              <label for="name" class="visually-hidden">Full Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Full Name*"
+                required
+              />
+            </div>
 
-            <select>
-              <option>Select Treatment</option>
-            </select>
+            <!-- Email -->
+            <div class="form-group">
+              <label for="email" class="visually-hidden">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="E-Mail*"
+                required
+              />
+            </div>
 
-            <select>
-              <option>Choose Doctor</option>
-            </select>
+            <!-- Treatment -->
+            <div class="form-group">
+              <label for="treatment" class="visually-hidden"
+                >Select Treatment</label
+              >
+              <select id="treatment" name="treatment" required>
+                <option value="" disabled selected>Select Treatment</option>
+                <option value="cardiology">Cardiology</option>
+                <option value="pediatric">Pediatric</option>
+                <option value="orthopedics">Orthopedics</option>
+                <option value="nephrology">Nephrology</option>
+              </select>
+            </div>
 
-            <input type="number" id="number" placeholder="Phone Number*" />
-            <input type="date" id="date" placeholder="Select Date" />
+            <!-- Doctor -->
+            <div class="form-group">
+              <label for="doctor" class="visually-hidden">Choose Doctor</label>
+              <select id="doctor" name="doctor" required>
+                <option value="" disabled selected>Choose Doctor</option>
+                <option value="garrison-hall">Dr. Garrison Hall</option>
+                <option value="jenifer-olivia">Dr. Jenifer Olivia</option>
+                <option value="arnold-maxwell">Dr. Arnold Maxwell</option>
+                <option value="ashley-graham">Dr. Ashley Graham</option>
+              </select>
+            </div>
+
+            <!-- Phone -->
+            <div class="form-group">
+              <label for="number" class="visually-hidden">Phone Number</label>
+              <input
+                type="tel"
+                id="number"
+                name="phone"
+                placeholder="Phone Number*"
+                required
+              />
+            </div>
+
+            <!-- Date -->
+            <div class="form-group">
+              <label for="date" class="visually-hidden">Select Date</label>
+              <input type="date" id="date" name="date" required />
+            </div>
           </div>
 
           <button type="submit" class="appointment-btn">

@@ -203,7 +203,7 @@
 .services-wrap {
   max-width: 1200px;
   margin: auto;
-
+gap: 32px;
   display: grid;
   grid-template-columns: repeat(5, 1fr); /* equal */
   border-radius: 22px;
@@ -215,24 +215,18 @@
 ========================= */
 
 .service-card {
-  background: #eef1f4;
   text-align: center;
-
   padding: 40px 20px;
   min-height: 200px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   transition: 0.3s ease;
 }
 
 /* equal icon size */
 .service-card .icon {
-  width: 58px;
-  height: 58px;
   margin-bottom: 18px;
 }
 
