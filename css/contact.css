@@ -1,0 +1,457 @@
+.about-hero {
+  position: relative;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  overflow: hidden;
+  background: url(../assesst/hero-img.png);
+}
+
+/* container layout */
+.about-hero-wrap {
+  max-width: 1280px;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ================================
+   TITLE
+================================ */
+
+.about-hero-left h1 {
+  font-size: 56px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+/* ================================
+   BREADCRUMB (RIGHT SIDE)
+================================ */
+
+.about-hero-right {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  opacity: 0.9;
+}
+
+.about-hero-right .sep {
+  opacity: 0.5;
+}
+
+.about-hero-right .title {
+  color: #00b4d8;
+  font-weight: 600;
+}
+.about-hero-right a {
+  color: #ffffff;
+}
+.about-hero-right a :hover {
+  color: #1475e2;
+}
+
+/* ================================
+   DECORATIVE CURVE 
+================================ */
+
+.about-hero::after {
+  content: "";
+  position: absolute;
+  right: -120px;
+  bottom: -120px;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(20, 198, 209, 0.18),
+    transparent 70%
+  );
+}
+
+/* ================================
+   SECTION BASE
+================================ */
+
+.branch-section {
+  background: #F6F7F9;
+  padding: 80px 0;
+}
+
+.branch-container {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+/* ================================
+   CARD
+================================ */
+
+.branch-card {
+  background: #ffffff;
+  border: 1px solid #E9EDF3;
+  border-radius: 6px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  overflow: hidden;
+}
+
+/* ================================
+   COLUMN
+================================ */
+
+.branch-col {
+  text-align: center;
+  padding: 60px 0px 30px;
+  position: relative;
+}
+
+/* vertical divider */
+.branch-col:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background: #E9EDF3;
+}
+
+/* ================================
+   TYPOGRAPHY
+================================ */
+
+.branch-col h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0B1030;
+  margin-bottom: 40px;
+  border-bottom: 1px solid rgba(11, 16, 48, 0.102);
+}
+
+.label {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: rgba(11, 16, 48, 0.502);
+  margin-bottom: 8px;
+}
+
+.value {
+  font-size: 15px;
+  font-weight: 600;
+  color: #000137;
+  margin-bottom: 28px;
+}
+
+/* Remove margin on last value */
+.branch-col .value:last-child {
+  margin-bottom: 0;
+}
+
+.value:hover{
+    color: #00b4d8;
+}
+/* =========================================
+   SECTION
+========================================= */
+
+.map-schedule-section {
+  background: #f6f7f9;
+  padding: 120px 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* =========================================
+   MAP CONTAINER (FIXED HEIGHT + CENTERED)
+========================================= */
+
+.map-container {
+  position: relative;
+  width: 100%;
+  max-width: 1320px;
+  height: 500px;
+  overflow: hidden;
+}
+
+/* =========================================
+   GOOGLE MAP
+========================================= */
+
+.map-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.map-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+  filter: brightness(0.95);
+}
+/* =========================================
+   GOOGLE INFO FLOATING CARD (LEFT)
+========================================= */
+
+.map-info-card {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 280px;
+  background: #ffffff;
+  padding: 20px 22px;
+  border-radius: 14px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  font-size: 13px;
+  z-index: 10;
+}
+
+/* Header */
+.map-info-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.map-info-header h4 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #0B1030;
+}
+
+.directions {
+  font-size: 12px;
+  color: #19C6D1;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Address */
+.map-address {
+  color: #6B7C93;
+  font-size: 12px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+/* Rating container */
+.map-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.rating-number {
+  font-weight: 600;
+  color: #0B1030;
+}
+
+/* Stars */
+.stars {
+  display: flex;
+  gap: 3px;
+}
+
+.star {
+  width: 14px;
+  height: 14px;
+  fill: #FFC107; /* Gold */
+}
+
+.star.full {
+  fill: #FFC107;
+}
+
+/* Reviews text */
+.reviews {
+  font-size: 12px;
+  color: #6B7C93;
+}
+
+/* View Map */
+.view-map {
+  font-size: 12px;
+  color: #19C6D1;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.view-map:hover {
+  text-decoration: underline;
+}
+
+/* =========================================
+   FLOATING SCHEDULE CARD (PERFECT CENTER)
+========================================= */
+
+.schedule-card {
+  position: absolute;
+  right: 80px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 280px;
+  background: #0B1030;
+  padding: 32px 30px;
+  border-radius: 20px;
+  box-shadow: 0 30px 80px rgba(11, 16, 48, 0.35);
+  border: 1px solid rgba(25, 198, 209, 0.2);
+}
+
+/* =========================================
+   ROWS
+========================================= */
+
+.schedule-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+
+.schedule-row:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================================
+   CLOSED TEXT
+========================================= */
+
+.closed {
+  color: #19C6D1;
+  font-weight: 600;
+}
+
+/* ==============================
+   SECTION BASE
+============================== */
+
+.offer-section {
+  background: #F6F7F9;
+  padding: 120px 0;
+  position: relative;
+}
+
+.offer-container {
+  max-width: 1320px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 421px 849px;
+  column-gap: 100px;
+  align-items: center;
+}
+
+/* ==============================
+   LEFT SIDE
+============================== */
+
+.offer-badge {
+  display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 18px;
+    border-radius: 30px;
+    border: 1px solid #bfe8ef;
+    background: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    color: #19c6d1;
+    margin-bottom: 28px;
+}
+
+.offer-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #0B1030;
+  line-height: 1.3;
+  margin-bottom: 18px;
+}
+
+.offer-title span {
+  color: #19C6D1;
+}
+
+.offer-desc {
+  font-size: 14px;
+  color: #6B7C93;
+  line-height: 1.7;
+  max-width: 360px;
+}
+
+/* ==============================
+   FORM
+============================== */
+
+.offer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.offer-form input,
+.offer-form textarea {
+  width: 100%;
+  border: 1px solid rgba(25, 198, 209, 0.4);
+  border-radius: 40px;
+  padding: 14px 20px;
+  font-size: 14px;
+  outline: none;
+  background: transparent;
+  color: #0B1030;
+}
+
+.offer-form input::placeholder,
+.offer-form textarea::placeholder {
+  color: #8A97A8;
+}
+
+.offer-form textarea {
+  height: 120px;
+  border-radius: 20px;
+  resize: none;
+  padding-top: 18px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+/* ==============================
+   BUTTON
+============================== */
+
+.send-btn {
+  width: 160px;
+  height: 52px;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #19C6D1 0%, #14AEB9 100%);
+  border: none;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.send-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(25, 198, 209, 0.25);
+}

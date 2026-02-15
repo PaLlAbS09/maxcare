@@ -1,0 +1,155 @@
+/* ================================
+   RESET
+================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+}
+
+/* ================================
+   LAYOUT
+================================ */
+
+.error-page {
+  display: flex;
+  height: 100vh;
+}
+
+/* ================================
+   LEFT PANEL
+================================ */
+
+.error-left {
+  width: 50%;
+  background: linear-gradient(
+    135deg,
+    #0d3c78 0%,
+    #09194f 60%,
+    #000137 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.brand-logo {
+  width: 247.5px; 
+  height: auto;
+}
+
+
+/* ================================
+   RIGHT PANEL
+================================ */
+
+.error-right {
+  width: 50%;
+  background: #f6f7f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-content {
+  text-align: center;
+  max-width: 480px;
+}
+
+/* 404 number */
+.error-code {
+  font-size: 120px;
+  font-weight: 700;
+  color: #19c6d1;
+  margin-bottom: 10px;
+}
+
+/* Title */
+.error-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #0b1030;
+  margin-bottom: 14px;
+}
+
+/* Text */
+.error-text {
+  font-size: 14px;
+  color: #7a889c;
+  line-height: 1.7;
+  margin-bottom: 32px;
+}
+
+/* ================================
+   SEARCH
+================================ */
+
+.search-box {
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.search-box input {
+  width: 100%;
+  height: 54px;
+  border-radius: 50px;
+  border: 1px solid #d7e3ec;
+  padding: 0 60px 0 24px;
+  font-size: 14px;
+  outline: none;
+  background: #ffffff;
+}
+
+.search-box input::placeholder {
+  color: #9aa9bc;
+}
+
+.search-btn {
+  position: absolute;
+  right: 6px;
+  top: 6px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #19c6d1;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* ================================
+   BUTTON
+================================ */
+.back-home-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  padding: 0 36px;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #19C6D1 0%, #14AEB9 100%);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.back-home-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(25, 198, 209, 0.25);
+}
