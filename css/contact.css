@@ -75,309 +75,188 @@
   );
 }
 
-/* ================================
-   SECTION BASE
-================================ */
 
 .branch-section {
-  background: #F6F7F9;
-  padding: 80px 0;
+ 
+  padding: 100px 0;
 }
 
-.branch-container {
+/* ============================= */
+/* ROW TABLE STYLE */
+/* ============================= */
+
+.branch-row {
   max-width: 1320px;
   margin: 0 auto;
-}
-
-/* ================================
-   CARD
-================================ */
-
-.branch-card {
+  display: flex;
   background: #ffffff;
-  border: 1px solid #E9EDF3;
-  border-radius: 6px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  overflow: hidden;
+  border: 1px solid #E5E9F2;
 }
 
-/* ================================
-   COLUMN
-================================ */
+/* ============================= */
+/* COLUMN STYLE */
+/* ============================= */
 
 .branch-col {
+  flex: 1;
   text-align: center;
-  padding: 60px 0px 30px;
+  padding: 0px 0px 60px;
   position: relative;
 }
 
 /* vertical divider */
-.branch-col:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 1px;
-  height: 100%;
-  background: #E9EDF3;
+.branch-col:not(:last-child) {
+  border-right: 1px solid #E5E9F2;
 }
 
-/* ================================
-   TYPOGRAPHY
-================================ */
+/* ============================= */
+/* TITLE */
+/* ============================= */
 
 .branch-col h3 {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 600;
   color: #0B1030;
-  margin-bottom: 40px;
-  border-bottom: 1px solid rgba(11, 16, 48, 0.102);
+  margin-bottom: 60px;
+  padding:45px 115px;
+  border-bottom: 1px solid #E5E9F2;
 }
 
+
 .label {
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 500;
   letter-spacing: 1px;
-  color: rgba(11, 16, 48, 0.502);
-  margin-bottom: 8px;
+  color: #8A97A8;
+  margin-bottom: 10px;
 }
 
 .value {
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 600;
-  color: #000137;
-  margin-bottom: 28px;
+  color: #0B1030;
+  margin-bottom: 45px;
+  line-height: 1.6;
+  transition: 0.3s ease;
 }
 
-/* Remove margin on last value */
+.value:hover {
+  color: #19C6D1;
+  cursor: pointer;
+}
+
 .branch-col .value:last-child {
   margin-bottom: 0;
 }
 
-.value:hover{
-    color: #00b4d8;
-}
-/* =========================================
-   SECTION
-========================================= */
+/* ============================= */
+/* MAP SECTION */
+/* ============================= */
 
-.map-schedule-section {
-  background: #f6f7f9;
-  padding: 120px 0;
-  display: flex;
-  justify-content: center;
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
 }
-
-/* =========================================
-   MAP CONTAINER (FIXED HEIGHT + CENTERED)
-========================================= */
 
 .map-container {
   position: relative;
-  width: 100%;
-  max-width: 1320px;
-  height: 500px;
+  height: 520px;
+  border-radius: 24px;
   overflow: hidden;
 }
 
-/* =========================================
-   GOOGLE MAP
-========================================= */
-
-.map-wrapper {
-  width: 100%;
-  height: 100%;
-}
-
-.map-wrapper iframe {
+/* MAP */
+.map-container iframe {
   width: 100%;
   height: 100%;
   border: none;
   display: block;
-  filter: brightness(0.95);
+  position: relative;
+  z-index: 1;
 }
-/* =========================================
-   GOOGLE INFO FLOATING CARD (LEFT)
-========================================= */
 
+/* LEFT INFO CARD */
 .map-info-card {
   position: absolute;
-  top: 30px;
-  left: 30px;
-  width: 280px;
+  top: 40px;
+  left: 40px;
+  width: 346px;
   background: #ffffff;
-  padding: 20px 22px;
-  border-radius: 14px;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
-  font-size: 13px;
-  z-index: 10;
+  padding: 22px 24px;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+  z-index: 5;
 }
 
-/* Header */
-.map-info-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.map-info-header h4 {
-  font-size: 15px;
-  font-weight: 600;
-  color: #0B1030;
-}
-
-.directions {
-  font-size: 12px;
-  color: #19C6D1;
-  font-weight: 500;
-  cursor: pointer;
-}
-
-/* Address */
-.map-address {
-  color: #6B7C93;
-  font-size: 12px;
-  line-height: 1.6;
-  margin-bottom: 12px;
-}
-
-/* Rating container */
-.map-rating {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 10px;
-}
-
-.rating-number {
-  font-weight: 600;
-  color: #0B1030;
-}
-
-/* Stars */
-.stars {
-  display: flex;
-  gap: 3px;
-}
-
-.star {
-  width: 14px;
-  height: 14px;
-  fill: #FFC107; /* Gold */
-}
-
-.star.full {
-  fill: #FFC107;
-}
-
-/* Reviews text */
-.reviews {
-  font-size: 12px;
-  color: #6B7C93;
-}
-
-/* View Map */
-.view-map {
-  font-size: 12px;
-  color: #19C6D1;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.view-map:hover {
-  text-decoration: underline;
-}
-
-/* =========================================
-   FLOATING SCHEDULE CARD (PERFECT CENTER)
-========================================= */
-
+/* RIGHT SCHEDULE CARD */
 .schedule-card {
   position: absolute;
-  right: 80px;
+  right: 60px;
   top: 50%;
   transform: translateY(-50%);
-  width: 280px;
+  width: 300px;
   background: #0B1030;
-  padding: 32px 30px;
-  border-radius: 20px;
-  box-shadow: 0 30px 80px rgba(11, 16, 48, 0.35);
-  border: 1px solid rgba(25, 198, 209, 0.2);
+  padding: 36px 34px;
+  border-radius: 24px;
+  border-right: 2px solid #19C6D1;
+  border-bottom: 2px solid #19C6D1;
+  box-shadow: 0 40px 80px rgba(11,16,48,0.4);
+  z-index: 5;
+  color: #ffffff;
 }
-
-/* =========================================
-   ROWS
-========================================= */
 
 .schedule-row {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  font-size: 17px;
   margin-bottom: 22px;
-  font-size: 16px;
-  color: #ffffff;
-  font-weight: 500;
-  letter-spacing: 0.2px;
 }
 
 .schedule-row:last-child {
   margin-bottom: 0;
 }
 
-/* =========================================
-   CLOSED TEXT
-========================================= */
-
 .closed {
   color: #19C6D1;
   font-weight: 600;
 }
-
-/* ==============================
-   SECTION BASE
-============================== */
+/* ============================= */
+/* OFFER SECTION */
+/* ============================= */
 
 .offer-section {
-  background: #F6F7F9;
   padding: 120px 0;
-  position: relative;
 }
 
-.offer-container {
-  max-width: 1320px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 421px 849px;
-  column-gap: 100px;
+.offer-row {
   align-items: center;
 }
 
-/* ==============================
-   LEFT SIDE
-============================== */
+.offer-left {
+  flex: 0 0 32%;
+  max-width: 32%;
+}
+
+.offer-right {
+  flex: 0 0 68%;
+  max-width: 68%;
+}
 
 .offer-badge {
-  display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 8px 18px;
-    border-radius: 30px;
-    border: 1px solid #bfe8ef;
-    background: #ffffff;
-    font-size: 14px;
-    font-weight: 500;
-    color: #19c6d1;
-    margin-bottom: 28px;
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 30px;
+  border: 1px solid #BFE8EF;
+  background: #ffffff;
+  font-size: 14px;
+  color: #19C6D1;
+  margin-bottom: 25px;
 }
 
 .offer-title {
   font-size: 32px;
   font-weight: 700;
-  color: #0B1030;
-  line-height: 1.3;
-  margin-bottom: 18px;
+  margin-bottom: 15px;
 }
 
 .offer-title span {
@@ -387,13 +266,8 @@
 .offer-desc {
   font-size: 14px;
   color: #6B7C93;
-  line-height: 1.7;
-  max-width: 360px;
+  line-height: 1.6;
 }
-
-/* ==============================
-   FORM
-============================== */
 
 .offer-form {
   display: flex;
@@ -409,29 +283,52 @@
 .offer-form input,
 .offer-form textarea {
   width: 100%;
-  border: 1px solid rgba(25, 198, 209, 0.4);
-  border-radius: 40px;
   padding: 14px 20px;
-  font-size: 14px;
+  border-radius: 40px;
+  border: 1px solid rgba(25, 198, 209, 0.4);
   outline: none;
-  background: transparent;
-  color: #0B1030;
-}
-
-.offer-form input::placeholder,
-.offer-form textarea::placeholder {
-  color: #8A97A8;
 }
 
 .offer-form textarea {
   height: 120px;
   border-radius: 20px;
   resize: none;
-  padding-top: 18px;
 }
 
-.full-width {
-  width: 100%;
+.send-btn {
+  width: 160px;
+  height: 48px;
+  border-radius: 30px;
+  background: #19C6D1;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 992px) {
+
+  .branch-col,
+  .offer-left,
+  .offer-right {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .schedule-card {
+    position: relative;
+    right: auto;
+    top: auto;
+    transform: none;
+    margin-top: 20px;
+  }
 }
 
 /* ==============================
