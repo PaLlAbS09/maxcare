@@ -1,7 +1,10 @@
 /* =====================================================
    GOOGLE FONT
 ===================================================== */
-@import url("https://fonts.googleapis.com/css2?family=Castoro+Titling&family=DM+Sans:wght@300;400;500;600;700&display=swap");
+@font-face{
+  font-family: urbanist;
+  src: url(../font/Urbanist[wght].ttf);
+}
 
 /* =====================================================
    ROOT VARIABLES
@@ -9,17 +12,14 @@
 :root {
   --bg-dark: #0b2a53;
   --bg-black: #000;
-
-  --primary-color: #1aa4b7; /* teal */
+  --primary-color: #1aa4b7; 
   --accent-red: #e63946;
-
   --golden-color: #6a4f2c;
   --maroon-color: #631015;
-
   --text-dark: #222;
   --text-light: #fff;
-
   --section-padding: 120px;
+  --font-urbanist: urbanist
 }
 
 /* =====================================================
@@ -32,11 +32,14 @@
 }
 
 body {
-  font-family: "DM Sans", sans-serif;
+  font-family: var(--font-urbanist), sans-serif;
   color: var(--text-dark);
   line-height: 1.6;
 }
-
+html , body{
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
 a {
   text-decoration: none;
 }
@@ -46,9 +49,18 @@ ul {
 }
 
 .container {
+  width: 100%;
   max-width: 1200px;
-  margin: auto;
-  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 1;
 }
 
 /* ===== TOPBAR ===== */
@@ -151,6 +163,7 @@ ul {
 .med-navbar .nav-link.active,
 .med-navbar .nav-link.show {
   color: #fff !important;
+  font-size: 18px;
 }
 
 .med-navbar {
@@ -158,9 +171,10 @@ ul {
   position: relative;
   display: flex;
   align-items: center;
+  background: rgba(255, 255, 255, 0.07);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
-  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
   overflow: visible;
   z-index: 9999;
 }
@@ -170,9 +184,7 @@ ul {
   content: "";
   position: absolute;
   inset: 0;
-
   background: linear-gradient(90deg, #173b75 0%, #173b75 45%, #0b1a45 100%);
-
   z-index: -1;
 }
 
@@ -331,13 +343,10 @@ ul {
 .dropdown-item {
   font-size: 14px;
   padding: 12px 22px;
-
   color: #fff;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   transition: 0.2s;
 }
 
@@ -658,4 +667,174 @@ ul {
 .scroll-top svg {
   width: 22px;
   height: 22px;
+}
+
+@media (max-width: 1200px) {
+
+  .container {
+    max-width: 1000px;
+  }
+
+  .footer-container {
+    width: 100%;
+    padding: 0 40px;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .footer-contact {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-contact > div {
+    border-right: none;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+  }
+
+  .footer-contact > div:last-child {
+    border-bottom: none;
+  }
+
+  .nav-menu {
+    gap: 24px;
+  }
+
+  .nav-right {
+    gap: 20px;
+  }
+
+}
+@media (max-width: 992px) {
+
+  .med-navbar {
+    height: 80px;
+  }
+
+  .nav-container {
+    padding: 0 20px;
+  }
+
+  .nav-menu {
+    gap: 18px;
+  }
+
+  .phone-box {
+    display: none; 
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+@media (max-width: 768px) {
+
+  /* TOPBAR */
+  .topbar-inner {
+    padding: 0 20px;
+  }
+
+  .topbar-left {
+    gap: 15px;
+    font-size: 13px;
+  }
+
+  .emergency-pill {
+    position: static;
+    transform: none;
+    width: auto;
+    padding: 0 16px;
+  }
+
+  /* NAVBAR */
+  .nav-menu {
+    display: none; /* use hamburger menu */
+  }
+
+  .nav-brand img {
+    width: 150px;
+  }
+
+  /* FOOTER */
+  .footer-top {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+}
+@media (max-width: 576px) {
+
+  .topbar {
+    height: auto;
+    padding: 8px 0;
+  }
+
+  .topbar-left {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .topbar-right {
+    display: none;
+  }
+
+  .nav-brand img {
+    width: 130px;
+  }
+
+  .footer {
+    padding: 60px 0 30px;
+  }
+
+  .footer-container {
+    padding: 0 20px;
+  }
+
+  .footer-contact .foot-num {
+    font-size: 22px;
+    padding: 25px;
+  }
+
+  .socials {
+    flex-wrap: wrap;
+  }
+
+}
+@media (max-width: 320px) {
+
+  .brand-text h3 {
+    font-size: 16px;
+  }
+
+  .brand-text span {
+    font-size: 11px;
+  }
+
+  .footer-col h4 {
+    font-size: 16px;
+  }
+
+  .footer-col li {
+    font-size: 14px;
+  }
+
+  .footer-contact span {
+    font-size: 16px;
+  }
+
+  .scroll-top {
+    width: 46px;
+    height: 46px;
+    right: 14px;
+    bottom: 20px;
+  }
+
 }

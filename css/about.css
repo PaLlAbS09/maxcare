@@ -497,7 +497,7 @@
 ===================================== */
 
 .stats {
-  padding: 260px 0 140px;
+  padding: 725px 0 140px;
   color: #fff;
   position: relative;
   overflow: visible;
@@ -573,162 +573,211 @@
   font-size: 15px;
   opacity: 0.85;
 }
-/* ======================================
-   CHOOSE SECTION
-====================================== */
+/* =========================================
+   WHY CHOOSE SECTION
+========================================= */
 
-.choose {
+.choose-section {
   background: #f4f7fa;
   position: relative;
-  z-index: 3;
+  overflow: hidden;
 }
 
-/* ======================================
-   MAIN WRAP
-====================================== */
-
-.choose-wrap {
+/* Main Container */
+.choose-container {
   max-width: 1280px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 620px 1fr;
-  align-items: center;
+  position: relative;
+  z-index: 2;
 }
 
-/* ======================================
-   LEFT BIG CARD
-====================================== */
+/* =========================================
+   LEFT CARD
+========================================= */
 
 .choose-card {
   background: #f2fbfd;
-  padding: 100px 80px;
-  border-radius: 52px;
-  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.05);
+  padding: 90px 80px;
+  border-radius: 60px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.04);
 }
 
-/* small tag */
+/* Tag */
 .choose-tag {
   display: inline-block;
-  border: 1.5px solid #14c6d1;
-  color: #14c6d1;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: #00b4d8;
+  border: 1.5px solid #a6dae5;
   padding: 6px 18px;
-  border-radius: 30px;
-  letter-spacing: 0.6px;
+  border-radius: 100px;
+  margin-bottom: 28px;
 }
 
-/* heading */
+/* Title */
 .choose-title {
-  font-size: 40px;
+  font-size: 42px;
   font-weight: 700;
-  color: #0b1a45;
   line-height: 1.25;
-  margin: 26px 0 55px;
+  color: #0b1a45;
+  margin-bottom: 60px;
 }
 
-/* ======================================
-   STEPS LIST
-====================================== */
-
+/* List */
 .choose-list {
   list-style: none;
-  margin: 0;
   padding: 0;
-
+  margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 42px;
+  gap: 45px;
 }
 
-/* each row */
 .choose-list li {
   display: flex;
-  gap: 20px;
+  gap: 22px;
   align-items: flex-start;
 }
 
-/* circle number */
+/* Number Circle */
 .num {
   width: 42px;
   height: 42px;
   min-width: 42px;
-
   background: #14c6d1;
   color: #fff;
-
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  border-radius: 50%;
   font-weight: 600;
   font-size: 14px;
 }
 
-/* text */
-.choose-list h4 {
+/* Content */
+.choose-content h4 {
   font-size: 16px;
   font-weight: 600;
-  margin-bottom: 6px;
   color: #0b1a45;
-}
-
-.choose-list p {
-  font-size: 14px;
-  color: #6b7b8f;
-  line-height: 1.6;
-}
-
-/* ======================================
-   RIGHT IMAGE
-====================================== */
-
-.choose-img {
-  position: relative;
-}
-.choose-img img {
-  width: 100%;
-  height: 600px;
-  object-fit: cover;
-  border-radius: 52px;
-}
-
-/* ======================================
-   EXPERIENCE SECTION
-====================================== */
-
-.experience {
-  width: 1280px;
-  margin: 70px auto 0;
-
-  display: flex;
-  align-items: center;
-  gap: 50px;
-}
-
-/* big number */
-.experience h3 {
-  font-size: 110px;
-  font-weight: 800;
-  color: #08143d;
-  line-height: 1;
-}
-
-/* text */
-.exp-text strong {
-  display: block;
-  font-size: 16px;
   margin-bottom: 8px;
-  color: #08143d;
 }
 
-.exp-text p {
+.choose-content p {
   font-size: 14px;
   color: #6b7b8f;
-  max-width: 520px;
   line-height: 1.7;
 }
+
+/* =========================================
+   RIGHT IMAGE
+========================================= */
+
+.choose-image img {
+  width: 100%;
+  height: 620px;
+  object-fit: cover;
+  border-radius: 60px;
+}
+
+/* =========================================
+   EXPERIENCE BLOCK
+========================================= */
+
+.experience {
+  max-width: 1280px;
+  margin: 80px auto 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 140px; 
+}
+
+
+.experience-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+
+.exp-number {
+  font-size: 110px;
+  font-weight: 800;
+  line-height: 1;
+  color: #08143d;
+}
+
+
+.exp-label {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #08143d;
+  margin-top: 18px; 
+}
+
+.experience-text {
+  max-width: 520px;
+}
+
+.experience-text p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #9aa3b2;
+  margin: 0;
+}
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1200px) {
+  .choose-container {
+    grid-template-columns: 1fr;
+  }
+
+  .choose-image img {
+    height: 480px;
+  }
+
+  .experience-block {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .choose-card {
+    padding: 60px 40px;
+  }
+
+  .choose-title {
+    font-size: 30px;
+  }
+
+  .exp-number {
+    font-size: 72px;
+  }
+}
+
+@media (max-width: 480px) {
+  .choose-card {
+    padding: 40px 25px;
+    border-radius: 40px;
+  }
+
+  .choose-image img {
+    height: 350px;
+    border-radius: 40px;
+  }
+
+  .exp-number {
+    font-size: 56px;
+  }
+}
+
 /* =====================================
    TEAM SECTION
 ===================================== */
@@ -740,7 +789,7 @@
 
 /* container */
 .team-container {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
   text-align: center;
 }
@@ -756,7 +805,6 @@
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.6px;
-
   color: #14c6d1;
   border: 1.5px solid #14c6d1;
   margin-bottom: 20px;
@@ -788,7 +836,6 @@
 
 .team-row {
   position: relative;
-
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 45px;
@@ -821,15 +868,12 @@
 
 .team-info {
   position: absolute;
-
   left: 50%;
   bottom: 30px;
   transform: translateX(-50%);
-
   background: #fff;
   width: 85%;
   padding: 18px 20px;
-
   border-radius: 18px;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
@@ -856,19 +900,14 @@
   position: absolute;
   right: -70px;
   top: 45%;
-
   width: 48px;
   height: 48px;
-
   border-radius: 50%;
   border: none;
-
   background: #14c6d1;
   color: #fff;
-
   font-size: 26px;
   cursor: pointer;
-
   box-shadow: 0 10px 25px rgba(20, 198, 209, 0.35);
 }
 
@@ -904,7 +943,7 @@
 ========================= */
 
 .testimonial {
-  background: #f4f7fa;
+  background: #F2FBFD;
   padding: 120px 0;
   font-family: "Poppins", sans-serif;
 }

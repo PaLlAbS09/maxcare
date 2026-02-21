@@ -1,6 +1,14 @@
 /* =================================================
    HERO SECTION (FIGMA EXACT FROM COLORS)
    ================================================= */
+   .hero-row {
+  min-height: 100vh;
+  align-items: center;
+}
+
+.hero-left {
+  flex: 0 0 55%;
+}
 .hero,
 .about-hero,
 .hero-medical {
@@ -10,8 +18,8 @@
 
 .hero-medical {
   position: relative;
-  height: 100vh;
-  min-height: 900px;
+  min-height: 100vh;
+  padding: 120px 0;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -293,11 +301,13 @@
   overflow: hidden;
 }
 
-/* container */
 .container {
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
   margin: auto;
+  padding: 0 20px;
 }
+
 
 /* layout */
 .about-wrapper {
@@ -592,7 +602,7 @@
    SERVICES SECTION
 ========================= */
 .services-intro {
-  background: #dff9ff;
+  background: #F2FBFD;
   padding: 80px 0 0;
   text-align: center;
 }
@@ -635,7 +645,7 @@
 
 .services {
   padding: 10px 0 44px;
-  background-color: #dff9ff;
+  background-color: #F2FBFD;
 }
 
 /* GRID = equal width always */
@@ -716,9 +726,7 @@
 ================================= */
 .dept-wrapper {
   background: #dff9ff;
-  border-radius: 36px;
   padding: 60px;
-
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 36px;
@@ -1022,30 +1030,43 @@
   background: #0b1a45;
 }
 @media (max-width: 1200px) {
-  /* HERO */
-  .hero-content {
-    padding-left: 120px;
-  }
 
+  /* HERO */
   .hero-content h1 {
     font-size: 54px;
   }
 
-  /* STATS */
-  .stats {
-    padding: 220px 0 120px;
+  /* CTA */
+  .cta-grid {
+    grid-template-columns: 1.2fr 1fr 1fr;
   }
 
+  /* ABOUT */
+  .container {
+    width: 100%;
+    padding: 0 40px;
+  }
+
+  .about-wrapper {
+    gap: 50px;
+  }
+
+  /* SERVICES */
+  .services-wrap {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* DEPARTMENTS */
+  .dept-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* STATS */
   .stats-title {
     font-size: 36px;
-    margin-bottom: 70px;
   }
 
   /* TEAM */
-  .team {
-    padding: 120px 0;
-  }
-
   .team-row {
     gap: 30px;
   }
@@ -1053,31 +1074,60 @@
   .team-card img {
     height: 400px;
   }
-
-  .team-next {
-    right: -50px;
-  }
 }
 
+
 @media (max-width: 992px) {
+
   /* HERO */
   .hero-medical {
     min-height: 780px;
+    padding: 100px 0;
+    background-position: center right;
   }
 
   .hero-content {
-    padding-left: 60px;
+    padding-left: 0;
+    text-align: left;
   }
 
   .hero-content h1 {
     font-size: 46px;
   }
 
-  /* STATS */
-  .stats {
-    padding: 200px 0 100px;
+  /* CTA */
+  .cta-grid {
+    grid-template-columns: 1fr;
   }
 
+  .cta-left,
+  .cta-mid,
+  .cta-right {
+    height: auto;
+  }
+
+  /* ABOUT */
+  .about-wrapper {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .about-gallery {
+    justify-content: center;
+  }
+
+  /* SERVICES */
+  .services-wrap {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* DEPARTMENTS */
+  .dept-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 40px;
+  }
+
+  /* STATS */
   .stats-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 60px 0;
@@ -1097,14 +1147,14 @@
   }
 }
 
+
 @media (max-width: 768px) {
+
   /* HERO */
   .hero-medical {
-    min-height: 680px;
-  }
-
-  .hero-content {
-    padding-left: 40px;
+    min-height: 650px;
+    padding: 90px 0;
+    background-position: center;
   }
 
   .hero-content h1 {
@@ -1121,10 +1171,19 @@
     font-size: 14px;
   }
 
+  /* SERVICES */
+  .services-wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* DEPARTMENTS */
+  .dept-wrapper {
+    grid-template-columns: 1fr;
+  }
+
   /* STATS */
   .stats-title {
     font-size: 32px;
-    margin-bottom: 60px;
   }
 
   /* TEAM */
@@ -1141,16 +1200,13 @@
   }
 }
 
+
 @media (max-width: 576px) {
+
   /* HERO */
   .hero-medical {
-    height: auto;
-    padding: 120px 0 100px;
-  }
-
-  .hero-content {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 120px 0 80px;
+    text-align: center;
   }
 
   .hero-content h1 {
@@ -1160,6 +1216,27 @@
   .btn-appointment {
     width: 100%;
     justify-content: space-between;
+  }
+
+  /* ABOUT */
+  .gallery-big {
+    width: 100%;
+    height: 400px;
+  }
+
+  .gallery-small {
+    width: 100%;
+    height: 200px;
+  }
+
+  .about-feature-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* SERVICES */
+  .services-wrap {
+    grid-template-columns: 1fr;
   }
 
   /* STATS */
@@ -1184,14 +1261,11 @@
   .team-card img {
     height: 360px;
   }
-
-  .team-info {
-    bottom: 20px;
-  }
 }
 
-@media (max-width: 320px) {
-  /* HERO */
+
+@media (max-width: 400px) {
+
   .hero-content h1 {
     font-size: 30px;
   }
@@ -1201,16 +1275,15 @@
   }
 
   .btn-appointment {
-    height: 52px;
     font-size: 13px;
+    height: 50px;
   }
 
   .btn-icon {
-    width: 40px;
-    height: 40px;
+    width: 38px;
+    height: 38px;
   }
 
-  /* STATS */
   .stats-title {
     font-size: 28px;
   }
@@ -1219,7 +1292,6 @@
     font-size: 44px;
   }
 
-  /* TEAM */
   .team-title {
     font-size: 28px;
   }
@@ -1227,8 +1299,5 @@
   .team-card img {
     height: 320px;
   }
-
-  .team-info {
-    padding: 14px;
-  }
 }
+
