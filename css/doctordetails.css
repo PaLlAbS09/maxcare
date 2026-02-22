@@ -102,7 +102,9 @@
 
 .doctor-card {
   width: 482px;
-  background: #ffffff;
+  height: 1087px;
+  margin-bottom: 30px;
+  background: #F2FBFD;
   border-radius: 24px;
   box-shadow: 0 20px 60px rgba(11, 16, 48, 0.08);
   overflow: hidden;
@@ -141,14 +143,15 @@
 =================================== */
 
 .doctor-header h3 {
-  font-size: 22px;
+  font-size: 30px;
   font-weight: 600;
   color: #0B1030;
   margin-bottom: 6px;
 }
 
 .doctor-role {
-  font-size: 14px;
+  font-size: 16px;
+  color: #03045E;
   font-weight: 400;
   margin-bottom: 24px;
 }
@@ -162,21 +165,21 @@
 }
 
 .detail-item {
-  padding: 18px 0;
-  border-bottom: 1px solid #EDF1F5;
+  padding: 23px 0;
+  border-bottom: 1px solid rgba(11, 16, 48, 0.102);
 }
 
 .detail-item span {
   display: block;
-  font-size: 13px;
-  color: #8A97A8;
+  font-size: 18px;
+  color: rgba(11, 16, 48, 0.502);
   margin-bottom: 6px;
 }
 
 .detail-item strong {
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 500;
-  color: #0B1030;
+  color: #000137;
 }
 
 /* ===================================
@@ -203,7 +206,6 @@
 .social-box svg {
   width: 16px;
   height: 16px;
-  fill: #0B1030;
   opacity: 0.6;
   transition: 0.25s ease;
 }
@@ -223,6 +225,7 @@
 
 .doctor-appointment-btn {
   height: 58px;
+  width: 482px;
   border-radius: 50px;
   background: linear-gradient(90deg, #19C6D1 0%, #14AEB9 100%);
   border: none;
@@ -253,23 +256,17 @@
   stroke: #0B1030;
 }
 
-/* Hover effect */
+
 .doctor-appointment-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 12px 30px rgba(25, 198, 209, 0.25);
 }
 
 
-/* ===================================
-   RIGHT CONTENT
-=================================== */
-
-
 .doctor-content {
   max-width: 754px;
 }
 
-/* Main Heading */
 .doctor-content h2 {
   font-size: 30px;
   font-weight: 600;
@@ -277,8 +274,6 @@
   margin-bottom: 28px;
   letter-spacing: -0.3px;
 }
-
-
 
 .doctor-meta {
   list-style: none;
@@ -297,8 +292,6 @@
 }
 
 
-
-/* Label (Name:, Specialty:) */
 .doctor-meta strong {
   font-weight: 600;
   color: #0b1a45;
@@ -313,19 +306,30 @@
   font-size: 15px;
   line-height: 1.8;
   color: #6b7c93;
-  margin-bottom: 18px;
+  margin-bottom: 30px;
 }
 
 /* ===================================
    SECTION TITLES
 =================================== */
-
 .section-title {
-  margin-top: 44px;
-  font-size: 22px;
+  position: relative;
+  font-size: 26px;
   font-weight: 600;
-  color: #0b1a45;
+  color: #0B1030;
   margin-bottom: 26px;
+  padding-bottom: 14px;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px; 
+  height: 0.5px;           
+  background: #19C6D1;
+  border-radius: 2px;
 }
 
 /* ===================================
@@ -335,10 +339,10 @@
 .education-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 34px 40px;   /* exact figma spacing */
+  gap: 34px 40px;
+  margin-bottom: 47px;   
 }
 
-/* Single Item */
 .edu-item {
   display: flex;
   gap: 18px;
@@ -349,8 +353,8 @@
 .edu-num {
   width: 40px;
   height: 40px;
-  background: #f0fbfc;
-  color: #19c6d1;
+  background: #ffffff;
+  color: #000;
   border-radius: 50%;
   display: flex;
   align-items: center;

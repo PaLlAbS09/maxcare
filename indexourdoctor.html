@@ -285,7 +285,7 @@
     </div>
     <!--================= NAVBAR =================-->
 
-     <nav class="navbar navbar-expand-xl med-navbar">
+    <nav class="navbar navbar-expand-xl med-navbar">
       <div class="container nav-container">
         <!-- ================= LEFT : BRAND ================= -->
         <a class="navbar-brand nav-brand" href="#">
@@ -444,7 +444,11 @@
                 </svg>
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item active" href="indexabout.html">About Us </a></li>
+                <li>
+                  <a class="dropdown-item active" href="indexabout.html"
+                    >About Us
+                  </a>
+                </li>
                 <li class="dropdown-submenu">
                   <a
                     href="#"
@@ -454,17 +458,29 @@
                     Doctor
                   </a>
                   <ul class="submenu-panel">
-                    <li><a class="dropdown-item" href="indexourdoctor.html">Our Doctors</a></li>
                     <li>
-                      <a class="dropdown-item" href="indexdoctordetails.html">Doctor Details</a>
+                      <a class="dropdown-item" href="indexourdoctor.html"
+                        >Our Doctors</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="indexdoctordetails.html"
+                        >Doctor Details</a
+                      >
                     </li>
                   </ul>
                 </li>
                 <li>
                   <a class="dropdown-item" href="#">Make An Appoinment</a>
                 </li>
-                <li><a class="dropdown-item" href="indexschedule.html">Schedule</a></li>
-                <li><a class="dropdown-item" href="indexerror.html">404 Error</a></li>
+                <li>
+                  <a class="dropdown-item" href="indexschedule.html"
+                    >Schedule</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="indexerror.html">404 Error</a>
+                </li>
               </ul>
             </li>
 
@@ -500,8 +516,16 @@
                 </svg>
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="indexservice.html">Our Service </a></li>
-                <li><a class="dropdown-item" href="indexservice2.html">Service Details</a></li>
+                <li>
+                  <a class="dropdown-item" href="indexservice.html"
+                    >Our Service
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="indexservice2.html"
+                    >Service Details</a
+                  >
+                </li>
               </ul>
             </li>
 
@@ -537,7 +561,11 @@
                 </svg>
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="indexcasestudies.html">Case Studies</a></li>
+                <li>
+                  <a class="dropdown-item" href="indexcasestudies.html"
+                    >Case Studies</a
+                  >
+                </li>
                 <li><a class="dropdown-item" href="#">Case Details</a></li>
               </ul>
             </li>
@@ -824,101 +852,137 @@
 
     <section class="doctor-team-section">
       <div class="container doctor-container">
-        <div class="doctor-grid">
-          <!-- CARD -->
-          <div class="doctor-card">
-            <img src="./assesst/doc-1.png" alt="" />
-            <div class="doctor-info">
-              <h3>Emily Parker</h3>
-              <span>Pediatrics</span>
+        <!-- ROW -->
+        <div class="row doctor-row">
+          <!-- CARD 1 -->
+          <div class="col doctor-col">
+            <div class="doctor-card">
+              <img src="./assesst/doc-1.png" alt="Emily Parker" />
+              <div class="doctor-info">
+                <h3>Emily Parker</h3>
+                <span>Pediatrics</span>
+              </div>
             </div>
           </div>
 
-          <div class="doctor-card">
-            <img src="./assesst/doc-2.png" alt="" />
-            <div class="doctor-info">
-              <h3>Sophie Bennett</h3>
-              <span>Obstetrics & Gynecology</span>
+          <!-- CARD 2 -->
+          <div class="col doctor-col">
+            <div class="doctor-card">
+              <img src="./assesst/doc-2.png" alt="Sophie Bennett" />
+              <div class="doctor-info">
+                <h3>Sophie Bennett</h3>
+                <span>Obstetrics & Gynecology</span>
+              </div>
             </div>
           </div>
 
-          <div class="doctor-card">
-            <img src="./assesst/doc-3.png" alt="" />
-            <div class="doctor-info">
-              <h3>Benjamin Shaw</h3>
-              <span>Dermatology</span>
+          <!-- CARD 3 -->
+          <div class="col doctor-col">
+            <div class="doctor-card">
+              <img src="./assesst/doc-3.png" alt="Benjamin Shaw" />
+              <div class="doctor-info">
+                <h3>Benjamin Shaw</h3>
+                <span>Dermatology</span>
+              </div>
             </div>
           </div>
 
-          <div class="doctor-card">
-            <img src="./assesst/doc-4.png" alt="" />
-            <div class="doctor-info">
-              <h3>Henry Foster</h3>
-              <span>ENT (Ear, Nose & Throat)</span>
+          <!-- CARD 4 -->
+          <div class="col doctor-col">
+            <div class="doctor-card">
+              <img src="./assesst/doc-4.png" alt="Henry Foster" />
+              <div class="doctor-info">
+                <h3>Henry Foster</h3>
+                <span>ENT (Ear, Nose & Throat)</span>
+              </div>
             </div>
           </div>
 
-          <div class="doctor-card">
-            <img src="./assesst/doc-5.png" alt="" />
-            <div class="doctor-info">
-              <h3>James Whitfield</h3>
-              <span>Ophthalmology</span>
+          <!-- CARD 5 -->
+          <div class="col doctor-col">
+            <div class="doctor-card">
+              <img src="./assesst/doc-5.png" alt="James Whitfield" />
+              <div class="doctor-info">
+                <h3>James Whitfield</h3>
+                <span>Ophthalmology</span>
+              </div>
             </div>
           </div>
 
-          <div class="doctor-card">
-            <img src="./assesst/doc-6.png" alt="" />
-            <div class="doctor-info">
-              <h3>Peter Lawson</h3>
-              <span>General Surgery</span>
+          <!-- CARD 6 -->
+          <div class="col doctor-col">
+            <div class="doctor-card">
+              <img src="./assesst/doc-6.png" alt="Peter Lawson" />
+              <div class="doctor-info">
+                <h3>Peter Lawson</h3>
+                <span>General Surgery</span>
+              </div>
             </div>
           </div>
 
-          <div class="doctor-card">
-            <img src="./assesst/doc-7.png" alt="" />
-            <div class="doctor-info">
-              <h3>William Carter</h3>
-              <span>Orthopedics & Trauma</span>
+          <!-- CARD 7 -->
+          <div class="col doctor-col">
+            <div class="doctor-card">
+              <img src="./assesst/doc-7.png" alt="William Carter" />
+              <div class="doctor-info">
+                <h3>William Carter</h3>
+                <span>Orthopedics & Trauma</span>
+              </div>
             </div>
           </div>
 
-          <div class="doctor-card">
-            <img src="./assesst/doc-8.png" alt="" />
-            <div class="doctor-info">
-              <h3>Charlotte Harrison</h3>
-              <span>Neurology</span>
+          <!-- CARD 8 -->
+          <div class="col doctor-col">
+            <div class="doctor-card">
+              <img src="./assesst/doc-8.png" alt="Charlotte Harrison" />
+              <div class="doctor-info">
+                <h3>Charlotte Harrison</h3>
+                <span>Neurology</span>
+              </div>
             </div>
           </div>
 
-          <div class="doctor-card">
-            <img src="./assesst/doc-9.png" alt="" />
-            <div class="doctor-info">
-              <h3>Amelia Turner</h3>
-              <span>Cardiology</span>
+          <!-- CARD 9 -->
+          <div class="col doctor-col">
+            <div class="doctor-card">
+              <img src="./assesst/doc-9.png" alt="Amelia Turner" />
+              <div class="doctor-info">
+                <h3>Amelia Turner</h3>
+                <span>Cardiology</span>
+              </div>
             </div>
           </div>
 
-          <div class="doctor-card">
-            <img src="./assesst/doc-10.png" alt="" />
-            <div class="doctor-info">
-              <h3>Arnold Maxwell</h3>
-              <span>Chief Financial Officer</span>
+          <!-- CARD 10 -->
+          <div class="col doctor-col">
+            <div class="doctor-card">
+              <img src="./assesst/doc-10.png" alt="Arnold Maxwell" />
+              <div class="doctor-info">
+                <h3>Arnold Maxwell</h3>
+                <span>Chief Financial Officer</span>
+              </div>
             </div>
           </div>
 
-          <div class="doctor-card">
-            <img src="./assesst/doc-11.png" alt="" />
-            <div class="doctor-info">
-              <h3>Jenifer Olivia</h3>
-              <span>Chief Executive Officer</span>
+          <!-- CARD 11 -->
+          <div class="col doctor-col">
+            <div class="doctor-card">
+              <img src="./assesst/doc-11.png" alt="Jenifer Olivia" />
+              <div class="doctor-info">
+                <h3>Jenifer Olivia</h3>
+                <span>Chief Executive Officer</span>
+              </div>
             </div>
           </div>
 
-          <div class="doctor-card">
-            <img src="./assesst/doc-12.png" alt="" />
-            <div class="doctor-info">
-              <h3>Jason Armstrong</h3>
-              <span>Head Of Operation</span>
+          <!-- CARD 12 -->
+          <div class="col doctor-col">
+            <div class="doctor-card">
+              <img src="./assesst/doc-12.png" alt="Jason Armstrong" />
+              <div class="doctor-info">
+                <h3>Jason Armstrong</h3>
+                <span>Head Of Operation</span>
+              </div>
             </div>
           </div>
         </div>
