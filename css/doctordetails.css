@@ -336,14 +336,14 @@
    EDUCATION GRID
 =================================== */
 
-.education-grid {
+.education-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 34px 40px;
   margin-bottom: 47px;   
 }
 
-.edu-item {
+.edu-col {
   display: flex;
   gap: 18px;
   align-items: flex-start;

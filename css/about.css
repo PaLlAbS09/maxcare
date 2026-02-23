@@ -1,74 +1,34 @@
-
-.flex {
-  display: flex;
+/*Global Declarations*/
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+.col10{
+  width: calc(8.33% * 10);
+  padding: 0 15px;
+}
+.col6{
+  width: calc(8.33% * 6);
+  padding: 0 15px;
+}
+.col-3{
+  width: calc(8.33% * 3);
+  padding: 0 15px;
 }
 
-.between {
-  justify-content: space-between;
+.col2{
+  width: calc(8.33% * 2);
+  padding: 0 15px;
 }
 
-.center {
-  text-align: center;
-}
-
-.grid-2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
-}
-
-.grid-3 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-}
-
-.grid-4 {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
-
-/* Topbar */
-.topbar {
-  background: #00bcd4;
-  color: #fff;
-  padding: 8px 0;
-  font-size: 14px;
-  
-}
-
-.emergency {
-  background: #ff4d4d;
-  padding: 6px 12px;
-  border-radius: 20px;
-}
-
-/* Navbar */
-.navbar {
-  background: #0b1b4a;
-  color: #fff;
-  padding: 15px 0;
-}
-
-.navbar nav a {
-  margin: 0 12px;
-  color: #fff;
-  text-decoration: none;
-}
-
-/*.active {
-  border-bottom: 2px solid #ffffff;
-}*/
-
-/* Hero */
+/* Banner Section Start */
 
 .about-hero{
   position: relative;
   height: 280px;                 
   display: flex;
   align-items: center;
-
   color: #fff;
   overflow: hidden;
   background:
@@ -77,7 +37,6 @@
     linear-gradient(135deg, #06183f 0%, #0b2e6b 55%, #081b4a 100%);
 }
 
-/* container layout */
 .about-hero-wrap{
   max-width: 1280px;
   margin: auto;
@@ -87,20 +46,12 @@
   justify-content: space-between;
 }
 
-/* ================================
-   TITLE
-================================ */
-
 .about-hero-left h1{
   font-size: 56px;
   font-weight: 700;
   letter-spacing: 0.5px;
   margin: 0;
 }
-
-/* ================================
-   BREADCRUMB (RIGHT SIDE)
-================================ */
 
 .about-hero-right{
   font-size: 15px;
@@ -122,9 +73,6 @@
   font-weight: 600;
 }
 
-/* ================================
-   DECORATIVE CURVE 
-================================ */
 
 .about-hero::after{
   content:"";
@@ -136,8 +84,9 @@
   border-radius:50%;
   background: radial-gradient(circle, rgba(20,198,209,0.18), transparent 70%);
 }
+/* Banner Section End */
 
-/* About */
+/* About Section Start*/
 .about {
   padding: 80px 0;
 }
@@ -171,7 +120,7 @@
   border-radius: 25px;
   margin-top: 15px;
 }
-/* Team */
+
 .team {
   padding: 80px 0;
 }
@@ -189,7 +138,6 @@
   border-radius: 12px;
 }
 
-/* Testimonial */
 .testimonial {
   background: #eef2f7;
   padding: 80px 0;
@@ -199,23 +147,17 @@
   width: 100%;
   border-radius: 15px;
 }
-/* =========================================
-   ABOUT SECTION — FIGMA LIGHT VERSION
-========================================= */
 
+/*About Section Start*/
 .about {
   position: relative;
   background: #ffffff; 
   overflow: hidden;
 }
-
-/* container */
 .container {
   width: 1200px;
-  margin: auto;
+  margin: 0 auto;
 }
-
-/* layout */
 .about-wrapper {
   display: grid;
   grid-template-columns: 1.05fr 1fr;
@@ -223,11 +165,6 @@
   position: relative;
   z-index: 2;
 }
-
-/* =========================================
-   SVG BACKGROUND (dots)
-========================================= */
-
 .about-bg {
   position: absolute;
   left: -120px;
@@ -238,21 +175,15 @@
   pointer-events: none;
 }
 
-/* =========================================
-   IMAGE COLLAGE
-========================================= */
-
 .about-gallery {
   display: flex;
 }
-
 .gallery-stack {
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
 
-/* images */
 .gallery-big img,
 .gallery-small img {
   width: 100%;
@@ -261,7 +192,6 @@
   border-radius: 24px;
 }
 
-/* exact sizes */
 .gallery-big {
   width: 360px;
   height: 480px;
@@ -306,12 +236,6 @@
   box-shadow: 0 18px 40px rgba(10, 35, 80, 0.08);
   margin: 28px 0 32px;
 }
-
-/* video */
-/* ===============================
-   VIDEO THUMB
-=============================== */
-
 .feature-video {
   position: relative;
   width: 210px;
@@ -319,56 +243,40 @@
   border-radius: 16px;
   overflow: hidden;
 }
-
 .feature-video > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 16px;
 }
-
-/* ===============================
-   PLAY BUTTON (IMAGE ICON)
-=============================== */
-
 .play-btn {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   width: 54px;
   height: 54px;
-
   background: #fff;
   border-radius: 50%;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
-
   cursor: pointer;
   transition: 0.25s ease;
 }
 
-/* icon size */
 .play-btn img {
   width: 68px;
   height: 68px;
   object-fit: contain;
 }
 
-/* hover effect */
 .play-btn:hover {
-  transform: translate(-50%, -50%) scale(1.08);
+  /* transform: translate(-50%, -50%) scale(1.08); */
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25);
 }
 
-/* ======================================
-   CHECKLIST
-====================================== */
 .about-list {
   list-style: none;
   padding: 0;
@@ -382,7 +290,6 @@
   color: #00194c;
 }
 
-/* SVG icon */
 .about-list li::before {
   content: "";
   position: absolute;
@@ -390,12 +297,8 @@
   top: 5px;
   width: 18px;
   height: 18px;
-  background: url("../assesst/checkmark-circle-01.png") no-repeat center/contain;
+  /* background: url("../assesst/checkmark-circle-01.png") no-repeat center/contain; */
 }
-
-/* ======================================
-   ACTIONS ROW
-====================================== */
 
 .about-actions {
   display: flex;
@@ -403,15 +306,10 @@
   gap: 30px;
 }
 
-/* ======================================
-   PRIMARY BUTTON (FIGMA EXACT)
-====================================== */
-
 .btn-primary {
   display: inline-flex;
   align-items: center;
   gap: 18px;
-
   background: #14c6d1;
   color: #fff;
   padding: 10px 12px 10px 26px;
@@ -423,98 +321,76 @@
   transition: 0.25s;
 }
 
-/* text */
 .btn-text {
   text-transform: capitalize;
 }
-
-/* right circle */
 .btn-icon {
   width: 40px;
   height: 40px;
-
   background: #ffffff;
   border-radius: 50%;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   flex-shrink: 0;
 }
 
-/* arrow svg */
 .btn-icon svg {
   width: 18px;
   height: 18px;
   stroke: #00194c;
 }
 
-/* hover */
 .btn-primary:hover {
-  transform: translateY(-2px);
+  /* transform: translateY(-2px); */
   box-shadow: 0 14px 30px rgba(20, 198, 209, 0.35);
   background: #0fa9b3;
 }
 
-/* emergency */
 .about-emergency {
   display: flex;
   align-items: center;
   gap: 14px;
 }
 
-/* round icon */
 .phone-circle {
   width: 46px;
   height: 46px;
   border-radius: 50%;
   border: 2px solid #dbe2ea;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   font-size: 18px;
   color: #0b1b4a;
   background: #fff;
 }
-
-/* text */
 .emergency small {
   display: block;
   font-size: 13px;
   color: #9aa3b2;
 }
-
 .emergency strong {
   font-size: 17px;
   color: #0b1b4a;
   font-weight: 700;
 }
-/* =====================================
-   STATS SECTION 
-===================================== */
+/*About Section End*/
 
+/*Stats Section Start*/
 .stats {
-  padding: 725px 0 140px;
+  padding: 260px 0 140px;
   color: #fff;
   position: relative;
   overflow: visible;
   background: url("../assesst/stats-image.png") center/cover no-repeat;
   z-index: 1;
 }
-
-/* container */
 .stats .container {
   max-width: 1200px;
   margin: auto;
   text-align: center;
 }
-
-/* =====================================
-   title
-===================================== */
 
 .stats-title {
   font-size: 40px;
@@ -526,24 +402,15 @@
   width: auto;
   height: auto;
 }
-
-/* =====================================
-   grid
-===================================== */
-
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
 }
-
-/* stat item */
 .stat-item {
   padding: 0 30px;
   position: relative;
 }
-
-/* vertical divider */
 .stat-item:not(:last-child)::after {
   content: "";
   position: absolute;
@@ -555,248 +422,147 @@
   background: rgba(255, 255, 255, 0.2);
 }
 
-/* icon */
 .stat-icon {
   width: 44px;
   margin-bottom: 20px;
 }
 
-/* number */
 .stat-item h3 {
   font-size: 56px;
   font-weight: 700;
   margin-bottom: 8px;
 }
 
-/* label */
 .stat-item p {
   font-size: 15px;
   opacity: 0.85;
 }
-/* =========================================
-   WHY CHOOSE SECTION
-========================================= */
+/*Stats Section End*/
 
-.choose-section {
+/*Choose us Section Start*/
+
+.choose {
   background: #f4f7fa;
   position: relative;
-  overflow: hidden;
+  z-index: 3;
 }
-
-/* Main Container */
-.choose-container {
+.choose-wrap {
   max-width: 1280px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 620px 1fr;
-  position: relative;
-  z-index: 2;
+  align-items: center;
 }
-
-/* =========================================
-   LEFT CARD
-========================================= */
-
 .choose-card {
   background: #f2fbfd;
-  padding: 90px 80px;
-  border-radius: 60px;
-  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.04);
+  padding: 100px 80px;
+  border-radius: 52px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.05);
 }
-
-/* Tag */
 .choose-tag {
   display: inline-block;
-  font-size: 13px;
+  border: 1.5px solid #14c6d1;
+  color: #14c6d1;
+  font-size: 12px;
   font-weight: 600;
-  letter-spacing: 0.8px;
-  text-transform: uppercase;
-  color: #00b4d8;
-  border: 1.5px solid #a6dae5;
   padding: 6px 18px;
-  border-radius: 100px;
-  margin-bottom: 28px;
+  border-radius: 30px;
+  letter-spacing: 0.6px;
 }
-
-/* Title */
 .choose-title {
-  font-size: 42px;
+  font-size: 40px;
   font-weight: 700;
-  line-height: 1.25;
   color: #0b1a45;
-  margin-bottom: 60px;
+  line-height: 1.25;
+  margin: 26px 0 55px;
 }
-
-/* List */
 .choose-list {
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 45px;
+  gap: 42px;
 }
-
 .choose-list li {
   display: flex;
-  gap: 22px;
+  gap: 20px;
   align-items: flex-start;
 }
-
-/* Number Circle */
 .num {
   width: 42px;
   height: 42px;
   min-width: 42px;
   background: #14c6d1;
   color: #fff;
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  border-radius: 50%;
   font-weight: 600;
   font-size: 14px;
 }
 
-/* Content */
-.choose-content h4 {
+.choose-list h4 {
   font-size: 16px;
   font-weight: 600;
+  margin-bottom: 6px;
   color: #0b1a45;
-  margin-bottom: 8px;
 }
-
-.choose-content p {
+.choose-list p {
   font-size: 14px;
   color: #6b7b8f;
-  line-height: 1.7;
+  line-height: 1.6;
 }
-
-/* =========================================
-   RIGHT IMAGE
-========================================= */
-
-.choose-image img {
+.choose-img {
+  position: relative;
+}
+.choose-img img {
   width: 100%;
-  height: 620px;
+  height: 600px;
   object-fit: cover;
-  border-radius: 60px;
+  border-radius: 52px;
 }
-
-/* =========================================
-   EXPERIENCE BLOCK
-========================================= */
-
 .experience {
-  max-width: 1280px;
-  margin: 80px auto 0;
+  width: 1280px;
+  margin: 70px auto 0;
   display: flex;
-  align-items: flex-start;
-  gap: 140px; 
+  align-items: right;
+  gap: 50px;
+  margin-left: 700px;
+  margin-top: -70px;
 }
-
-
-.experience-left {
-  display: flex;
-  align-items: flex-start;
-  gap: 18px;
-}
-
-
-.exp-number {
+.experience h3 {
   font-size: 110px;
   font-weight: 800;
+  color: #08143d;
   line-height: 1;
-  color: #08143d;
+ 
 }
-
-
-.exp-label {
+.exp-text strong {
+  display: block;
   font-size: 16px;
-  font-weight: 600;
-  line-height: 1.4;
+  margin-bottom: 8px;
   color: #08143d;
-  margin-top: 18px; 
 }
 
-.experience-text {
-  max-width: 520px;
-}
-
-.experience-text p {
+.exp-text p {
   font-size: 14px;
-  line-height: 1.8;
-  color: #9aa3b2;
-  margin: 0;
+  color: #6b7b8f;
+  max-width: 520px;
+  line-height: 1.7;
 }
-/* =========================================
-   RESPONSIVE
-========================================= */
-
-@media (max-width: 1200px) {
-  .choose-container {
-    grid-template-columns: 1fr;
-  }
-
-  .choose-image img {
-    height: 480px;
-  }
-
-  .experience-block {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-
-@media (max-width: 768px) {
-  .choose-card {
-    padding: 60px 40px;
-  }
-
-  .choose-title {
-    font-size: 30px;
-  }
-
-  .exp-number {
-    font-size: 72px;
-  }
-}
-
-@media (max-width: 480px) {
-  .choose-card {
-    padding: 40px 25px;
-    border-radius: 40px;
-  }
-
-  .choose-image img {
-    height: 350px;
-    border-radius: 40px;
-  }
-
-  .exp-number {
-    font-size: 56px;
-  }
-}
-
-/* =====================================
-   TEAM SECTION
-===================================== */
-
 .team {
   background: #f4f7fa;
   padding: 140px 0;
 }
 
-/* container */
 .team-container {
-  max-width: 1280px;
+  max-width: 1200px;
   margin: 0 auto;
   text-align: center;
 }
-
-/* =====================================
-   TAG
-===================================== */
 
 .team-tag {
   display: inline-block;
@@ -805,15 +571,11 @@
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.6px;
+
   color: #14c6d1;
   border: 1.5px solid #14c6d1;
   margin-bottom: 20px;
 }
-
-/* =====================================
-   TITLE
-===================================== */
-
 .team-title {
   font-size: 38px;
   font-weight: 700;
@@ -821,7 +583,6 @@
   margin-bottom: 14px;
 }
 
-/* subtitle */
 .team-subtitle {
   max-width: 720px;
   margin: 0 auto 70px;
@@ -829,42 +590,28 @@
   line-height: 1.7;
   color: #6b7b8f;
 }
-
-/* =====================================
-   CARDS ROW
-===================================== */
-
 .team-row {
   position: relative;
+
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 45px;
   align-items: center;
 }
 
-/* =====================================
-   CARD
-===================================== */
-
 .team-card {
   position: relative;
   border-radius: 28px;
   overflow: visible;
 }
-
-/* image */
 .team-card img {
   width: 100%;
   height: 450px;
   object-fit: cover;
   border-radius: 28px;
-
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
 }
 
-/* =====================================
-   NAME BADGE (floating bottom like figma)
-===================================== */
 
 .team-info {
   position: absolute;
@@ -877,24 +624,16 @@
   border-radius: 18px;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
-
-/* name */
 .team-info h4 {
   font-size: 16px;
   font-weight: 700;
   color: #0b1a45;
   margin-bottom: 4px;
 }
-
-/* role */
 .team-info span {
   font-size: 13px;
   color: #6b7b8f;
 }
-
-/* =====================================
-   RIGHT ARROW BUTTON
-===================================== */
 
 .team-next {
   position: absolute;
@@ -914,36 +653,28 @@
 .team-next:hover {
   transform: scale(1.08);
 }
-
-/* =====================================
-   DOTS
-===================================== */
-
 .team-dots {
   margin-top: 80px;
   display: flex;
   justify-content: center;
   gap: 10px;
 }
-
 .team-dots span {
   width: 13px;
   height: 13px;
   border-radius: 50%;
   background: #cfd8e3;
 }
-
 .team-dots .active {
   width: 40px;
   border-radius: 20px;
   background: #0b1a45;
 }
-/* =========================
-   TESTIMONIAL SECTION
-========================= */
+/*Our Doctor Section End*/
 
+/*Testimonial Section Start */
 .testimonial {
-  background: #F2FBFD;
+  background: #f4f7fa;
   padding: 120px 0;
   font-family: "Poppins", sans-serif;
 }
@@ -953,9 +684,7 @@
   margin: auto;
 }
 
-/* =========================
-   HEADER
-========================= */
+/*HEADER*/
 
 .testimonial-head {
   display: grid;
@@ -999,7 +728,7 @@
   gap: 14px;
 }
 
-/* "Average Rating" */
+/* Average Rating */
 .rating-label {
   font-size: 14px;
   font-weight: 500;
@@ -1031,9 +760,7 @@
 }
 
 
-/* =========================
-   BODY
-========================= */
+/*BODY */
 
 .testimonial-body {
   display: grid;
@@ -1074,9 +801,7 @@
   font-size: 32px;
 }
 
-/* =========================
-   TEXT
-========================= */
+/*TEXT */
 
 .testimonial-text {
   width: 608px;
@@ -1097,9 +822,7 @@
   color: #00b4d8;
 }
 
-/* =========================
-   STARS
-========================= */
+/* STARS */
 
 .stars {
   display: flex;
@@ -1111,8 +834,9 @@
   height: 18px;
   fill: #14c6d1;
 }
+/*Media Queries*/
 
-@media (max-width:1200px){
+@media  (max-width:1200px){
 
   .about-wrapper{
     gap: 60px;

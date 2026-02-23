@@ -5,37 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maxcare</title>
 
-    <!-- Bootstrap -->
+    <!--Bootstrap link-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
 
-    <!-- Bootstrap Icons -->
+    <!--Bootstrap Icons link-->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
     />
 
-    <!-- Swiper -->
+    <!-- Swiper link-->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
 
-    <!-- Global CSS -->
+    <!-- Main CSS -->
     <link rel="stylesheet" href="css/style.css" />
 
-    <!-- Page CSS -->
+    <!-- Our-service CSS -->
     <link rel="stylesheet" href="css/service.css" />
   </head>
+
   <body>
+    <!--Top Nav-bar Section Start-->
     <div class="topbar">
       <div class="topbar-inner">
-        <!-- LEFT INFO -->
         <div class="topbar-left">
           <div class="info-item">
-            <!-- clock -->
             <svg
               viewBox="0 0 24 24"
               fill="none"
@@ -58,7 +58,6 @@
           </div>
 
           <div class="info-item">
-            <!-- mail -->
             <svg
               viewBox="0 0 24 24"
               fill="none"
@@ -89,7 +88,6 @@
           </div>
 
           <div class="info-item">
-            <!-- location -->
             <svg
               viewBox="0 0 24 24"
               fill="none"
@@ -143,8 +141,6 @@
             <span>28 Street, New York, USA</span>
           </div>
         </div>
-
-        <!-- CENTER EMERGENCY -->
         <a href="#" class="emergency-pill">
           <span class="plus-icon">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none">
@@ -164,10 +160,8 @@
           </svg>
         </a>
 
-        <!-- RIGHT SOCIAL -->
         <div class="topbar-right">
           <a href="https://www.facebook.com/">
-            <!-- facebook -->
             <svg
               width="18"
               height="18"
@@ -192,7 +186,6 @@
           </a>
 
           <a href="https://www.instagram.com/">
-            <!-- insta -->
             <svg
               width="18"
               height="18"
@@ -229,7 +222,6 @@
           </a>
 
           <a href="https://x.com/">
-            <!-- twitter -->
             <svg
               width="18"
               height="18"
@@ -251,7 +243,6 @@
             </svg>
           </a>
           <a href="https://www.linkedin.com/feed/">
-            <!--linkdin-->
             <svg
               width="18"
               height="18"
@@ -283,21 +274,19 @@
         </div>
       </div>
     </div>
-     <!--================= NAVBAR =================-->
+    <!--Top Nav-bar Section Start-->
+
+    <!--Nav-bar Section Start-->
     <nav class="navbar navbar-expand-xl med-navbar">
       <div class="container nav-container">
-        <!-- ================= LEFT : BRAND ================= -->
         <a class="navbar-brand nav-brand" href="#">
-          <img src="./assesst/Logo.png" alt="logo" />
+          <img src="./assesst/Logo.png" alt="logo" loading="lazy" />
         </a>
-
-        <!-- ================= MOBILE TOGGLE ================= -->
         <button
           class="navbar-toggler border-0 shadow-none"
           data-bs-toggle="collapse"
           data-bs-target="#mainNav"
         >
-          <!-- hamburger svg -->
           <svg
             width="48"
             height="48"
@@ -402,16 +391,11 @@
             </defs>
           </svg>
         </button>
-
-        <!-- ================= CENTER + RIGHT ================= -->
         <div class="collapse navbar-collapse" id="mainNav">
-          <!-- ============ CENTER MENU ============ -->
           <ul class="navbar-nav mx-auto nav-menu">
             <li class="nav-item">
               <a class="nav-link active" href="index.html">Home </a>
             </li>
-
-            <!-- About -->
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -443,7 +427,9 @@
                 </svg>
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="indexabout.html">About Us </a></li>
+                <li>
+                  <a class="dropdown-item" href="indexabout.html">About Us </a>
+                </li>
                 <li class="dropdown-submenu">
                   <a
                     href="#"
@@ -453,21 +439,31 @@
                     Doctor
                   </a>
                   <ul class="submenu-panel">
-                    <li><a class="dropdown-item" href="indexourdoctor.html">Our Doctors</a></li>
                     <li>
-                      <a class="dropdown-item" href="#">Doctor Details</a>
+                      <a class="dropdown-item" href="indexourdoctor.html"
+                        >Our Doctors</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="indexdoctordetails.html"
+                        >Doctor Details</a
+                      >
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Make An Appoinment</a>
+                  <a class="dropdown-item" href="#"
+                    >Make An Appoinment</a
+                  >
                 </li>
-                <li><a class="dropdown-item" href="indexschedule.html">Schedule</a></li>
-                <li><a class="dropdown-item" href="indexerror.html">404 Error</a></li>
+                <li>
+                  <a class="dropdown-item" href="indexschedule.html">Schedule</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="indexerror.html">404 Error</a>
+                </li>
               </ul>
             </li>
-
-            <!-- Services -->
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -499,12 +495,19 @@
                 </svg>
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item active" href="indexservice.html">Our Service </a></li>
-                <li><a class="dropdown-item" href="indexservice2.html">Service Details</a></li>
+                <li>
+                  <a class="dropdown-item" href="indexservice.html"
+                    >Our Service
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="indexservice2.html"
+                    >Service Details</a
+                  >
+                </li>
               </ul>
             </li>
 
-            <!-- Case Studies -->
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -536,12 +539,19 @@
                 </svg>
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="indexcasestudies.html">Case Studies</a></li>
-                <li><a class="dropdown-item" href="#">Case Details</a></li>
+                <li>
+                  <a class="dropdown-item" href="indexcasestudies.html"
+                    >Case Studies</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Case Details</a
+                  >
+                </li>
               </ul>
             </li>
 
-            <!-- Blog -->
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -573,8 +583,16 @@
                 </svg>
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Blog Standard</a></li>
-                <li><a class="dropdown-item" href="#">Blog Details</a></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Blog Standard</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Blog Details</a
+                  >
+                </li>
               </ul>
             </li>
 
@@ -582,10 +600,7 @@
               <a class="nav-link" href="indexcontact.html">Contacts</a>
             </li>
           </ul>
-
-          <!-- ============ RIGHT SIDE ============ -->
           <div class="nav-right">
-            <!-- phone -->
             <div class="phone-box">
               <div class="phone-icon">
                 <svg
@@ -608,7 +623,6 @@
               </div>
             </div>
 
-            <!-- grid icon -->
             <button class="grid-btn">
               <svg
                 width="48"
@@ -718,15 +732,14 @@
         </div>
       </div>
     </nav>
-    <!-- ===== HERO ===== -->
+    <!--Nav-bar Section End-->
+
+    <!--Banner Section Start -->
     <section class="about-hero">
       <div class="container about-hero-wrap">
-        <!-- LEFT -->
         <div class="about-hero-left">
           <h1>Our Service</h1>
         </div>
-
-        <!-- RIGHT -->
         <div class="about-hero-right">
           <a href="index.html">Home</a>
           <span class="sep">
@@ -750,7 +763,9 @@
         </div>
       </div>
     </section>
+    <!--Banner Section End -->
 
+    <!--Service Section Start -->
     <section class="services-intro">
       <div class="container">
         <span class="intro-tag">
@@ -818,9 +833,8 @@
     </section>
 
     <section class="services">
-      <div class="services-wrap">
-        <!-- ACTIVE -->
-        <div class="service-card active">
+      <div class="service-container services-wrap">
+        <div class="col20 service-card active">
           <svg
             class="icon"
             width="80"
@@ -872,8 +886,7 @@
           <h4>Specialized</h4>
           <p>Medicine & Surgery</p>
         </div>
-
-        <div class="service-card">
+        <div class="col20 service-card">
           <svg
             class="icon"
             width="80"
@@ -929,8 +942,7 @@
           <h4>Emergency &</h4>
           <p>Critical Care</p>
         </div>
-
-        <div class="service-card">
+        <div class="col20 service-card">
           <svg
             class="icon"
             width="79"
@@ -982,8 +994,7 @@
           <h4>Laboratory</h4>
           <p>Services</p>
         </div>
-
-        <div class="service-card">
+        <div class="col20 service-card">
           <svg
             class="icon"
             width="208"
@@ -1020,8 +1031,7 @@
           <h4>Rehabilitation</h4>
           <p>Services</p>
         </div>
-
-        <div class="service-card">
+        <div class="col20 service-card">
           <svg
             class="icon"
             width="208"
@@ -1072,11 +1082,13 @@
         </div>
       </div>
     </section>
+    <!--Service Section End -->
+
+    <!--Department Section Start -->
     <section class="dept">
       <div class="dept-container">
-        <!-- card -->
-        <div class="dept-card">
-          <img src="./assesst/surgery-image.png" alt="" />
+        <div class="col4 dept-card">
+          <img src="./assesst/surgery-image.png" alt="General Surgery" />
           <div class="dept-body">
             <h3>General Surgery</h3>
             <p>
@@ -1085,9 +1097,6 @@
             </p>
             <a href="#" class="read-more">
               <span>Read More</span>
-
-              <!-- SVG Arrow -->
-
               <svg
                 width="24"
                 height="24"
@@ -1119,8 +1128,11 @@
           </div>
         </div>
 
-        <div class="dept-card">
-          <img src="./assesst/Internal-Medicine.png" alt="" />
+        <div class="col4 dept-card">
+          <img
+            src="./assesst/Internal-Medicine.png"
+            alt="Internal Medicine"
+          />
           <div class="dept-body">
             <h3>Internal Medicine</h3>
             <p>
@@ -1130,8 +1142,6 @@
             <a href="#" class="read-more">
               <span>Read More</span>
 
-              <!-- SVG Arrow -->
-
               <svg
                 width="24"
                 height="24"
@@ -1163,7 +1173,7 @@
           </div>
         </div>
 
-        <div class="dept-card">
+        <div class="col4 dept-card">
           <img src="./assesst/Obstetrics-Gynecology.png" alt="" />
           <div class="dept-body">
             <h3>Obstetrics & Gynecology</h3>
@@ -1174,8 +1184,6 @@
             <a href="#" class="read-more">
               <span>Read More</span>
 
-              <!-- SVG Arrow -->
-
               <svg
                 width="24"
                 height="24"
@@ -1207,8 +1215,11 @@
           </div>
         </div>
 
-        <div class="dept-card">
-          <img src="./assesst/Cardiothoracic-Surgery.png" alt="" />
+        <div class="col4 dept-card">
+          <img
+            src="./assesst/Cardiothoracic-Surgery.png"
+            alt="Cardiothoracic Surgery"
+          />
           <div class="dept-body">
             <h3>Cardiothoracic Surgery</h3>
             <p>
@@ -1218,8 +1229,6 @@
             <a href="#" class="read-more">
               <span>Read More</span>
 
-              <!-- SVG Arrow -->
-
               <svg
                 width="24"
                 height="24"
@@ -1251,8 +1260,8 @@
           </div>
         </div>
 
-        <div class="dept-card">
-          <img src="./assesst/Urology-Surgery.png" alt="" />
+        <div class="col4 dept-card">
+          <img src="./assesst/Urology-Surgery.png" alt="Urology Surgery" />
           <div class="dept-body">
             <h3>Urology Surgery</h3>
             <p>
@@ -1262,8 +1271,6 @@
             <a href="#" class="read-more">
               <span>Read More</span>
 
-              <!-- SVG Arrow -->
-
               <svg
                 width="24"
                 height="24"
@@ -1295,8 +1302,8 @@
           </div>
         </div>
 
-        <div class="dept-card">
-          <img src="./assesst/Endocrinology.png" alt="" />
+        <div class="col4 dept-card">
+          <img src="./assesst/Endocrinology.png" alt="Endocrinology" />
           <div class="dept-body">
             <h3>Endocrinology</h3>
             <p>
@@ -1306,8 +1313,6 @@
             <a href="#" class="read-more">
               <span>Read More</span>
 
-              <!-- SVG Arrow -->
-
               <svg
                 width="24"
                 height="24"
@@ -1340,183 +1345,196 @@
         </div>
       </div>
     </section>
-    <!--  STEPS SECTION -->
+    <!--Department Section End -->
+
+    <!--Booking-step Section Start -->
     <section class="steps-sec">
-      <div class="steps-wrap">
-        <!-- STEP 01 -->
-        <div class="step">
-          <div class="step-img">
-            <img src="./assesst/step-image-1.png" alt="Book Appointment" />
-            <span class="step-no">01</span>
+      <div class="container steps-wrap">
+        <div class="row">
+          <!--step1-->
+          <div class="step">
+            <div class="step-img">
+              <img
+                src="./assesst/step-image-1.png"
+                alt="Book Appointment"
+              />
+              <span class="step-no">01</span>
+            </div>
+            <h4>Book an Appointment</h4>
+            <p>
+              Select your preferred date, time, and doctor using our easy online
+              booking system or by calling our help desk.
+            </p>
           </div>
-          <h4>Book an Appointment</h4>
-          <p>
-            Select your preferred date, time, and doctor using our easy online
-            booking system or by calling our help desk.
-          </p>
-        </div>
-
-        <!-- STEP 02 -->
-        <div class="step">
-          <div class="step-img">
-            <img src="./assesst/step-image-2.png" alt="Confirm Schedule" />
-            <span class="step-no">02</span>
+          <!--Step2-->
+          <div class="step">
+            <div class="step-img">
+              <img
+                src="./assesst/step-image-2.png"
+                alt="Confirm Schedule"
+              />
+              <span class="step-no">02</span>
+            </div>
+            <h4>Confirm Your Schedule</h4>
+            <p>
+              Receive confirmation via SMS or email with details of your
+              consultation, including doctor's profile and location.
+            </p>
           </div>
-          <h4>Confirm Your Schedule</h4>
-          <p>
-            Receive confirmation via SMS or email with details of your
-            consultation, including doctor's profile and location.
-          </p>
-        </div>
-
-        <!-- STEP 03 -->
-        <div class="step">
-          <div class="step-img">
-            <img src="./assesst/step-image-3.png" alt="Meet Doctor" />
-            <span class="step-no">03</span>
+          <!--Step3-->
+          <div class="step">
+            <div class="step-img">
+              <img
+                src="./assesst/step-image-3.png"
+                alt="Meet Doctor"
+              />
+              <span class="step-no">03</span>
+            </div>
+            <h4>Meet Your Doctor</h4>
+            <p>
+              Visit the hospital or join a secure video call at your scheduled
+              time. Our specialists will assess your health condition
+              thoroughly.
+            </p>
           </div>
-          <h4>Meet Your Doctor</h4>
-          <p>
-            Visit the hospital or join a secure video call at your scheduled
-            time. Our specialists will assess your health condition thoroughly.
-          </p>
-        </div>
-
-        <!-- STEP 04 -->
-        <div class="step">
-          <div class="step-img">
-            <img src="./assesst/step-image-4.png" alt="Diagnosis Advice" />
-            <span class="step-no">04</span>
+          <!--Step4-->
+          <div class="step">
+            <div class="step-img">
+              <img
+                src="./assesst/step-image-4.png"
+                alt="Diagnosis Advice"
+              />
+              <span class="step-no">04</span>
+            </div>
+            <h4>Get Diagnosis & Advice</h4>
+            <p>
+              Receive a proper diagnosis, treatment plan, and prescription if
+              needed—with clear explanations and care instructions.
+            </p>
           </div>
-          <h4>Get Diagnosis & Advice</h4>
-          <p>
-            Receive a proper diagnosis, treatment plan, and prescription if
-            needed—with clear explanations and care instructions.
-          </p>
-        </div>
-
-        <!-- STEP 05 -->
-        <div class="step">
-          <div class="step-img">
-            <img src="./assesst/step-image-5.png" alt="Follow Up Support" />
-            <span class="step-no">05</span>
+          <!--Step5-->
+          <div class="step">
+            <div class="step-img">
+              <img
+                src="./assesst/step-image-5.png"
+                alt="Follow Up Support"
+              />
+              <span class="step-no">05</span>
+            </div>
+            <h4>Follow-Up Support</h4>
+            <p>
+              Our team will guide you with aftercare, test results, and
+              follow-up appointments for ongoing support and peace of mind.
+            </p>
           </div>
-          <h4>Follow-Up Support</h4>
-          <p>
-            Our team will guide you with aftercare, test results, and follow-up
-            appointments for ongoing support and peace of mind.
-          </p>
         </div>
       </div>
     </section>
+    <!--Booking-step Section End -->
 
-
-    <!-- =======================
-   APPOINTMENT SECTION
-======================= -->
+    <!--Appointment Section Start-->
     <section class="appointment-sec">
-      <div class="appointment-box">
-        <!-- LEFT CONTENT -->
-        <div class="appointment-content">
-          <span class="tag">Trusted Care, Proven Excellence.</span>
-          <h2>
-            Committed to ensure <br />
-            Quality Healthcare
-          </h2>
-        </div>
+      <div class="container appointment-box">
+        <div class="row">
+          <div class="col6 appointment-content">
+            <span class="tag">Trusted Care, Proven Excellence.</span>
+            <h2>
+              Committed to ensure <br />
+              Quality Healthcare
+            </h2>
+          </div>
+          <div class="col6 appointment-card">
+            <h3>Get Appointment</h3>
+            <p>
+              Call us 24/7 with any emergency or to schedule an appointment &
+              check your health.
+            </p>
+            <div class="call">
+              <div class="icon">
+                <svg
+                  width="38"
+                  height="38"
+                  viewBox="0 0 38 38"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="38" height="38" rx="19" fill="#00B4D8" />
+                  <path
+                    d="M21.25 13.75V16.75H24.25M25.75 12.25L21.5544 16.4456"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M16.8687 14.2842L16.5667 13.6047C16.3692 13.1604 16.2705 12.9383 16.1229 12.7683C15.9378 12.5552 15.6966 12.3985 15.4268 12.3159C15.2114 12.25 14.9683 12.25 14.4822 12.25C13.7709 12.25 13.4153 12.25 13.1168 12.3867C12.7652 12.5478 12.4476 12.8975 12.321 13.2629C12.2136 13.5732 12.2444 13.8921 12.3059 14.5298C12.9609 21.3176 16.6824 25.0391 23.4702 25.694C24.108 25.7556 24.4268 25.7864 24.7371 25.679C25.1025 25.5525 25.4522 25.2348 25.6133 24.8832C25.75 24.5846 25.75 24.2291 25.75 23.5178C25.75 23.0316 25.75 22.7885 25.6842 22.5732C25.6016 22.3034 25.4448 22.0622 25.2318 21.8771C25.0617 21.7295 24.8396 21.6308 24.3953 21.4333L23.7159 21.1313C23.2347 20.9174 22.9941 20.8106 22.7496 20.7873C22.5157 20.765 22.2798 20.7979 22.0608 20.8832C21.832 20.9723 21.6297 21.1408 21.2253 21.4778C20.8226 21.8134 20.6213 21.9812 20.3753 22.071C20.1573 22.1507 19.869 22.1802 19.6392 22.1463C19.3802 22.1082 19.1817 22.0022 18.785 21.7901C17.5504 21.1304 16.8696 20.4496 16.2099 19.215C15.9979 18.8183 15.8918 18.6198 15.8537 18.3608C15.8198 18.1311 15.8493 17.8427 15.929 17.6247C16.0188 17.3787 16.1866 17.1774 16.5221 16.7747C16.8592 16.3703 17.0278 16.168 17.1169 15.9392C17.2021 15.7202 17.235 15.4843 17.2127 15.2504C17.1895 15.0059 17.0825 14.7653 16.8687 14.2842Z"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <div>
+                <span>Call Us:</span>
+                <strong>
+                  +811.2311.785<br />
+                  +811.2311.657
+                </strong>
+              </div>
+            </div>
 
-        <!-- RIGHT FLOATING CARD -->
-        <div class="appointment-card">
-          <h3>Get Appointment</h3>
-
-          <p>
-            Call us 24/7 with any emergency or to schedule an appointment &
-            check your health.
-          </p>
-
-          <div class="call">
-            <div class="icon">
+            <a href="#" class="req-link">
+              Request An Appointment
               <svg
-                width="38"
-                height="38"
-                viewBox="0 0 38 38"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <rect width="38" height="38" rx="19" fill="#00B4D8" />
-                <path
-                  d="M21.25 13.75V16.75H24.25M25.75 12.25L21.5544 16.4456"
-                  stroke="white"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M16.8687 14.2842L16.5667 13.6047C16.3692 13.1604 16.2705 12.9383 16.1229 12.7683C15.9378 12.5552 15.6966 12.3985 15.4268 12.3159C15.2114 12.25 14.9683 12.25 14.4822 12.25C13.7709 12.25 13.4153 12.25 13.1168 12.3867C12.7652 12.5478 12.4476 12.8975 12.321 13.2629C12.2136 13.5732 12.2444 13.8921 12.3059 14.5298C12.9609 21.3176 16.6824 25.0391 23.4702 25.694C24.108 25.7556 24.4268 25.7864 24.7371 25.679C25.1025 25.5525 25.4522 25.2348 25.6133 24.8832C25.75 24.5846 25.75 24.2291 25.75 23.5178C25.75 23.0316 25.75 22.7885 25.6842 22.5732C25.6016 22.3034 25.4448 22.0622 25.2318 21.8771C25.0617 21.7295 24.8396 21.6308 24.3953 21.4333L23.7159 21.1313C23.2347 20.9174 22.9941 20.8106 22.7496 20.7873C22.5157 20.765 22.2798 20.7979 22.0608 20.8832C21.832 20.9723 21.6297 21.1408 21.2253 21.4778C20.8226 21.8134 20.6213 21.9812 20.3753 22.071C20.1573 22.1507 19.869 22.1802 19.6392 22.1463C19.3802 22.1082 19.1817 22.0022 18.785 21.7901C17.5504 21.1304 16.8696 20.4496 16.2099 19.215C15.9979 18.8183 15.8918 18.6198 15.8537 18.3608C15.8198 18.1311 15.8493 17.8427 15.929 17.6247C16.0188 17.3787 16.1866 17.1774 16.5221 16.7747C16.8592 16.3703 17.0278 16.168 17.1169 15.9392C17.2021 15.7202 17.235 15.4843 17.2127 15.2504C17.1895 15.0059 17.0825 14.7653 16.8687 14.2842Z"
-                  stroke="white"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                />
+                <g clip-path="url(#clip0_2123_4456)">
+                  <path d="M14 12H4H14Z" fill="#000137" />
+                  <path
+                    d="M14 12H4"
+                    stroke="#000137"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M18.5859 13.6026L17.6194 14.3639C16.0536 15.5974 15.2707 16.2141 14.6354 15.9328C14 15.6515 14 14.6881 14 12.7613V11.2387C14 9.31191 14 8.34853 14.6354 8.06721C15.2707 7.7859 16.0536 8.40264 17.6194 9.63612L18.5858 10.3974C19.5286 11.1401 20 11.5115 20 12C20 12.4885 19.5286 12.8599 18.5859 13.6026Z"
+                    fill="#000137"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_2123_4456">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
               </svg>
-            </div>
-            <div>
-              <span>Call Us:</span>
-              <strong>
-                +811.2311.785<br />
-                +811.2311.657
-              </strong>
-            </div>
+            </a>
           </div>
-
-          <a href="#" class="req-link">
-            Request An Appointment
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clip-path="url(#clip0_2123_4456)">
-                <path d="M14 12H4H14Z" fill="#000137" />
-                <path
-                  d="M14 12H4"
-                  stroke="#000137"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M18.5859 13.6026L17.6194 14.3639C16.0536 15.5974 15.2707 16.2141 14.6354 15.9328C14 15.6515 14 14.6881 14 12.7613V11.2387C14 9.31191 14 8.34853 14.6354 8.06721C15.2707 7.7859 16.0536 8.40264 17.6194 9.63612L18.5858 10.3974C19.5286 11.1401 20 11.5115 20 12C20 12.4885 19.5286 12.8599 18.5859 13.6026Z"
-                  fill="#000137"
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0_2123_4456">
-                  <rect width="24" height="24" fill="white" />
-                </clipPath>
-              </defs>
-            </svg>
-          </a>
         </div>
       </div>
     </section>
+    <!--Appointment Section End -->
 
+    <!--Footer Section Start-->
     <footer class="footer">
       <div class="footer-container">
-        <!-- TOP GRID -->
         <div class="footer-top">
-          <!-- BRAND -->
           <div class="footer-brand">
             <div class="logo">
-              <img src="./assesst/Logo.png" alt="Maxcare" />
+              <img
+                src="./assesst/lo"
+                alt="footer-logo"
+                loading="lazy"
+              />
             </div>
-
             <p>
               Maxcare has been offering comprehensive medical services across a
               wide range of specialties all over USA.
             </p>
-
             <div class="socials">
               <a href="#"
                 ><svg
@@ -1650,8 +1668,6 @@
               </a>
             </div>
           </div>
-
-          <!-- SERVICES -->
           <div class="footer-col">
             <h4>Our Services</h4>
             <ul>
@@ -1662,8 +1678,6 @@
               <li>Preventive Health & Wellness</li>
             </ul>
           </div>
-
-          <!-- CUSTOMERS -->
           <div class="footer-col">
             <h4>For Customers</h4>
             <ul>
@@ -1674,8 +1688,6 @@
               <li>Track Progress</li>
             </ul>
           </div>
-
-          <!-- HOURS -->
           <div class="footer-col">
             <h4>Opening Hour</h4>
             <ul class="hours">
@@ -1689,8 +1701,6 @@
             </ul>
           </div>
         </div>
-
-        <!-- CONTACT BAR -->
         <div class="footer-contact">
           <div>
             <svg
@@ -1769,10 +1779,8 @@
                 stroke-linejoin="round"
               />
             </svg>
-
             <span>Maxcare3456mail@gmail.com</span>
           </div>
-
           <div>
             <svg
               width="40"
@@ -1798,7 +1806,6 @@
                 stroke-width="2"
               />
             </svg>
-
             <span>231 Utah City Centre, Utah, USA</span>
           </div>
         </div>
@@ -1812,6 +1819,9 @@
         </div>
       </div>
     </footer>
+    <!--Footer Section End-->
+
+    <!--Scroll botton Section Start-->
     <button class="scroll-top" aria-label="Scroll to top">
       <svg
         width="20"
@@ -1829,10 +1839,13 @@
         />
       </svg>
     </button>
+    <!--Scroll botton Section End-->
 
+    <!--Java Script Start-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-
+    <!--JS Link -->
     <script src="./js/script.js"></script>
+    <!--Java Script End-->
   </body>
 </html>

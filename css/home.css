@@ -1,14 +1,27 @@
-/* =================================================
-   HERO SECTION (FIGMA EXACT FROM COLORS)
-   ================================================= */
-   .hero-row {
-  min-height: 100vh;
-  align-items: center;
+/*Global Declarations*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 20px;
+}
+.col-20 {
+  width: 20%;
+  padding: 0 15px;
+}
+.col10 {
+  width: calc(8.33% * 10);
+  padding: 0 15px;
+}
+.col-4 {
+  width: calc(8.33% * 4);
+  padding: 0 15px;
+}
+.col-3 {
+  width: calc(8.33% * 3);
+  padding: 0 15px;
 }
 
-.hero-left {
-  flex: 0 0 55%;
-}
+/*Banner Section Start*/
 .hero,
 .about-hero,
 .hero-medical {
@@ -18,12 +31,13 @@
 
 .hero-medical {
   position: relative;
-  min-height: 100vh;
-  padding: 120px 0;
+  height: 100vh;
+  min-height: 900px;
   display: flex;
   align-items: center;
   overflow: hidden;
-  background: url("../assesst/Banner_Section.png") right center/cover no-repeat;
+  background: url("../assesst/Banner_Section.png") right center/cover
+    no-repeat;
 }
 
 .hero-medical::before {
@@ -40,6 +54,12 @@
     transparent 100%
   );
   z-index: 1;
+}
+.hero-container {
+  max-width: 1650px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .hero-medical .container {
@@ -107,18 +127,13 @@
   width: 16px;
   height: 16px;
 }
+/*Banner Section End*/
 
-/* ======================
-   SECTION
-====================== */
+/*CTA Section Start*/
 .cta {
   padding: 110px 0;
   background: #f4f7fa;
 }
-
-/* ======================
-   GRID
-====================== */
 .cta-grid {
   max-width: 1400px;
   margin: auto;
@@ -127,8 +142,6 @@
   grid-template-columns: 1.45fr 1fr 1fr;
   gap: 32px;
 }
-
-/* shared height */
 .cta-left,
 .cta-mid,
 .cta-right {
@@ -136,21 +149,15 @@
   border-radius: 28px;
   overflow: hidden;
 }
-
-/* ======================
-   LEFT
-====================== */
 .cta-left {
   position: relative;
   color: #fff;
 }
-
 .cta-left img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
 .overlay {
   position: absolute;
   inset: 0;
@@ -161,30 +168,23 @@
     rgba(20, 198, 209, 0.45)
   );
 }
-
 .left-content {
   position: absolute;
   top: 55px;
   left: 55px;
   max-width: 340px;
 }
-
 .left-content span {
   font-size: 12px;
   letter-spacing: 1px;
   opacity: 0.9;
 }
-
 .left-content h2 {
   font-size: 38px;
   font-weight: 700;
   line-height: 1.25;
   margin-top: 18px;
 }
-
-/* ======================
-   CENTER
-====================== */
 .cta-mid {
   background: #f6f8fb; /* figma grey */
   padding: 34px 34px;
@@ -193,7 +193,6 @@
 
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06); /* softer */
 }
-
 .mid-head {
   display: flex;
   justify-content: space-between;
@@ -202,114 +201,88 @@
   padding-bottom: 14px;
   border-bottom: 1px solid #e7edf3;
 }
-
 .mid-head h3 {
   font-size: 18px;
   font-weight: 700;
   color: #0b1a45;
 }
-
 .mid-head span {
   color: #14c6d1;
   font-size: 20px;
 }
-
 .cta-mid p {
   font-size: 13.5px;
   color: #6b7b8f;
   line-height: 1.6;
   margin: 18px 0 22px;
 }
-
 .mid-call {
   display: flex;
   gap: 12px;
   align-items: flex-start;
   margin-bottom: auto;
 }
-
 .icon {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.icon svg {
-  width: 17px;
-}
-
 .mid-call small {
   color: #6b7b8f;
   font-size: 12px;
 }
-
 .mid-call b {
   display: block;
   font-size: 14px;
   color: #0b1a45;
 }
-
-/* ======================
-   RIGHT
-====================== */
 .cta-right {
   background: linear-gradient(135deg, #14c6d1, #1299b4);
   color: #fff;
-
   padding: 38px;
   display: flex;
   flex-direction: column;
 }
-
 .cta-right h3 {
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 24px;
 }
-
 .cta-right ul {
   list-style: none;
   padding: 0;
   margin: 0 0 auto;
 }
-
 .cta-right li {
   display: flex;
   justify-content: space-between;
   font-size: 13.5px;
   margin-bottom: 14px;
 }
-
-/* ======================
-   LINKS
-====================== */
 .link {
   font-size: 14px;
   font-weight: 600;
   text-decoration: none;
   color: #0b1a45;
 }
-
 .link.white {
   color: #fff;
 }
-
 .about {
   position: relative;
   margin: 120px 0 0;
   background: #ffffff;
   overflow: hidden;
 }
+/*CTA Section Start*/
 
+/*About Section Start*/
 .container {
-  max-width: 1200px;
-  width: 100%;
+  width: 1200px;
   margin: auto;
-  padding: 0 20px;
 }
 
-
-/* layout */
 .about-wrapper {
   display: grid;
   grid-template-columns: 1.05fr 1fr;
@@ -317,11 +290,6 @@
   position: relative;
   z-index: 2;
 }
-
-/* =========================================
-   SVG BACKGROUND (dots)
-========================================= */
-
 .about-bg {
   position: absolute;
   left: -120px;
@@ -331,10 +299,6 @@
   z-index: 0;
   pointer-events: none;
 }
-
-/* =========================================
-   IMAGE COLLAGE
-========================================= */
 
 .about-gallery {
   display: flex;
@@ -401,11 +365,6 @@
   margin: 28px 0 32px;
 }
 
-/* video */
-/* ===============================
-   VIDEO THUMB
-=============================== */
-
 .feature-video {
   position: relative;
   width: 210px;
@@ -420,10 +379,6 @@
   object-fit: cover;
   border-radius: 16px;
 }
-
-/* ===============================
-   PLAY BUTTON (IMAGE ICON)
-=============================== */
 
 .play-btn {
   position: absolute;
@@ -447,22 +402,17 @@
   transition: 0.25s ease;
 }
 
-/* icon size */
 .play-btn img {
   width: 68px;
   height: 68px;
   object-fit: contain;
 }
 
-/* hover effect */
 .play-btn:hover {
-  transform: translate(-50%, -50%) scale(1.08);
+  /* transform: translate(-50%, -50%) scale(1.08); */
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25);
 }
 
-/* ======================================
-   CHECKLIST
-====================================== */
 .about-list {
   list-style: none;
   padding: 0;
@@ -488,26 +438,16 @@
   height: 18px;
   background: url("../assesst/checkmark-circle-01.png") no-repeat center/contain;
 }
-
-/* ======================================
-   ACTIONS ROW
-====================================== */
-
 .about-actions {
   display: flex;
   align-items: center;
   gap: 30px;
 }
 
-/* ======================================
-   PRIMARY BUTTON (FIGMA EXACT)
-====================================== */
-
 .btn-primary {
   display: inline-flex;
   align-items: center;
   gap: 18px;
-
   background: #14c6d1;
   color: #fff;
   padding: 10px 12px 10px 26px;
@@ -518,105 +458,69 @@
   box-shadow: 0 10px 25px rgba(20, 198, 209, 0.25);
   transition: 0.25s;
 }
-
-/* text */
 .btn-text {
   text-transform: capitalize;
 }
-
-/* right circle */
 .btn-icon {
   width: 40px;
   height: 40px;
-
-  background: #000137;
+  background: #fff;
   border-radius: 50%;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   flex-shrink: 0;
 }
-
-/* arrow svg */
 .btn-icon svg {
   width: 18px;
   height: 18px;
   stroke: #00194c;
 }
-
-/* hover */
 .btn-primary:hover {
-  transform: translateY(-2px);
   box-shadow: 0 14px 30px rgba(20, 198, 209, 0.35);
   background: #0fa9b3;
 }
-
-/* emergency */
 .about-emergency {
   display: flex;
   align-items: center;
   gap: 14px;
 }
-.ab-btn-icon{
-      width: 40px;
-    height: 40px;
-    background: #ffffff;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-}
-/* round icon */
 .phone-circle {
   width: 46px;
   height: 46px;
   border-radius: 50%;
   border: 2px solid #dbe2ea;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   font-size: 18px;
   color: #0b1b4a;
   background: #fff;
 }
-
-/* text */
 .emergency small {
   display: block;
   font-size: 13px;
   color: #9aa3b2;
 }
-
 .emergency strong {
   font-size: 17px;
   color: #0b1b4a;
   font-weight: 700;
 }
+/*About Section End*/
 
-/* =========================
-   SERVICES SECTION
-========================= */
+/*Service Section Start*/
 .services-intro {
   background: #F2FBFD;
   padding: 80px 0 0;
   text-align: center;
 }
-
-/* container */
 .services-intro .container {
-  max-width: 900px;
+  max-width: 1350px;
+  width: 100%;
   margin: auto;
+  margin-top: 50px;
 }
-
-/* ==============================
-   SMALL TAG (pill)
-============================== */
-
 .intro-tag {
   display: inline-block;
   padding: 7px 20px;
@@ -628,41 +532,36 @@
   border: 1.5px solid #14c6d1;
   margin-bottom: 26px;
 }
-
-/* ==============================
-   TITLE
-============================== */
-
 .intro-title {
   font-size: 42px;
   font-weight: 700;
   line-height: 1.3;
   color: #0b1a45;
   margin: 0;
-} /* =========================
-   SERVICES SECTION
-========================= */
-
+}
 .services {
   padding: 10px 0 44px;
   background-color: #F2FBFD;
 }
-
-/* GRID = equal width always */
+.dept-container {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.service-container {
+  max-width: 1920px;
+  background-color: #F2FBFD;
+}
 .services-wrap {
-  max-width: 1200px;
+  max-width: 1350px;
   margin: auto;
   gap: 10px;
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* equal */
+  grid-template-columns: repeat(5, 1fr);
   border-radius: 22px;
-  overflow: hidden; /* keeps corners clean */
+  overflow: hidden;
 }
-
-/* =========================
-   CARD
-========================= */
-
 .service-card {
   text-align: center;
   padding: 40px 20px;
@@ -674,27 +573,20 @@
   transition: 0.3s ease;
 }
 
-/* equal icon size */
 .service-card .icon {
   margin-bottom: 18px;
 }
 
-/* text */
 .service-card h4 {
   font-size: 16px;
   font-weight: 600;
   color: #0b1a45;
   margin-bottom: 6px;
 }
-
 .service-card p {
   font-size: 14px;
   color: #6b7b8f;
 }
-
-/* =========================
-   ACTIVE (FIGMA STYLE)
-========================= */
 
 .service-card.active {
   background: linear-gradient(135deg, #14c6d1, #17b2c7);
@@ -706,40 +598,28 @@
 .service-card.active p {
   color: #fff;
 }
-
 .service-card.active .icon {
   filter: brightness(0) invert(1);
 }
-
-/* =========================
-   HOVER
-========================= */
-
 .service-card:hover {
   background: linear-gradient(135deg, #14c6d1, #17b2c7);
   color: #fff;
   border-radius: 20px;
 }
-
-/* =================================
-   DEPARTMENT WRAPPER (BLUE BG)
-================================= */
 .dept-wrapper {
   background: #dff9ff;
   padding: 60px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 36px;
-}
+  display: flex;
+  flex-wrap: wrap;
+  gap: 36px;  
+} 
 
-/* =================================
-   DEPT CARD
-================================= */
 .dept-card {
   background: #fff;
   border-radius: 26px;
   padding: 20px;
   text-align: left;
+  flex: 0 0 calc((100% - 72px) / 3);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
   transition: 0.3s;
 }
@@ -784,6 +664,9 @@
 .read-more:hover svg {
   transform: translateX(5px);
 }
+/*Service Section End*/
+
+/* Stats Section Start */
 
 .stats {
   padding: 260px 0 140px;
@@ -794,17 +677,11 @@
   z-index: 1;
 }
 
-/* container */
 .stats .container {
-  max-width: 1200px;
-  margin: auto;
+  max-width: 1350px;
+  margin: 0 auto;
   text-align: center;
 }
-
-/* =====================================
-   title
-===================================== */
-
 .stats-title {
   font-size: 40px;
   font-weight: 600;
@@ -816,23 +693,17 @@
   height: auto;
 }
 
-/* =====================================
-   grid
-===================================== */
-
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
 }
 
-/* stat item */
 .stat-item {
   padding: 0 30px;
   position: relative;
 }
 
-/* vertical divider */
 .stat-item:not(:last-child)::after {
   content: "";
   position: absolute;
@@ -843,42 +714,32 @@
   height: 120px;
   background: rgba(255, 255, 255, 0.2);
 }
-
-/* icon */
 .stat-icon {
   width: 44px;
   margin-bottom: 20px;
 }
 
-/* number */
 .stat-item h3 {
   font-size: 56px;
   font-weight: 700;
   margin-bottom: 8px;
 }
-
-/* label */
 .stat-item p {
   font-size: 15px;
   opacity: 0.85;
 }
+/*Stats Section End*/
 
+/*Our Doctor Section Start*/
 .team {
   background: #f4f7fa;
   padding: 140px 0;
 }
-
-/* container */
 .team-container {
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
 }
-
-/* =====================================
-   TAG
-===================================== */
-
 .team-tag {
   display: inline-block;
   padding: 6px 18px;
@@ -891,11 +752,6 @@
   border: 1.5px solid #14c6d1;
   margin-bottom: 20px;
 }
-
-/* =====================================
-   TITLE
-===================================== */
-
 .team-title {
   font-size: 38px;
   font-weight: 700;
@@ -903,7 +759,6 @@
   margin-bottom: 14px;
 }
 
-/* subtitle */
 .team-subtitle {
   max-width: 720px;
   margin: 0 auto 70px;
@@ -911,162 +766,109 @@
   line-height: 1.7;
   color: #6b7b8f;
 }
-
-/* =====================================
-   CARDS ROW
-===================================== */
-
 .team-row {
   position: relative;
-
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 45px;
   align-items: center;
 }
-
-/* =====================================
-   CARD
-===================================== */
-
 .team-card {
   position: relative;
   border-radius: 28px;
   overflow: visible;
 }
-
-/* image */
 .team-card img {
   width: 100%;
   height: 450px;
   object-fit: cover;
   border-radius: 28px;
-
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
 }
-
-/* =====================================
-   NAME BADGE (floating bottom like figma)
-===================================== */
-
 .team-info {
   position: absolute;
-
   left: 50%;
   bottom: 30px;
   transform: translateX(-50%);
-
   background: #fff;
   width: 85%;
   padding: 18px 20px;
-
   border-radius: 18px;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
-
-/* name */
 .team-info h4 {
   font-size: 16px;
   font-weight: 700;
   color: #0b1a45;
   margin-bottom: 4px;
 }
-
-/* role */
 .team-info span {
   font-size: 13px;
   color: #6b7b8f;
 }
-
-/* =====================================
-   RIGHT ARROW BUTTON
-===================================== */
-
 .team-next {
   position: absolute;
   right: -70px;
   top: 45%;
-
   width: 48px;
   height: 48px;
-
   border-radius: 50%;
   border: none;
-
   background: #14c6d1;
   color: #fff;
-
   font-size: 26px;
   cursor: pointer;
-
   box-shadow: 0 10px 25px rgba(20, 198, 209, 0.35);
 }
-
 .team-next:hover {
   transform: scale(1.08);
 }
-
-/* =====================================
-   DOTS
-===================================== */
-
 .team-dots {
   margin-top: 80px;
   display: flex;
   justify-content: center;
   gap: 10px;
 }
-
 .team-dots span {
   width: 13px;
   height: 13px;
   border-radius: 50%;
   background: #cfd8e3;
 }
-
 .team-dots .active {
   width: 40px;
   border-radius: 20px;
   background: #0b1a45;
 }
-@media (max-width: 1200px) {
+/*Our Doctor Section End*/
 
-  /* HERO */
+/*Media Queries Start*/
+
+@media (max-width: 1200px) {
+  /* Banner */
+  .hero-content {
+    padding-left: 120px;
+  }
+
   .hero-content h1 {
     font-size: 54px;
   }
 
-  /* CTA */
-  .cta-grid {
-    grid-template-columns: 1.2fr 1fr 1fr;
-  }
-
-  /* ABOUT */
-  .container {
-    width: 100%;
-    padding: 0 40px;
-  }
-
-  .about-wrapper {
-    gap: 50px;
-  }
-
-  /* SERVICES */
-  .services-wrap {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  /* DEPARTMENTS */
-  .dept-wrapper {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   /* STATS */
+  .stats {
+    padding: 220px 0 120px;
+  }
+
   .stats-title {
     font-size: 36px;
+    margin-bottom: 70px;
   }
 
   /* TEAM */
+  .team {
+    padding: 120px 0;
+  }
+
   .team-row {
     gap: 30px;
   }
@@ -1074,60 +876,31 @@
   .team-card img {
     height: 400px;
   }
+
+  .team-next {
+    right: -50px;
+  }
 }
 
-
 @media (max-width: 992px) {
-
-  /* HERO */
+  /* Banner */
   .hero-medical {
     min-height: 780px;
-    padding: 100px 0;
-    background-position: center right;
   }
 
   .hero-content {
-    padding-left: 0;
-    text-align: left;
+    padding-left: 60px;
   }
 
   .hero-content h1 {
     font-size: 46px;
   }
 
-  /* CTA */
-  .cta-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .cta-left,
-  .cta-mid,
-  .cta-right {
-    height: auto;
-  }
-
-  /* ABOUT */
-  .about-wrapper {
-    grid-template-columns: 1fr;
-    gap: 60px;
-  }
-
-  .about-gallery {
-    justify-content: center;
-  }
-
-  /* SERVICES */
-  .services-wrap {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  /* DEPARTMENTS */
-  .dept-wrapper {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 40px;
-  }
-
   /* STATS */
+  .stats {
+    padding: 200px 0 100px;
+  }
+
   .stats-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 60px 0;
@@ -1147,14 +920,14 @@
   }
 }
 
-
 @media (max-width: 768px) {
-
-  /* HERO */
+  /* Banner */
   .hero-medical {
-    min-height: 650px;
-    padding: 90px 0;
-    background-position: center;
+    min-height: 680px;
+  }
+
+  .hero-content {
+    padding-left: 40px;
   }
 
   .hero-content h1 {
@@ -1171,19 +944,10 @@
     font-size: 14px;
   }
 
-  /* SERVICES */
-  .services-wrap {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  /* DEPARTMENTS */
-  .dept-wrapper {
-    grid-template-columns: 1fr;
-  }
-
   /* STATS */
   .stats-title {
     font-size: 32px;
+    margin-bottom: 60px;
   }
 
   /* TEAM */
@@ -1200,13 +964,16 @@
   }
 }
 
-
 @media (max-width: 576px) {
-
-  /* HERO */
+  /*Banner*/
   .hero-medical {
-    padding: 120px 0 80px;
-    text-align: center;
+    height: auto;
+    padding: 120px 0 100px;
+  }
+
+  .hero-content {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .hero-content h1 {
@@ -1216,27 +983,6 @@
   .btn-appointment {
     width: 100%;
     justify-content: space-between;
-  }
-
-  /* ABOUT */
-  .gallery-big {
-    width: 100%;
-    height: 400px;
-  }
-
-  .gallery-small {
-    width: 100%;
-    height: 200px;
-  }
-
-  .about-feature-card {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  /* SERVICES */
-  .services-wrap {
-    grid-template-columns: 1fr;
   }
 
   /* STATS */
@@ -1261,11 +1007,14 @@
   .team-card img {
     height: 360px;
   }
+
+  .team-info {
+    bottom: 20px;
+  }
 }
 
-
-@media (max-width: 400px) {
-
+@media (max-width: 320px) {
+  /* Banner */
   .hero-content h1 {
     font-size: 30px;
   }
@@ -1275,15 +1024,16 @@
   }
 
   .btn-appointment {
+    height: 52px;
     font-size: 13px;
-    height: 50px;
   }
 
   .btn-icon {
-    width: 38px;
-    height: 38px;
+    width: 40px;
+    height: 40px;
   }
 
+  /* STATS */
   .stats-title {
     font-size: 28px;
   }
@@ -1292,6 +1042,7 @@
     font-size: 44px;
   }
 
+  /* TEAM */
   .team-title {
     font-size: 28px;
   }
@@ -1299,5 +1050,9 @@
   .team-card img {
     height: 320px;
   }
-}
 
+  .team-info {
+    padding: 14px;
+  }
+}
+/*Media Queries End*/
