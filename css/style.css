@@ -54,105 +54,135 @@ ul {
   margin: 0 auto;
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.col {
-  flex: 1;
-}
 
 /* ===== TOPBAR ===== */
-
-.topbar {
-  background: #18a9c6;
-  height: 48px;
-  display: flex;
-  align-items: stretch;
+.hdr-top .container > div {
+  row-gap: 12px;
 }
 
-/* inner row */
-.topbar-inner {
-  width: 100%;
-  padding: 0 40px;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  position: relative;
+.hdr-top {
+  background-color: #1ea5b8; 
+  padding: 12px 0;
+  font-size: 14px;
+  color: #ffffff;
 }
 
-/* ===== LEFT ===== */
-.topbar-left {
-  display: flex;
+.hdr-top .top-info {
   gap: 30px;
-  color: white;
 }
 
-.info-item {
-  display: flex;
-  align-items: center;
+.hdr-top .info-item {
   gap: 8px;
 }
 
-.info-item svg {
+.hdr-top .info-item img {
   width: 16px;
   height: 16px;
 }
 
-/* ===== CENTER RED STRIP ===== */
-.emergency-pill {
-  position: absolute;
-  left: 68%;
-  transform: translateX(-50%);
-  width: 335px;
-  height: 100%;
-  background: #ef3e42;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  color: white;
-  font-weight: 600;
-  border-radius: 0;
+.hdr-top span {
+  font-weight: 400;
+  letter-spacing: 0.3px;
 }
 
-/* FIX class name */
+/* ===============================
+   EMERGENCY BUTTON
+================================= */
+
+.emergency-wrapper {
+  position: relative;
+}
+
+.emergency-btn {
+  background-color: #e63946; 
+  padding: 12px 22px;
+  border-radius: 6px;
+  font-weight: 600;
+  color: #fff;
+  gap: 12px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.emergency-btn:hover {
+  background-color: #c92c39;
+}
+
 .plus-icon {
-  width: 20px;
-  height: 20px;
-  background: rgba(255, 255, 255, 0.25);
+  width: 28px;
+  height: 28px;
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
 }
 
-.plus-icon svg {
-  width: 12px;
-  height: 12px;
+.dropdown-arrow {
+  font-size: 14px;
+  transition: transform 0.3s ease;
 }
 
-/* ===== RIGHT ===== */
-.topbar-right {
-  display: flex;
-  align-items: center;
-  gap: 16px;
+/* ===============================
+   SOCIAL ICONS
+================================= */
+
+.social-links ul {
+  gap: 18px;
+  list-style: none;
+  padding-left: 0;
 }
 
-.topbar-right svg {
-  width: 14px;
-  height: 14px;
-  fill: white;
-  opacity: 0.95;
-  transition: 0.2s;
+.social-links img {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease;
 }
 
-.topbar-right svg:hover {
-  opacity: 0.7;
+.social-links a:hover img {
+  transform: scale(1.2);
 }
+
+/* ===============================
+   DROPDOWN PANEL
+================================= */
+
+.emergency-dropdown {
+  position: absolute;
+  top: 120%;
+  left: 0;
+  background: #ffffff;
+  width: 260px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+
+.emergency-dropdown p {
+  color: #333;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Active State */
+
+.emergency-wrapper.active .emergency-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.emergency-wrapper.active .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
 /* =================================================
    MEDICAL NAVBAR — FIGMA EXACT
 ================================================= */
@@ -671,6 +701,18 @@ ul {
 
 @media (max-width: 1200px) {
 
+  .top-info {
+    gap: 20px;
+  }
+
+  .info-item span {
+    font-size: 13px;
+  }
+
+  .emergency-btn {
+    padding: 10px 18px;
+  }
+
   .container {
     max-width: 1000px;
   }
@@ -704,10 +746,36 @@ ul {
 
   .nav-right {
     gap: 20px;
+    display: none;
   }
 
 }
 @media (max-width: 992px) {
+  @media (max-width: 991px) {
+
+  .hdr-top .container > div {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .top-info {
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .emergency-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+}
 
   .med-navbar {
     height: 80px;
@@ -733,26 +801,33 @@ ul {
 @media (max-width: 768px) {
 
   /* TOPBAR */
-  .topbar-inner {
-    padding: 0 20px;
+  @media (max-width: 767px) {
+
+  .top-info {
+    flex-direction: column;
+    gap: 10px;
   }
 
-  .topbar-left {
-    gap: 15px;
+  .info-item {
+    justify-content: center;
+  }
+
+  .info-item svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .info-item span {
     font-size: 13px;
   }
 
-  .emergency-pill {
-    position: static;
-    transform: none;
-    width: auto;
-    padding: 0 16px;
+  .emergency-btn {
+    width: 100%;
+    justify-content: center;
+    font-size: 13px;
   }
 
-  /* NAVBAR */
-  .nav-menu {
-    display: none; /* use hamburger menu */
-  }
+}
 
   .nav-brand img {
     width: 150px;
@@ -772,20 +847,31 @@ ul {
 }
 @media (max-width: 576px) {
 
-  .topbar {
-    height: auto;
-    padding: 8px 0;
+ @media (max-width: 575px) {
+
+  .hdr-top {
+    padding: 10px 0;
   }
 
-  .topbar-left {
-    flex-direction: column;
-    gap: 5px;
+  .top-info span {
+    font-size: 12px;
   }
 
-  .topbar-right {
-    display: none;
+  .plus-icon svg {
+    width: 18px;
+    height: 18px;
   }
 
+  .dropdown-arrow svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .social-links ul {
+    gap: 12px;
+  }
+
+}
   .nav-brand img {
     width: 130px;
   }
@@ -809,6 +895,28 @@ ul {
 
 }
 @media (max-width: 320px) {
+  @media (max-width: 480px) {
+
+  /* Hide address for better layout */
+  .info-item:nth-child(3) {
+    display: none;
+  }
+
+  .top-info {
+    gap: 6px;
+  }
+
+  .emergency-btn {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .social-links svg {
+    width: 16px;
+    height: 16px;
+  }
+
+}
 
   .brand-text h3 {
     font-size: 16px;

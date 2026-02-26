@@ -1,12 +1,11 @@
-
-document.querySelectorAll('[data-bs-toggle="submenu"]').forEach(btn => {
-  btn.addEventListener('click', function (e) {
+document.querySelectorAll('[data-bs-toggle="submenu"]').forEach((btn) => {
+  btn.addEventListener("click", function (e) {
     e.preventDefault();
     e.stopPropagation();
 
-    const parent = this.closest('.dropdown-submenu');
+    const parent = this.closest(".dropdown-submenu");
 
-    parent.classList.toggle('show');
+    parent.classList.toggle("show");
   });
 });
 
@@ -18,4 +17,14 @@ window.addEventListener("scroll", () => {
 
 btn.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+document.querySelectorAll(".filter-tab").forEach((tab) => {
+  tab.addEventListener("click", function (e) {
+    e.preventDefault();
+    document
+      .querySelectorAll(".filter-tab")
+      .forEach((t) => t.classList.remove("active"));
+    this.classList.add("active");
+  });
 });

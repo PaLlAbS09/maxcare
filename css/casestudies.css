@@ -75,96 +75,73 @@
   );
 }
 
-/* ===============================
-   SECTION BG
-================================ */
-.filter-section {
-  background: #f3f5f8;
-  padding: 80px 0 35px;
-}
-
-/* ===============================
-   OUTER CAPSULE (1320 × 43)
-================================ */
-.filter-bar {
-  width: 1320px;
+.filter-tabs-wrapper {
   height: 43px;
+  border-radius: 6px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 14px;
-  padding: 4px 12px;
-  border-radius: 999px;
-  box-shadow: none;
+  padding: 0 6px;
+  gap: 0;
+  box-sizing: border-box;
+  background: #fff;
+  margin-top: 80px;
 }
 
-/* ===============================
-   INDIVIDUAL MINI PILLS
-================================ */
-.filter-pill {
-  height: 32px;
-  padding: 0 22px;
-  display: flex;
+.filter-tab {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(11, 16, 48, 0.2);
-  background: #f6f8fb;
+  height: 31px;
+  padding: 0 18px;
+  border: 1px solid #d1d5db;
   border-radius: 999px;
-  font-size: 14px;
-  font-weight: 500;
-  color: #5f6f85;
+  font-size: 13.5px;
+  font-weight: 400;
+  color: #374151;
+  background: #fff;
   cursor: pointer;
-  transition: all 0.2s ease;
+  white-space: nowrap;
+  text-decoration: none;
+  margin: 0 3px;
+  letter-spacing: 0.01em;
 }
 
-/* hover */
-.filter-pill:hover {
-  background: #00b4d8;
-  color: #2f3e52;
+.filter-tab:hover {
+  background: #f3f4f6;
+  border-color: #9ca3af;
+  color: #111827;
 }
 
-/* ===============================
-   SECTION BG
-================================= */
-.medical-gallery {
-  background: #f6f7f9;
-  padding: 0 0 80px;
+.filter-tab.active {
+  background: #1a73e8;
+  border-color: #1a73e8;
+  color: #fff;
+  font-weight: 500;
 }
-
-/* ===============================
-   CENTERED CONTAINER (figma width)
-================================= */
-.gallery-container {
-  max-width: 1269px;
+.page-wrapper {
+  max-width: 1920px;
   margin: 0 auto;
+  padding: 40px 120px 60px;
 }
 
-/* ===============================
-   TRUE 3x3 GRID 
-================================= */
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-
-/* ===============================
-   CARD 
-================================= */
-.gallery-card {
-  position: relative;
-  width: 100%;
-  padding-top: 100%;
-  border-radius: 24px;
+.gallery-item {
+  border-radius: 10px;
   overflow: hidden;
+   display: flex;
+  flex-direction: column;
+  flex: 1;
+  background: #e5e7eb;
 }
 
-/* image fill */
-.gallery-card img {
-  position: absolute;
-  inset: 0;
-  width: 403px;
-  height: 487px;
+.gallery-item img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   display: block;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.03);
 }

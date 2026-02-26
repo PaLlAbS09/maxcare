@@ -297,7 +297,6 @@
   top: 5px;
   width: 18px;
   height: 18px;
-  /* background: url("../assesst/checkmark-circle-01.png") no-repeat center/contain; */
 }
 
 .about-actions {
@@ -342,7 +341,6 @@
 }
 
 .btn-primary:hover {
-  /* transform: translateY(-2px); */
   box-shadow: 0 14px 30px rgba(20, 198, 209, 0.35);
   background: #0fa9b3;
 }
@@ -864,11 +862,6 @@
 }
 
 @media (max-width:992px){
-
-  /* GRID SYSTEM */
-  .grid-4{ grid-template-columns: repeat(2,1fr); }
-  .grid-3{ grid-template-columns: repeat(2,1fr); }
-  .grid-2{ grid-template-columns: 1fr; }
 
   /* ABOUT */
   .about-wrapper{
