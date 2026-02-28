@@ -28,3 +28,24 @@ document.querySelectorAll(".filter-tab").forEach((tab) => {
     this.classList.add("active");
   });
 });
+//Swiper Js for Our Doctor Section
+  const carouselEl = document.getElementById('teamCarousel');
+  const carousel   = new bootstrap.Carousel(carouselEl, { interval: false, wrap: true });
+  const dots       = document.querySelectorAll('#teamDots span');
+
+  // Prev / Next buttons
+  document.getElementById('teamNext').addEventListener('click', () => carousel.next());
+  document.getElementById('teamPrev').addEventListener('click', () => carousel.prev());
+
+  // Sync dots with slide
+  carouselEl.addEventListener('slid.bs.carousel', (e) => {
+    dots.forEach(d => d.classList.remove('active'));
+    dots[e.to].classList.add('active');
+  });
+
+  // Click on dots
+  dots.forEach(dot => {
+    dot.addEventListener('click', () => {
+      carousel.to(parseInt(dot.dataset.index));
+    });
+  });

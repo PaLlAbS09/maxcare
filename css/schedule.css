@@ -74,300 +74,407 @@
     transparent 70%
   );
 }
-
-/* ===============================
-   SECTION BASE
-================================= */
+/* =========================================
+   DOCTOR SCHEDULE SECTION
+========================================= */
 
 .doctor-schedule-section {
-  background: #F6F7F9;
-  padding: 120px 0;
+  background: var(--bg-light);
+  padding: 100px 0;
 }
 
-.schedule-container {
-  max-width: 1320px;
+/* Container scaling */
+.container {
+  width: 100%;
+  max-width: 1140px;
   margin: 0 auto;
-  text-align: center;
-}
-
-/* ===============================
-   BADGE
-================================= */
-
-.schedule-badge {
-  display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 8px 18px;
-    border-radius: 30px;
-    border: 1px solid #bfe8ef;
-    background: #ffffff;
-    font-size: 14px;
-    font-weight: 500;
-    color: #19c6d1;
-    margin-bottom: 28px;
-}
-
-/* ===============================
-   TITLE
-================================= */
-
-.schedule-title {
-  font-size: 32px;
-  font-weight: 600;
-  color: #0B1030;
-  margin-bottom: 28px;
-}
-
-.schedule-title span {
-  color: #0B1030;
-}
-
-/* ===============================
-   FILTER PILLS
-================================= */
-
-.schedule-filters {
-  display: flex;
-  justify-content: center;
-  gap: 14px;
-  margin-bottom: 40px;
-  flex-wrap: wrap;
-}
-
-.filter-pill {
-  padding: 8px 18px;
-  border-radius: 50px;
-  border: 1px solid #E4E8EE;
-  background: #FFFFFF;
-  font-size: 13px;
-  color: #6B7C93;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-.filter-pill:hover{
-  background: #00b4d8;
-  color: #2f3e52;
-}
-
-
-/* ===============================
-   TABLE CARD
-================================= */
-
-.schedule-card {
-  background: #ffffff;
-  box-shadow: 0 20px 60px rgba(11, 16, 48, 0.08);
-  overflow: hidden;
-}
-
-/* ===============================
-   TABLE
-================================= */
-
-.schedule-table {
-  width: 1346px;
-  height: 512px;
-  border-collapse: collapse;
-  font-size: 13px;
-  text-align: center;
-}
-.schedule-table thead th {
-  background: #F2FBFD;
-  color: #0b1030;
-  font-size: 18px;
-  font-weight: 600;
-  padding: 18px 16px;
-  border-bottom: 1px solid #EDF1F5;;
-  text-align: center;
-}
-.schedule-table th {
-  background: #F2FBFD;
-  font-weight: 600;
-  color: #0B1030;
-  padding: 14px 10px;
-}
-
-.schedule-table td {
-  padding: 14px 10px;
-font-size: 14px;
-font-weight: 400;
-  border: 1px solid rgba(11, 16, 48, 0.102);
-}
-
-.schedule-table td:first-child,
-.schedule-table th:first-child {
-  font-size: 18px;
-  font-weight: 300;
-  text-align: center;
-}
-
-.schedule-table td:nth-child(2) {
-  font-size: 16px;
-  font-weight: 500;
-  color: #000137;
-  background: #F2FBFD;
+  padding: 0 24px;
 }
 
 /* =========================================
-   SECTION BACKGROUND
+   BADGES
 ========================================= */
-.appointment-section {
-  background: #f5f7f9;
-  padding: 120px 0 140px;
-  text-align: center;   
-}
 
-/* =========================================
-   TOP BADGE
-========================================= */
+.schedule-badge,
 .appointment-badge {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-
-  padding: 8px 18px;
-  border-radius: 30px;
-  border: 1px solid #bfe8ef;
-  background: #ffffff;
+  padding: 8px 22px;
+  border-radius: 50px;
+  border: 1px solid var(--border-light);
+  background: #fff;
   font-size: 14px;
   font-weight: 500;
-  color: #19c6d1;
+  color: var(--primary-color);
   margin-bottom: 28px;
+  transition: 0.3s ease;
+}
+
+.schedule-badge:hover,
+.appointment-badge:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 6px 20px rgba(25, 198, 209, 0.15);
 }
 
 /* =========================================
-   MAIN HEADING
+   TITLE
 ========================================= */
+
+.schedule-title {
+  font-size: 38px;
+  font-weight: 600;
+  color: var(--dark-text);
+  margin-bottom: 40px;
+  line-height: 1.25;
+}
+
+/* =========================================
+   FILTER PILLS
+========================================= */
+
+.schedule-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 50px;
+}
+
+.filter-pill {
+  padding: 10px 22px;
+  border-radius: 50px;
+  border: 1px solid var(--border-gray);
+  background: #fff;
+  font-size: 14px;
+  color: var(--gray-text);
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.filter-pill:hover,
+.filter-pill.active {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #fff;
+}
+
+/* =========================================
+   TABLE CARD
+========================================= */
+.schedule-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.schedule-table thead {
+  background: #f2fbfd;
+}
+
+.schedule-table th,
+.schedule-table td {
+  padding: 18px 16px;
+  border: 1px solid #edf1f5;
+  font-size: 14px;
+}
+
+.schedule-table th {
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.schedule-table .doctor-cell {
+  text-align: left;
+  font-weight: 600;
+  color: #000137;
+  background-color: #f2fbfd;
+}
+
+.schedule-table tbody tr:hover {
+  background: #f9fbfc;
+}
+
+/* =========================================
+   APPOINTMENT SECTION
+========================================= */
+
+.appointment-section {
+  background: var(--bg-pale);
+  padding: 120px 0;
+}
+
 .appointment-title {
   font-size: 48px;
   font-weight: 700;
-  line-height: 1.2;
   margin-bottom: 60px;
-  color: #0f172a;
+  color: var(--dark-secondary);
+  text-align: center;
 }
-
-/* highlight word */
 .appointment-title span {
-  color: #19c6d1;
+  color: var(--primary-color);
 }
 
 /* =========================================
-   FORM WRAPPER
+   FORM LAYOUT
 ========================================= */
+
 .appointment-form {
   max-width: 900px;
   margin: 0 auto;
 }
 
-.appointment-section {
-  background: #f5f7f9;
-  margin: 0 0 80px 0;
+.form-group {
+  margin-bottom: 28px;
 }
 
-/* =========================================
-   FORM WRAPPER
-========================================= */
-.appointment-form {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-/* =========================================
-   GRID LAYOUT
-========================================= */
-.form-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 28px 40px;   
-  margin-top: 50px;
-}
-
-/* =========================================
-   INPUT + SELECT BASE STYLE
-========================================= */
-.form-group input,
-.form-group select {
+.form-control-custom,
+.form-select-custom {
   width: 100%;
   height: 64px;
   padding: 0 26px;
-  border-radius: 50px;
-  border: 1.5px solid #bfe8ef;
-  background: #ffffff;
+  border-radius: 40px;
+  border: 1.5px solid var(--border-light);
   font-size: 15px;
   font-weight: 500;
-  color: #0f172a;
-  outline: none;
-  transition: all 0.25s ease;
+  background: #fff;
+  transition: 0.25s ease;
 }
 
-/* Placeholder */
-.form-group input::placeholder {
-  color: #8ca3b5;
-  font-weight: 500;
+.form-control-custom:focus,
+.form-select-custom:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 4px rgba(25, 198, 209, 0.08);
 }
 
-/* Focus State */
-.form-group input:focus,
-.form-group select:focus {
-  border-color: #19c6d1;
-  box-shadow: 0 0 0 3px rgba(25, 198, 209, 0.08);
-}
-
-/* =========================================
-   REMOVE DEFAULT SELECT STYLE
-========================================= */
-.form-group select {
+/* Select arrow */
+.form-select-custom {
   appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background-image: url(../assesst/from-arrow..png);
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 20 20' fill='none' stroke='%2319c6d1' stroke-width='2' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 8l5 5 5-5'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 22px center;
-  background-size: 16px;
-}
-
-/* =========================================
-   REMOVE DEFAULT DATE STYLE
-========================================= */
-input[type="date"] {
-  appearance: none;
-  -webkit-appearance: none;
-  position: relative;
-}
-
-input[type="date"]::-webkit-calendar-picker-indicator {
-  opacity: 0.6;
-  cursor: pointer;
+  background-size: 18px;
+  padding-right: 50px;
 }
 
 /* =========================================
    BUTTON
 ========================================= */
+
 .appointment-btn {
-  margin-top: 60px;
-  width: 520px;
-  height: 64px;
-
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-
-  border: none;
+  width: 100%;
+  max-width: 620px;
+  margin: 50px auto 0;
+  height: 64px;
   border-radius: 50px;
-
-  background: linear-gradient(90deg, #19c6d1, #1aa6b8);
+  background: linear-gradient(
+    90deg,
+    var(--primary-color),
+    var(--primary-hover)
+  );
   color: #fff;
-
   font-size: 16px;
   font-weight: 600;
-  letter-spacing: 0.3px;
-
-  cursor: pointer;
-  transition: all 0.3s ease;
+  border: none;
+  transition: 0.3s ease;
 }
 
 .appointment-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(25, 198, 209, 0.25);
+  box-shadow: 0 10px 30px rgba(0, 188, 212, 0.3);
+}
+
+/* =========================================
+   RESPONSIVE BREAKPOINTS
+========================================= */
+
+/* 1200 ↓ */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+  .schedule-table th,
+  .schedule-table td {
+    padding: 14px 12px;
+    font-size: 13px;
+  }
+}
+
+/* 992 ↓ */
+@media (max-width: 992px) {
+  .schedule-title {
+    font-size: 32px;
+  }
+  .appointment-title {
+    font-size: 36px;
+  }
+  .table-responsive {
+    overflow-x: auto;
+  }
+
+  .schedule-table {
+    min-width: 900px;
+  }
+}
+
+/* 768 ↓ */
+@media (max-width: 768px) {
+  .schedule-table thead {
+    display: none;
+  }
+
+  .schedule-table,
+  .schedule-table tbody,
+  .schedule-table tr,
+  .schedule-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .schedule-table tr {
+    background: #ffffff;
+    padding: 16px;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  }
+
+  .schedule-table td {
+    border: none;
+    padding: 8px 0;
+    padding-left: 120px;
+    text-align: left;
+    position: relative;
+    font-size: 13px;
+  }
+
+  .schedule-table td::before {
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 110px;
+    font-weight: 600;
+    color: #000137;
+    white-space: nowrap;
+  }
+
+  /* Column Labels */
+
+  .schedule-table td:nth-child(1)::before {
+    content: "Room No";
+  }
+  .schedule-table td:nth-child(2)::before {
+    content: "Doctor";
+  }
+  .schedule-table td:nth-child(3)::before {
+    content: "Monday";
+  }
+  .schedule-table td:nth-child(4)::before {
+    content: "Tuesday";
+  }
+  .schedule-table td:nth-child(5)::before {
+    content: "Wednesday";
+  }
+  .schedule-table td:nth-child(6)::before {
+    content: "Thursday";
+  }
+  .schedule-table td:nth-child(7)::before {
+    content: "Friday";
+  }
+  .schedule-table td:nth-child(8)::before {
+    content: "Saturday";
+  }
+  .schedule-table td:nth-child(9)::before {
+    content: "Sunday";
+  }
+
+  .doctor-schedule-section,
+  .appointment-section {
+    padding: 80px 0;
+  }
+
+  .schedule-title {
+    font-size: 28px;
+  }
+  .appointment-title {
+    font-size: 30px;
+  }
+
+  .schedule-table {
+    min-width: 750px;
+  }
+
+  .form-control-custom,
+  .form-select-custom {
+    height: 56px;
+  }
+
+  .appointment-btn {
+    height: 56px;
+  }
+}
+
+/* 576 ↓ */
+@media (max-width: 576px) {
+  .container {
+    padding: 0 18px;
+  }
+
+  .schedule-title {
+    font-size: 24px;
+  }
+  .appointment-title {
+    font-size: 26px;
+  }
+
+  .schedule-table {
+    min-width: 650px;
+    font-size: 12px;
+  }
+  .schedule-table td {
+    padding-left: 100px;
+    font-size: 12px;
+  }
+
+  .schedule-table td::before {
+    width: 90px;
+    font-size: 12px;
+  }
+
+  .form-control-custom,
+  .form-select-custom {
+    height: 50px;
+    font-size: 14px;
+  }
+
+  .appointment-btn {
+    height: 50px;
+    font-size: 14px;
+  }
+}
+
+/* 400 ↓ */
+@media (max-width: 400px) {
+  .schedule-table {
+    min-width: 600px;
+  }
+  .schedule-table td {
+    padding-left: 85px;
+  }
+
+  .schedule-table td::before {
+    width: 80px;
+  }
+  .schedule-badge,
+  .appointment-badge {
+    font-size: 12px;
+    padding: 6px 16px;
+  }
 }

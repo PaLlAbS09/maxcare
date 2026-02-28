@@ -33,27 +33,31 @@
    BREADCRUMB (RIGHT SIDE)
 ================================ */
 
+
 .about-hero-right {
   font-size: 15px;
   display: flex;
   align-items: center;
-  gap: 12px;
-  opacity: 0.9;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .about-hero-right .sep {
   opacity: 0.5;
 }
 
+.about-hero-right a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.about-hero-right a:hover {  
+  color: #00b4d8;
+}
+
 .about-hero-right .title {
   color: #00b4d8;
   font-weight: 600;
-}
-.about-hero-right a {
-  color: #ffffff;
-}
-.about-hero-right a :hover {
-  color: #1475e2;
 }
 
 /* ================================
@@ -155,7 +159,7 @@
 
 .container {
   max-width: 1320px;
-  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .map-container {
@@ -305,32 +309,6 @@
   cursor: pointer;
 }
 
-/* ============================= */
-/* RESPONSIVE */
-/* ============================= */
-
-@media (max-width: 992px) {
-
-  .branch-col,
-  .offer-left,
-  .offer-right {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-
-  .form-row {
-    flex-direction: column;
-  }
-
-  .schedule-card {
-    position: relative;
-    right: auto;
-    top: auto;
-    transform: none;
-    margin-top: 20px;
-  }
-}
-
 /* ==============================
    BUTTON
 ============================== */
@@ -351,4 +329,201 @@
 .send-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 25px rgba(25, 198, 209, 0.25);
+}
+
+@media (max-width: 992px) {
+
+  /* -------- BRANCH SECTION -------- */
+
+  .branch-row {
+    flex-wrap: wrap;
+  }
+
+  .branch-col {
+    flex: 0 0 50%;
+    max-width: 50%;
+    border-right: none;
+    border-bottom: 1px solid #E5E9F2;
+  }
+
+  .branch-col h3 {
+    padding: 30px;
+    margin-bottom: 30px;
+  }
+
+  /* -------- MAP SECTION -------- */
+
+  .map-container {
+    height: 450px;
+  }
+
+  .map-info-card {
+    left: 20px;
+    width: 260px;
+  }
+
+  .schedule-card {
+    right: 20px;
+    width: 260px;
+    padding: 28px;
+  }
+
+  /* -------- OFFER SECTION -------- */
+
+  .offer-left,
+  .offer-right {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .offer-row {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .offer-section {
+    padding: 80px 0;
+  }
+
+}
+
+
+/* ================================
+   768px ↓ (Small Tablet)
+================================ */
+
+@media (max-width: 768px) {
+
+  /* -------- MAP STACK FIX -------- */
+
+  .map-container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .map-container iframe {
+    height: 350px;
+  }
+
+  .map-info-card,
+  .schedule-card {
+    position: static;
+    transform: none;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+}
+
+
+/* ================================
+   576px ↓ (Mobile)
+================================ */
+
+@media (max-width: 576px) {
+
+  /* -------- BRANCH STACK -------- */
+
+  .branch-row {
+    flex-direction: column;
+  }
+
+  .branch-col {
+    flex: 100%;
+    max-width: 100%;
+    border-right: none !important;
+  }
+
+  .branch-col h3 {
+    font-size: 18px;
+    padding: 25px;
+  }
+
+  .value {
+    font-size: 16px;
+  }
+
+  /* -------- OFFER -------- */
+
+  .offer-title {
+    font-size: 24px;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .send-btn {
+    width: 100%;
+  }
+
+}
+@media (max-width: 400px) {
+
+  .map-container iframe {
+    height: 280px;
+  }
+
+  .offer-title {
+    font-size: 20px;
+  }
+
+  .offer-desc {
+    font-size: 13px;
+  }
+
+  .schedule-row {
+    font-size: 15px;
+  }
+
+  .map-info-card {
+    padding: 18px;
+  }
+
+  .schedule-card {
+    padding: 22px;
+  }
+}
+
+
+/* ================================
+   320px ↓ (Extra Small Devices)
+================================ */
+@media (max-width: 320px) {
+
+  .branch-col h3 {
+    font-size: 16px;
+  }
+
+  .label {
+    font-size: 12px;
+  }
+
+  .value {
+    font-size: 14px;
+  }
+
+  .map-container iframe {
+    height: 250px;
+  }
+
+  .offer-title {
+    font-size: 18px;
+  }
+
+  .offer-desc {
+    font-size: 12px;
+  }
+
+  .offer-form input,
+  .offer-form textarea {
+    padding: 12px 14px;
+    font-size: 13px;
+  }
+
+  .send-btn {
+    height: 45px;
+    font-size: 13px;
+  }
 }

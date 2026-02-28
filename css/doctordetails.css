@@ -204,14 +204,6 @@
   transition: all 0.25s ease;
 }
 
-.social-box:hover {
-  background: #19c6d1;
-}
-
-.social-box:hover svg {
-  fill: #ffffff;
-  opacity: 1;
-}
 
 /* ================================
            APPOINTMENT BUTTON
