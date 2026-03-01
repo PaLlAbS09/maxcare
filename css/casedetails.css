@@ -1,0 +1,486 @@
+.about-hero {
+  position: relative;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  overflow: hidden;
+  background: url(../assesst/hero-img.png);
+}
+
+/* container layout */
+.about-hero-wrap {
+  max-width: 1280px;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ================================
+   TITLE
+================================ */
+
+.about-hero-left h1 {
+  font-size: 56px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+/* ================================
+   BREADCRUMB (RIGHT SIDE)
+================================ */
+
+
+.about-hero-right {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.about-hero-right .sep {
+  opacity: 0.5;
+}
+
+.about-hero-right a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.about-hero-right a:hover {  
+  color: #00b4d8;
+}
+
+.about-hero-right .title {
+  color: #00b4d8;
+  font-weight: 600;
+}
+
+/* ================================
+   DECORATIVE CURVE 
+================================ */
+
+.about-hero::after {
+  content: "";
+  position: absolute;
+  right: -120px;
+  bottom: -120px;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(20, 198, 209, 0.18),
+    transparent 70%
+  );
+}
+.case-details {
+  background: #f8f9fb;
+}
+
+/* Title */
+.case-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #0b1030;
+}
+
+.case-desc {
+  font-size: 15px;
+  color: #6b7c93;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.case-image img {
+  border-radius: 16px;
+}
+
+/* Treatment list */
+.treatment-list {
+  list-style: none;
+  padding: 0;
+}
+
+.treatment-list li {
+  padding-left: 25px;
+  position: relative;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #4a4a4a;
+}
+
+/* Sidebar wrapper */
+.sidebar-wrapper {
+  max-width: 380px;
+  margin-left: auto;
+}
+
+/* Profile Card */
+.profile-card {
+  background: #ffffff;
+  padding: 32px 28px;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.06);
+}
+
+/* Title */
+.profile-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #0b1030;
+}
+
+/* Profile rows */
+.profile-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  padding: 14px 0;
+  border-bottom: 1px solid #eef2f7;
+}
+
+.profile-row.last {
+  border-bottom: none;
+}
+
+/* Labels */
+.profile-row .label {
+  font-size: 13px;
+  color: #8a97a8;
+}
+
+/* Values */
+.profile-row .value {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0b1030;
+  text-align: right;
+}
+
+
+/* Download button */
+.download-btn {
+  display: block;
+  width: 100%;
+  margin-top: 25px;
+  text-align: center;
+  padding: 14px 0;
+  border-radius: 50px;
+  background: linear-gradient(90deg,#00b4d8,#0096c7);
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.download-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(0,180,216,0.3);
+  color: #fff;
+}
+
+/* Support Card */
+.support-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.support-card img {
+  width: 100%;
+  display: block;
+}
+
+.support-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 24px;
+  background: linear-gradient(180deg,transparent,#000137);
+  color: #ffffff;
+}
+
+.support-overlay h6 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.support-contact span {
+  font-size: 12px;
+  display: block;
+}
+
+.support-contact strong {
+  font-size: 15px;
+}
+
+/* ===============================
+   Consultation Section
+================================ */
+
+.consultation-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0b1030;
+  margin-bottom: 10px;
+}
+
+.consultation-desc {
+  font-size: 14px;
+  color: #6b7c93;
+  margin-bottom: 40px;
+  max-width: 750px;
+}
+
+/* Layout spacing */
+.consultation-row {
+  row-gap: 40px;
+}
+
+/* Process item */
+.process-item {
+  position: relative;
+}
+
+/* Header (number + title) */
+.process-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.process-number {
+  width: 36px;
+  height: 36px;
+  background: #f2f4f7;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+  color: #0b1030;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+}
+
+.process-header h6 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  color: #0b1030;
+}
+
+/* List styling */
+.process-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.process-list li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #4a4a4a;
+}
+
+/* Right paragraph */
+.process-text {
+  font-size: 14px;
+  color: #6b7c93;
+  line-height: 1.7;
+}
+/* =====================================================
+   CASE DETAILS RESPONSIVE
+===================================================== */
+
+/* ---------- 1200px ↓ ---------- */
+@media (max-width: 1200px) {
+
+  .case-title {
+    font-size: 28px;
+  }
+
+  .sidebar-wrapper {
+    max-width: 100%;
+  }
+
+}
+
+
+/* ---------- 992px ↓ (Tablet) ---------- */
+@media (max-width: 992px) {
+
+  .case-details {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .case-title {
+    font-size: 24px;
+  }
+
+  .case-desc {
+    font-size: 14px;
+  }
+
+  .profile-card {
+    margin-top: 40px;
+  }
+
+}
+
+
+/* ---------- 768px ↓ (Stack Layout) ---------- */
+@media (max-width: 768px) {
+
+  .row.g-5 {
+    --bs-gutter-x: 0;
+  }
+
+  .case-title {
+    font-size: 22px;
+    line-height: 1.4;
+  }
+
+  .consultation-row {
+    row-gap: 30px;
+  }
+
+  .process-header h6 {
+    font-size: 15px;
+  }
+
+  .process-list li {
+    font-size: 13px;
+  }
+
+  .treatment-list li {
+    font-size: 13px;
+  }
+
+  .profile-row {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  .profile-row .value {
+    text-align: left;
+    margin-top: 4px;
+  }
+
+}
+
+
+/* ---------- 576px ↓ (Mobile) ---------- */
+@media (max-width: 576px) {
+
+  .case-details {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .case-title {
+    font-size: 20px;
+  }
+
+  .consultation-title {
+    font-size: 18px;
+  }
+
+  .consultation-desc {
+    font-size: 13px;
+  }
+
+  .process-number {
+    width: 32px;
+    height: 32px;
+    font-size: 12px;
+  }
+
+  .process-list li,
+  .treatment-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 13px;
+  }
+
+  .process-list svg,
+  .treatment-list svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+  }
+
+  .profile-card {
+    padding: 24px;
+  }
+
+  .profile-title {
+    font-size: 15px;
+  }
+
+  .profile-row .label {
+    font-size: 12px;
+  }
+
+  .profile-row .value {
+    font-size: 13px;
+  }
+
+  .download-btn {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+}
+
+
+
+@media (max-width: 320px) {
+
+  .case-title {
+    font-size: 16px;
+  }
+
+  .case-desc {
+    font-size: 12px;
+  }
+
+  .consultation-title {
+    font-size: 16px;
+  }
+
+  .consultation-desc {
+    font-size: 12px;
+  }
+
+  .process-list li,
+  .treatment-list li {
+    font-size: 12px;
+  }
+
+  .profile-row .label {
+    font-size: 11px;
+  }
+
+  .profile-row .value {
+    font-size: 12px;
+  }
+
+  .download-btn {
+    font-size: 13px;
+  }
+
+}
