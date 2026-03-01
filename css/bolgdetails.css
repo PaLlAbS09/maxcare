@@ -316,3 +316,175 @@ textarea.custom-input {
   box-shadow: 0 10px 25px rgba(0, 180, 216, 0.3);
   transform: translateY(-2px);
 }
+/* ==============================
+   LARGE DESKTOP (≤1200px)
+============================== */
+@media (max-width: 1200px) {
+
+  .about-hero-left h1 {
+    font-size: 48px;
+  }
+
+  .blog-title {
+    font-size: 36px;
+  }
+
+  .section-title {
+    font-size: 22px;
+  }
+
+  .video-box {
+    height: 380px;
+  }
+}
+
+
+/* ==============================
+   TABLET (≤992px)
+============================== */
+@media (max-width: 992px) {
+
+  .about-hero {
+    height: 240px;
+    padding: 0 20px;
+  }
+
+  .about-hero-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .about-hero-left h1 {
+    font-size: 40px;
+  }
+
+  .about-hero-right {
+    font-size: 14px;
+  }
+
+  .blog-details {
+    padding: 60px 0;
+  }
+
+  .blog-title {
+    font-size: 30px;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+
+  .video-box {
+    height: 320px;
+  }
+
+  .share-box {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}
+
+
+/* ==============================
+   MOBILE (≤768px)
+============================== */
+@media (max-width: 768px) {
+
+  .about-hero {
+    height: 200px;
+  }
+
+  .about-hero-left h1 {
+    font-size: 32px;
+  }
+
+  .about-hero-right {
+    font-size: 13px;
+  }
+
+  .blog-details {
+    padding: 50px 0;
+  }
+
+  .blog-title {
+    font-size: 24px;
+  }
+
+  .blog-desc,
+  .custom-list li {
+    font-size: 13px;
+  }
+
+  .section-title {
+    font-size: 18px;
+  }
+
+  .section-desc {
+    font-size: 14px;
+  }
+
+  .video-box {
+    height: 260px;
+  }
+
+  .play-btn {
+    width: 50px;
+    height: 50px;
+  }
+
+  .play-btn::after {
+    left: 18px;
+    top: 15px;
+  }
+
+  .share-box span {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .share-btn {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+
+  .custom-input {
+    font-size: 13px;
+  }
+}
+
+
+/* ==============================
+   SMALL MOBILE (≤480px)
+============================== */
+@media (max-width: 480px) {
+
+  .about-hero {
+    height: 180px;
+  }
+
+  .about-hero-left h1 {
+    font-size: 26px;
+  }
+
+  .blog-title {
+    font-size: 20px;
+  }
+
+  .section-title {
+    font-size: 16px;
+  }
+
+  .video-box {
+    height: 220px;
+  }
+
+  .final-desc {
+    font-size: 16px;
+  }
+
+  .share-btn {
+    padding: 6px 14px;
+    font-size: 11px;
+  }
+}
