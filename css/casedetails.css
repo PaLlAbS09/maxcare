@@ -78,8 +78,8 @@
     transparent 70%
   );
 }
-.case-details {
-  background: #f8f9fb;
+.row{
+  margin: 80px 0px;
 }
 
 /* Title */
@@ -227,12 +227,23 @@
 ================================ */
 
 .consultation-title {
-  font-size: 22px;
+  position: relative;
+  font-size: 26px;
   font-weight: 700;
   color: #0b1030;
   margin-bottom: 10px;
 }
-
+.consultation-title::after{
+  content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 2px;
+    background: #19c6d1;
+    border-radius: 2px;
+  }
+    
 .consultation-desc {
   font-size: 14px;
   color: #6b7c93;
@@ -273,7 +284,7 @@
 }
 
 .process-header h6 {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   margin: 0;
   color: #0b1030;
@@ -300,11 +311,33 @@
   color: #6b7c93;
   line-height: 1.7;
 }
+.section-heading{
+  position: relative;
+    font-size: 18px;
+  font-weight: 600;
+  margin: 24px 0;
+  color: #0b1030;
+}
+.section-heading::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 2px;
+    background: #19c6d1;
+    border-radius: 2px;
+}
+.section-desc{
+   font-size: 15px;
+  color: #6b7c93;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
 /* =====================================================
    CASE DETAILS RESPONSIVE
 ===================================================== */
 
-/* ---------- 1200px ↓ ---------- */
 @media (max-width: 1200px) {
 
   .case-title {
@@ -317,8 +350,6 @@
 
 }
 
-
-/* ---------- 992px ↓ (Tablet) ---------- */
 @media (max-width: 992px) {
 
   .case-details {
@@ -340,8 +371,6 @@
 
 }
 
-
-/* ---------- 768px ↓ (Stack Layout) ---------- */
 @media (max-width: 768px) {
 
   .row.g-5 {
@@ -382,7 +411,6 @@
 }
 
 
-/* ---------- 576px ↓ (Mobile) ---------- */
 @media (max-width: 576px) {
 
   .case-details {
@@ -445,8 +473,6 @@
   }
 
 }
-
-
 
 @media (max-width: 320px) {
 

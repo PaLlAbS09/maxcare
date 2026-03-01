@@ -1,0 +1,318 @@
+.about-hero {
+  position: relative;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  overflow: hidden;
+  background: url(../assesst/hero-img.png);
+}
+
+/* container layout */
+.about-hero-wrap {
+  max-width: 1280px;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ================================
+   TITLE
+================================ */
+
+.about-hero-left h1 {
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+/* ================================
+   BREADCRUMB (RIGHT SIDE)
+================================ */
+
+.about-hero-right {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  opacity: 0.9;
+}
+
+.about-hero-right .sep {
+  opacity: 0.5;
+}
+
+.about-hero-right .title {
+  color: #00b4d8;
+  font-weight: 600;
+  width: 86px;
+  height: 26px;
+}
+.about-hero-right a {
+  color: #ffffff;
+}
+.about-hero-right a :hover {
+  color: #1475e2;
+}
+
+/* ================================
+   DECORATIVE CURVE 
+================================ */
+
+.about-hero::after {
+  content: "";
+  position: absolute;
+  right: -120px;
+  bottom: -120px;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(20, 198, 209, 0.18),
+    transparent 70%
+  );
+}
+/* ==============================
+   BLOG DETAILS SECTION
+============================== */
+
+.blog-details {
+  background: #f7f9fc;
+  padding: 80px 0;
+}
+
+/* ==============================
+   FEATURE IMAGE
+============================== */
+
+.blog-details img {
+  border-radius: 16px;
+}
+
+/* ==============================
+   META INFO
+============================== */
+
+.blog-meta {
+  display: flex;
+  gap: 40px;
+  font-size: 13px;
+  color: #8a97a8;
+  margin-top: 25px;
+}
+
+/* ==============================
+   TITLE & TEXT
+============================== */
+
+.blog-title {
+  font-size: 43px;
+  font-weight: 600;
+  color: #0b1030;
+}
+
+.blog-desc {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #6b7c93;
+  margin-bottom: 25px;
+}
+
+.section-title {
+  position: relative;
+  font-size: 26px;
+  font-weight: 600;
+  color: #0b1030;
+  margin-bottom: 15px;
+}
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 2px;
+  background: #19c6d1;
+  border-radius: 2px;
+}
+.section-desc {
+  font-size: 16px;
+  color: #6b7c93;
+  margin-bottom: 40px;
+  max-width: 750px;
+}
+.section-sub {
+  font-size: 18px;
+  font-weight: 400;
+  color: #0b1030;
+  margin-bottom: 15px;
+}
+
+/* ==============================
+   CUSTOM LIST
+============================== */
+
+.custom-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.custom-list li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #4a4a4a;
+  line-height: 1.6;
+}
+
+/* ==============================
+   IMAGE ROW SPACING
+============================== */
+
+.blog-details .row img {
+  border-radius: 16px;
+}
+
+.blog-details .row {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* ==============================
+   VIDEO BOX
+============================== */
+
+.video-box {
+  position: relative;
+  width: 100%;
+  height: 421px; 
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* Image */
+.video-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.video-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  background: rgba(254, 255, 255, 0.9);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.play-btn::after {
+  content: "";
+  position: absolute;
+  left: 23px;
+  top: 18px;
+  border-left: 15px solid #000;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+.final-desc {
+  font-weight: 800;
+  font-size: 18px;
+  color: #0b1030;
+  margin-bottom: 40px;
+  max-width: 750px;
+}
+
+/* ==============================
+   SHARE SECTION
+============================== */
+
+.share-box {
+  font-size: 13px;
+  color: #6b7c93;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.share-box span {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0b1030;
+}
+
+.share-btn {
+  padding: 10px 22px;
+  background: #eef1f6;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #0b1030;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  transition: all 0.2s ease;
+}
+
+/* Very subtle hover (like Figma) */
+.share-btn:hover {
+  background: #e3e7ee;
+  color: #0b1030;
+}
+
+/* ==============================
+   COMMENT SECTION
+============================== */
+
+.comment-box h5 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.custom-input {
+  border-radius: 30px;
+  border: 1px solid #d6e9ef;
+  padding: 12px 18px;
+  font-size: 14px;
+  box-shadow: none;
+}
+
+.custom-input:focus {
+  border-color: #00b4d8;
+  box-shadow: 0 0 0 2px rgba(0, 180, 216, 0.1);
+}
+
+textarea.custom-input {
+  border-radius: 16px;
+  resize: none;
+}
+
+.submit-btn {
+  background: linear-gradient(90deg, #00b4d8, #0096c7);
+  color: #fff;
+  border-radius: 50px;
+  padding: 10px 28px;
+  font-size: 14px;
+  border: none;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  box-shadow: 0 10px 25px rgba(0, 180, 216, 0.3);
+  transform: translateY(-2px);
+}
