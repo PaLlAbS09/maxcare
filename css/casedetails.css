@@ -82,149 +82,39 @@
   margin: 80px 0px;
 }
 
-/* Title */
+/*Case Details Section Start*/
+.case-details {
+  padding: 80px 0;
+}
 .case-title {
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 20px;
   color: #0b1030;
 }
-
 .case-desc {
   font-size: 15px;
   color: #6b7c93;
   line-height: 1.7;
   margin-bottom: 30px;
 }
-
 .case-image img {
   border-radius: 16px;
-}
-
-/* Treatment list */
-.treatment-list {
-  list-style: none;
-  padding: 0;
-}
-
-.treatment-list li {
-  padding-left: 25px;
-  position: relative;
-  margin-bottom: 12px;
-  font-size: 14px;
-  color: #4a4a4a;
-}
-
-/* Sidebar wrapper */
-.sidebar-wrapper {
-  max-width: 380px;
-  margin-left: auto;
-}
-
-/* Profile Card */
-.profile-card {
-  background: #ffffff;
-  padding: 32px 28px;
-  border-radius: 20px;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.06);
-}
-
-/* Title */
-.profile-title {
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 25px;
-  color: #0b1030;
-}
-
-/* Profile rows */
-.profile-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px;
-  padding: 14px 0;
-  border-bottom: 1px solid #eef2f7;
-}
-
-.profile-row.last {
-  border-bottom: none;
-}
-
-/* Labels */
-.profile-row .label {
-  font-size: 13px;
-  color: #8a97a8;
-}
-
-/* Values */
-.profile-row .value {
-  font-size: 14px;
-  font-weight: 600;
-  color: #0b1030;
-  text-align: right;
-}
-
-
-/* Download button */
-.download-btn {
-  display: block;
   width: 100%;
-  margin-top: 25px;
-  text-align: center;
-  padding: 14px 0;
-  border-radius: 50px;
-  background: linear-gradient(90deg,#00b4d8,#0096c7);
-  color: #ffffff;
-  font-weight: 600;
-  text-decoration: none;
-  transition: 0.3s ease;
 }
 
-.download-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 30px rgba(0,180,216,0.3);
-  color: #fff;
-}
 
-/* Support Card */
-.support-card {
-  position: relative;
-  border-radius: 20px;
-  overflow: hidden;
-}
-
-.support-card img {
+.img-placeholder {
+  border-radius: 16px;
   width: 100%;
-  display: block;
+  background: #d0e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0096c7;
+  font-weight: 600;
+  font-size: 14px;
 }
-
-.support-overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 24px;
-  background: linear-gradient(180deg,transparent,#000137);
-  color: #ffffff;
-}
-
-.support-overlay h6 {
-  font-size: 15px;
-  margin-bottom: 10px;
-}
-
-.support-contact span {
-  font-size: 12px;
-  display: block;
-}
-
-.support-contact strong {
-  font-size: 15px;
-}
-
-/* ===============================
-   Consultation Section
-================================ */
 
 .consultation-title {
   position: relative;
@@ -233,45 +123,39 @@
   color: #0b1030;
   margin-bottom: 10px;
 }
-.consultation-title::after{
+.consultation-title::after {
   content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 40px;
-    height: 2px;
-    background: #19c6d1;
-    border-radius: 2px;
-  }
-    
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 2px;
+  background: #19c6d1;
+  border-radius: 2px;
+}
 .consultation-desc {
   font-size: 14px;
   color: #6b7c93;
   margin-bottom: 40px;
   max-width: 750px;
 }
-
-/* Layout spacing */
 .consultation-row {
   row-gap: 40px;
 }
 
-/* Process item */
 .process-item {
   position: relative;
 }
-
-/* Header (number + title) */
 .process-header {
   display: flex;
   align-items: center;
   gap: 16px;
   margin-bottom: 20px;
 }
-
 .process-number {
   width: 36px;
   height: 36px;
+  min-width: 36px;
   background: #f2f4f7;
   border-radius: 50%;
   display: flex;
@@ -280,233 +164,366 @@
   font-weight: 600;
   font-size: 14px;
   color: #0b1030;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
 }
-
 .process-header h6 {
   font-size: 18px;
   font-weight: 600;
   margin: 0;
   color: #0b1030;
 }
-
-/* List styling */
 .process-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
 .process-list li {
-  position: relative;
-  padding-left: 28px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
   margin-bottom: 14px;
   font-size: 14px;
   color: #4a4a4a;
 }
-
-/* Right paragraph */
 .process-text {
   font-size: 14px;
   color: #6b7c93;
   line-height: 1.7;
 }
-.section-heading{
+
+.section-heading {
   position: relative;
-    font-size: 18px;
+  font-size: 18px;
   font-weight: 600;
   margin: 24px 0;
   color: #0b1030;
 }
-.section-heading::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 40px;
-    height: 2px;
-    background: #19c6d1;
-    border-radius: 2px;
+.section-heading::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 2px;
+  background: #19c6d1;
+  border-radius: 2px;
 }
-.section-desc{
-   font-size: 15px;
+.section-desc {
+  font-size: 15px;
   color: #6b7c93;
   line-height: 1.7;
   margin-bottom: 30px;
 }
-/* =====================================================
-   CASE DETAILS RESPONSIVE
-===================================================== */
+.treatment-list {
+  list-style: none;
+  padding: 0;
+}
+.treatment-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #4a4a4a;
+}
+.check-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
 
+
+.sidebar-wrapper {
+  max-width: 380px;
+  margin-left: auto;
+  position: sticky;
+  top: 20px;
+}
+
+
+.profile-card {
+  background: #ffffff;
+  padding: 32px 28px;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.profile-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #0b1030;
+}
+.profile-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  padding: 14px 0;
+  border-bottom: 1px solid #eef2f7;
+}
+.profile-row.last {
+  border-bottom: none;
+}
+.profile-row .label {
+  font-size: 13px;
+  color: #8a97a8;
+}
+.profile-row .value {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0b1030;
+  text-align: right;
+}
+
+
+.download-btn {
+  display: block;
+  width: 100%;
+  margin-top: 25px;
+  text-align: center;
+  padding: 14px 0;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #00b4d8, #0096c7);
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border: 2px solid transparent;
+  transition:
+    color 0.4s ease,
+    border-color 0.4s ease;
+}
+.download-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 50px;
+  z-index: -1;
+  transition: left 0.4s ease;
+}
+.download-btn:hover::before {
+  left: 0;
+}
+.download-btn:hover {
+  color: #0096c7;
+  border-color: #0096c7;
+}
+
+
+.support-card {
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 24px;
+}
+.support-img-wrap {
+  background: #eef4f8;
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.support-img-wrap img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+.support-img-placeholder {
+  width: 100%;
+  height: 220px;
+  background: linear-gradient(160deg, #e0f3fa 60%, #b8e4f5 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.support-img-placeholder svg {
+  opacity: 0.3;
+}
+.support-body {
+  background: #00093d;
+  padding: 24px 20px 20px;
+}
+.support-body h6 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 16px;
+  line-height: 1.4;
+}
+.support-contact-box {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 14px 18px;
+}
+.support-phone-icon {
+  width: 46px;
+  height: 46px;
+  min-width: 46px;
+  background: linear-gradient(135deg, #00b4d8, #0096c7);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.support-phone-icon svg {
+  width: 22px;
+  height: 22px;
+}
+.support-contact-text span {
+  font-size: 12px;
+  color: #0096c7;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 2px;
+}
+.support-contact-text strong {
+  font-size: 17px;
+  font-weight: 700;
+  color: #0b1030;
+  display: block;
+}
+/*Case Details Section End*/
+
+/*Media Queries Start*/
 @media (max-width: 1200px) {
-
   .case-title {
     font-size: 28px;
   }
-
   .sidebar-wrapper {
     max-width: 100%;
   }
-
 }
-
 @media (max-width: 992px) {
-
   .case-details {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 60px 0;
   }
-
   .case-title {
     font-size: 24px;
   }
-
   .case-desc {
     font-size: 14px;
   }
-
   .profile-card {
     margin-top: 40px;
   }
-
-}
-
-@media (max-width: 768px) {
-
-  .row.g-5 {
-    --bs-gutter-x: 0;
+  .sidebar-wrapper {
+    max-width: 100%;
+    margin-left: 0;
   }
-
+}
+@media (max-width: 768px) {
   .case-title {
     font-size: 22px;
     line-height: 1.4;
   }
-
   .consultation-row {
     row-gap: 30px;
   }
-
   .process-header h6 {
     font-size: 15px;
   }
-
   .process-list li {
     font-size: 13px;
   }
-
   .treatment-list li {
     font-size: 13px;
   }
-
   .profile-row {
     grid-template-columns: 1fr;
-    text-align: left;
   }
-
   .profile-row .value {
     text-align: left;
     margin-top: 4px;
   }
-
 }
-
-
 @media (max-width: 576px) {
-
   .case-details {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 40px 0;
   }
-
   .case-title {
     font-size: 20px;
   }
-
   .consultation-title {
     font-size: 18px;
   }
-
   .consultation-desc {
     font-size: 13px;
   }
-
   .process-number {
     width: 32px;
     height: 32px;
+    min-width: 32px;
     font-size: 12px;
   }
-
   .process-list li,
   .treatment-list li {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
     font-size: 13px;
   }
-
-  .process-list svg,
-  .treatment-list svg {
+  .check-icon {
     width: 18px;
     height: 18px;
-    flex-shrink: 0;
   }
-
   .profile-card {
     padding: 24px;
   }
-
   .profile-title {
     font-size: 15px;
   }
-
   .profile-row .label {
     font-size: 12px;
   }
-
   .profile-row .value {
     font-size: 13px;
   }
-
   .download-btn {
     padding: 12px;
     font-size: 14px;
   }
-
+  .support-body h6 {
+    font-size: 17px;
+  }
 }
-
 @media (max-width: 320px) {
-
   .case-title {
     font-size: 16px;
   }
-
   .case-desc {
     font-size: 12px;
   }
-
   .consultation-title {
     font-size: 16px;
   }
-
   .consultation-desc {
     font-size: 12px;
   }
-
   .process-list li,
   .treatment-list li {
     font-size: 12px;
   }
-
   .profile-row .label {
     font-size: 11px;
   }
-
   .profile-row .value {
     font-size: 12px;
   }
-
   .download-btn {
     font-size: 13px;
   }
-
+  .support-body h6 {
+    font-size: 15px;
+  }
+  .support-contact-text strong {
+    font-size: 14px;
+  }
 }
+/*Media Queries End*/
