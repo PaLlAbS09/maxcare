@@ -78,9 +78,6 @@
     transparent 70%
   );
 }
-.row{
-  margin: 80px 0px;
-}
 
 /*Case Details Section Start*/
 .case-details {
@@ -102,7 +99,6 @@
   border-radius: 16px;
   width: 100%;
 }
-
 
 .img-placeholder {
   border-radius: 16px;
@@ -232,14 +228,12 @@
   flex-shrink: 0;
 }
 
-
 .sidebar-wrapper {
   max-width: 380px;
   margin-left: auto;
   position: sticky;
   top: 20px;
 }
-
 
 .profile-card {
   background: #ffffff;
@@ -276,7 +270,6 @@
   color: #0b1030;
   text-align: right;
 }
-
 
 .download-btn {
   display: block;
@@ -317,80 +310,103 @@
   border-color: #0096c7;
 }
 
-
 .support-card {
-  border-radius: 20px;
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  height: 568px;
+  border-radius: 10px;
   overflow: hidden;
-  margin-top: 24px;
+  background: #fff;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12);
 }
-.support-img-wrap {
-  background: #eef4f8;
-  min-height: 220px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.support-img-wrap img {
+
+.support-card > img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  display: block;
+  height: 60%;
   object-fit: cover;
+  z-index: 1;
 }
-.support-img-placeholder {
+
+.support-curve {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   width: 100%;
-  height: 220px;
-  background: linear-gradient(160deg, #e0f3fa 60%, #b8e4f5 100%);
+  height: 75%;
+  z-index: 2;
+  display: block;
+}
+
+.support-content {
+  position: absolute;
+  bottom: -94px;
+  left: 0;
+  width: 100%;
+  height: 75%;
+  padding: 48px 28px;
+  z-index: 3;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  color: #fff;
 }
-.support-img-placeholder svg {
-  opacity: 0.3;
+
+.support-content h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 26px;
+  letter-spacing: 0.2px;
 }
-.support-body {
-  background: #00093d;
-  padding: 24px 20px 20px;
-}
-.support-body h6 {
-  font-size: 20px;
-  font-weight: 700;
-  color: #ffffff;
-  margin-bottom: 16px;
-  line-height: 1.4;
-}
-.support-contact-box {
+
+.support-btn {
+  position: relative;
+  width: 278px;
+  height: 95px;
+  background: #ffffff;
+  border-radius: 22px;
   display: flex;
   align-items: center;
   gap: 14px;
-  background: #ffffff;
-  border-radius: 14px;
-  padding: 14px 18px;
+  padding: 0 22px;
+  text-decoration: none;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  transition: 0.25s;
 }
-.support-phone-icon {
-  width: 46px;
-  height: 46px;
-  min-width: 46px;
-  background: linear-gradient(135deg, #00b4d8, #0096c7);
-  border-radius: 50%;
+
+.support-btn svg {
+  position: absolute;
+  left: -26px;
+  top: 28px;
+}
+
+.support-text {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  text-align: left;
 }
-.support-phone-icon svg {
-  width: 22px;
-  height: 22px;
+
+.support-text span {
+  font-size: 14px;
+  color: #14c6d1;
+  font-weight: 600;
+  padding: 0 0 0 13px;
 }
-.support-contact-text span {
-  font-size: 12px;
-  color: #0096c7;
-  font-weight: 500;
-  display: block;
-  margin-bottom: 2px;
-}
-.support-contact-text strong {
-  font-size: 17px;
+
+.support-text strong {
+  font-size: 18px;
   font-weight: 700;
-  color: #0b1030;
-  display: block;
+  color: #00194c;
+  padding: 0 0 0 37px;
+}
+
+.support-btn:hover {
+  transform: translateY(-2px);
 }
 /*Case Details Section End*/
 
@@ -401,6 +417,9 @@
   }
   .sidebar-wrapper {
     max-width: 100%;
+  }
+  .support-card {
+    height: 520px;
   }
 }
 @media (max-width: 992px) {
@@ -419,6 +438,10 @@
   .sidebar-wrapper {
     max-width: 100%;
     margin-left: 0;
+  }
+  .support-card {
+    max-width: 100%;
+    height: 480px;
   }
 }
 @media (max-width: 768px) {
@@ -444,6 +467,13 @@
   .profile-row .value {
     text-align: left;
     margin-top: 4px;
+  }
+  .support-card {
+    height: 440px;
+  }
+
+  .support-content {
+    bottom: -60px;
   }
 }
 @media (max-width: 576px) {
@@ -489,8 +519,21 @@
     padding: 12px;
     font-size: 14px;
   }
-  .support-body h6 {
-    font-size: 17px;
+  .support-card {
+    height: 400px;
+  }
+
+  .support-btn {
+    width: 240px;
+    height: 80px;
+  }
+
+  .support-content h4 {
+    font-size: 15px;
+  }
+
+  .support-text strong {
+    font-size: 15px;
   }
 }
 @media (max-width: 320px) {
@@ -519,11 +562,21 @@
   .download-btn {
     font-size: 13px;
   }
-  .support-body h6 {
-    font-size: 15px;
+  .support-card {
+    height: 360px;
   }
-  .support-contact-text strong {
-    font-size: 14px;
+
+  .support-btn {
+    width: 200px;
+    height: 72px;
+  }
+
+  .support-text span {
+    font-size: 12px;
+  }
+
+  .support-text strong {
+    font-size: 13px;
   }
 }
 /*Media Queries End*/

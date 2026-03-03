@@ -1,0 +1,68 @@
+/* Main Card */
+.emergency-card {
+  background: #FCEAED;
+  border: 6px solid #F5C5CC;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* Top Red Section */
+.emergency-top {
+  background: #E4354A;
+  color: #fff;
+  padding: 30px 20px;
+  border-radius: 15px;
+  margin: 15px;
+}
+
+.small-text {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.phone-number {
+  font-weight: 700;
+  font-size: 26px;
+  margin: 0;
+}
+
+/* Plus Icon */
+.plus-icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  font-weight: bold;
+  opacity: 0.3;
+}
+
+/* Bottom Section */
+.emergency-body {
+  padding: 20px 25px 35px;
+}
+
+.info-box {
+  border: 1px dashed #E4354A;
+  padding: 15px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #8F1221;
+  border-radius: 6px;
+  background: transparent;
+}
+
+/* Button */
+.direction-btn {
+  background: #8F1221;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 40px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.direction-btn:hover {
+  background: #6f0e1a;
+  color: #fff;
+}
