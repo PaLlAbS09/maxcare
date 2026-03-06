@@ -142,15 +142,6 @@
   transition: opacity 0.3s ease;
 }
 
-@keyframes spin-ring {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .step:hover .step-img::after {
   opacity: 1;
   animation: spin-ring 1.2s linear infinite;
@@ -187,10 +178,6 @@
 .step {
   transition: transform 0.3s ease;
   cursor: pointer;
-}
-
-.step:hover {
-  transform: translateY(-6px);
 }
 
 .step:hover .step-no {
